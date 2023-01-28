@@ -440,6 +440,30 @@ UI/Button.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Button.cpp.s
 .PHONY : UI/Button.cpp.s
 
+UI/Test.o: UI/Test.cpp.o
+.PHONY : UI/Test.o
+
+# target to build an object file
+UI/Test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Test.cpp.o
+.PHONY : UI/Test.cpp.o
+
+UI/Test.i: UI/Test.cpp.i
+.PHONY : UI/Test.i
+
+# target to preprocess a source file
+UI/Test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Test.cpp.i
+.PHONY : UI/Test.cpp.i
+
+UI/Test.s: UI/Test.cpp.s
+.PHONY : UI/Test.s
+
+# target to generate assembly for a file
+UI/Test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Test.cpp.s
+.PHONY : UI/Test.cpp.s
+
 UI/Vulkan/Buffer.o: UI/Vulkan/Buffer.cpp.o
 .PHONY : UI/Vulkan/Buffer.o
 
@@ -1277,6 +1301,9 @@ help:
 	@echo "... UI/Button.o"
 	@echo "... UI/Button.i"
 	@echo "... UI/Button.s"
+	@echo "... UI/Test.o"
+	@echo "... UI/Test.i"
+	@echo "... UI/Test.s"
 	@echo "... UI/Vulkan/Buffer.o"
 	@echo "... UI/Vulkan/Buffer.i"
 	@echo "... UI/Vulkan/Buffer.s"

@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Wuu.dir/Networking/IPv6ServerSocket.cpp.o"
   "CMakeFiles/Wuu.dir/Networking/Packet.cpp.o"
   "CMakeFiles/Wuu.dir/UI/Button.cpp.o"
+  "CMakeFiles/Wuu.dir/UI/Test.cpp.o"
   "CMakeFiles/Wuu.dir/UI/Vulkan/Buffer.cpp.o"
   "CMakeFiles/Wuu.dir/UI/Vulkan/CommandBuffer.cpp.o"
   "CMakeFiles/Wuu.dir/UI/Vulkan/CommandPool.cpp.o"

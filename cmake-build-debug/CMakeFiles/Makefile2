@@ -132,12 +132,12 @@ glm/clean:
 CMakeFiles/Wuu.dir/all: glfw-3/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44 "Built target Wuu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45 "Built target Wuu"
 .PHONY : CMakeFiles/Wuu.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Wuu.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles 60
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles 61
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Wuu.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Wuu.dir/rule
@@ -184,7 +184,7 @@ glfw-3/CMakeFiles/uninstall.dir/clean:
 glfw-3/src/CMakeFiles/glfw.dir/all:
 	$(MAKE) $(MAKESILENT) -f glfw-3/src/CMakeFiles/glfw.dir/build.make glfw-3/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) $(MAKESILENT) -f glfw-3/src/CMakeFiles/glfw.dir/build.make glfw-3/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60 "Built target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61 "Built target glfw"
 .PHONY : glfw-3/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.

@@ -269,6 +269,12 @@
 		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Element.h">
 			<Option target="Wuu"/>
 		</Unit>
+		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Test.cpp">
+			<Option target="Wuu"/>
+		</Unit>
+		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Test.h">
+			<Option target="Wuu"/>
+		</Unit>
 		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Buffer.cpp">
 			<Option target="Wuu"/>
 		</Unit>
