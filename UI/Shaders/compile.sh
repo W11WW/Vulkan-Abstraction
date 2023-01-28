@@ -1,0 +1,2 @@
+/Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/bin/glslc /Users/michaelferents/CLionProjects/Wuu/UI/Shaders/shader.vert -o /Users/michaelferents/CLionProjects/Wuu/UI/Shaders/vert.spv
+/Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/bin/glslc /Users/michaelferents/CLionProjects/Wuu/UI/Shaders/shader.frag -o /Users/michaelferents/CLionProjects/Wuu/UI/Shaders/frag.spv
