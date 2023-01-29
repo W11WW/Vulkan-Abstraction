@@ -36,9 +36,6 @@ namespace Wuu {
         void updateBuffers();
         void updateImages();
 
-        // Test function
-        void initImGui(GLFWwindow* window);
-
         void destroy();
 
     private:

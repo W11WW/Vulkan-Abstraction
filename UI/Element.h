@@ -16,18 +16,12 @@ public:
     Element() = default;
 
     [[nodiscard]] const auto& getPosition() const noexcept { return m_position; }
-    [[nodiscard]] const auto& getID() const noexcept { return m_ID; }
-    [[nodiscard]] const auto& getVisibility() const noexcept { return m_visibility; }
 
     void setPosition(glm::vec3&& newPosition) noexcept { m_position = newPosition; }
-    void setID(auto&& visibility) noexcept { m_visibility = visibility; }
-    void setVisibility(auto&& newID) noexcept { m_ID = newID; }
 
 protected:
 
     glm::vec3 m_position;
-    bool m_visibility = true;
-    std::string m_ID = "Default";
 
 };
 

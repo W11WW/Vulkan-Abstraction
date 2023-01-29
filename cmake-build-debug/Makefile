@@ -440,29 +440,77 @@ UI/Button.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Button.cpp.s
 .PHONY : UI/Button.cpp.s
 
-UI/Test.o: UI/Test.cpp.o
-.PHONY : UI/Test.o
+UI/Layout.o: UI/Layout.cpp.o
+.PHONY : UI/Layout.o
 
 # target to build an object file
-UI/Test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Test.cpp.o
-.PHONY : UI/Test.cpp.o
+UI/Layout.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Layout.cpp.o
+.PHONY : UI/Layout.cpp.o
 
-UI/Test.i: UI/Test.cpp.i
-.PHONY : UI/Test.i
+UI/Layout.i: UI/Layout.cpp.i
+.PHONY : UI/Layout.i
 
 # target to preprocess a source file
-UI/Test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Test.cpp.i
-.PHONY : UI/Test.cpp.i
+UI/Layout.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Layout.cpp.i
+.PHONY : UI/Layout.cpp.i
 
-UI/Test.s: UI/Test.cpp.s
-.PHONY : UI/Test.s
+UI/Layout.s: UI/Layout.cpp.s
+.PHONY : UI/Layout.s
 
 # target to generate assembly for a file
-UI/Test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Test.cpp.s
-.PHONY : UI/Test.cpp.s
+UI/Layout.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Layout.cpp.s
+.PHONY : UI/Layout.cpp.s
+
+UI/Text.o: UI/Text.cpp.o
+.PHONY : UI/Text.o
+
+# target to build an object file
+UI/Text.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Text.cpp.o
+.PHONY : UI/Text.cpp.o
+
+UI/Text.i: UI/Text.cpp.i
+.PHONY : UI/Text.i
+
+# target to preprocess a source file
+UI/Text.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Text.cpp.i
+.PHONY : UI/Text.cpp.i
+
+UI/Text.s: UI/Text.cpp.s
+.PHONY : UI/Text.s
+
+# target to generate assembly for a file
+UI/Text.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Text.cpp.s
+.PHONY : UI/Text.cpp.s
+
+UI/UIHandle.o: UI/UIHandle.cpp.o
+.PHONY : UI/UIHandle.o
+
+# target to build an object file
+UI/UIHandle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/UIHandle.cpp.o
+.PHONY : UI/UIHandle.cpp.o
+
+UI/UIHandle.i: UI/UIHandle.cpp.i
+.PHONY : UI/UIHandle.i
+
+# target to preprocess a source file
+UI/UIHandle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/UIHandle.cpp.i
+.PHONY : UI/UIHandle.cpp.i
+
+UI/UIHandle.s: UI/UIHandle.cpp.s
+.PHONY : UI/UIHandle.s
+
+# target to generate assembly for a file
+UI/UIHandle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/UIHandle.cpp.s
+.PHONY : UI/UIHandle.cpp.s
 
 UI/Vulkan/Buffer.o: UI/Vulkan/Buffer.cpp.o
 .PHONY : UI/Vulkan/Buffer.o
@@ -1301,9 +1349,15 @@ help:
 	@echo "... UI/Button.o"
 	@echo "... UI/Button.i"
 	@echo "... UI/Button.s"
-	@echo "... UI/Test.o"
-	@echo "... UI/Test.i"
-	@echo "... UI/Test.s"
+	@echo "... UI/Layout.o"
+	@echo "... UI/Layout.i"
+	@echo "... UI/Layout.s"
+	@echo "... UI/Text.o"
+	@echo "... UI/Text.i"
+	@echo "... UI/Text.s"
+	@echo "... UI/UIHandle.o"
+	@echo "... UI/UIHandle.i"
+	@echo "... UI/UIHandle.s"
 	@echo "... UI/Vulkan/Buffer.o"
 	@echo "... UI/Vulkan/Buffer.i"
 	@echo "... UI/Vulkan/Buffer.s"

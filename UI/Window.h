@@ -9,6 +9,7 @@
 
 #include "VulkanHandle.h"
 #include "WindowHandle.h"
+#include "UIHandle.h"
 
 namespace Wuu {
 
@@ -27,6 +28,7 @@ namespace Wuu {
 
         VulkanHandle m_vulkanHandle;
         WindowHandle m_windowHandle;
+        UIHandle m_uiHandle;
 
     };
 

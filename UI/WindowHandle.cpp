@@ -10,6 +10,8 @@ void WindowHandle::mouse_callback(GLFWwindow *window, double xpos, double ypos)
 {
     m_callbackInfo.mouseXpos = xpos;
     m_callbackInfo.mouseYpos = ypos;
+
+    std::cout << "Mouse Position: " << xpos << " " << ypos << std::endl;
 }
 
 void WindowHandle::key_callback(GLFWwindow *window, int key, int scancode, int action, int mods)

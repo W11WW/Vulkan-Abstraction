@@ -269,10 +269,22 @@
 		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Element.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Test.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Layout.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Test.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Layout.h">
+			<Option target="Wuu"/>
+		</Unit>
+		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Text.cpp">
+			<Option target="Wuu"/>
+		</Unit>
+		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Text.h">
+			<Option target="Wuu"/>
+		</Unit>
+		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/UIHandle.cpp">
+			<Option target="Wuu"/>
+		</Unit>
+		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/UIHandle.h">
 			<Option target="Wuu"/>
 		</Unit>
 		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Buffer.cpp">

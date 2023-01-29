@@ -3,3 +3,11 @@
 //
 
 #include "Button.h"
+
+using namespace Wuu;
+
+Button::Button(std::string title, float x, float y, bool reaction)
+{
+
+}
+

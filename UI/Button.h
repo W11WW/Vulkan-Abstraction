@@ -7,15 +7,15 @@
 #include "Element.h"
 #include <vector>
 
-class Button : public Element {
-public:
+namespace Wuu
+{
+    class Button : public Element {
+    public:
 
-    Button() = default;
+        Button(std::string title, float x, float y, bool reaction);
 
-    void onHover(){}
-    void onClick(){}
 
-private:
-};
+    };
+}
 
 #endif //WUU_BUTTON_H
