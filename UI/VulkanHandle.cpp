@@ -18,6 +18,8 @@ void VulkanHandle::initialize(GLFWwindow* window)
                           m_memoryPool,
                           m_renderer.getSwapchain().getExtent());
 
+    m_renderPass.initialize(m_renderer.getLogicalDevice(), m_renderer.getSwapchain(), m_depthImage);
+
     m_descriptorPool.setPool(m_renderer.getLogicalDevice(), 1, 1, 2);
 
     m_uniformBuffer.initialize(m_renderer.getLogicalDevice(),
@@ -34,18 +36,19 @@ void VulkanHandle::initialize(GLFWwindow* window)
     m_images[0].setImage(m_renderer.getLogicalDevice(), m_renderer.getPhysicalDevice(), m_memoryPool, "viking_room.png");
 
     std::vector<Vulkan::DescriptorType> types { m_uniformBuffer, m_images[0] };
-    m_shader.setPath("../UI/Shaders/vert.spv", "../UI/Shaders/frag.spv");
-    m_shader.initialize(window, m_renderer.getLogicalDevice(), m_renderer.getSwapchain(), m_depthImage, types);
+    m_pipeline.setPath("../UI/Shaders/vert.spv", "../UI/Shaders/frag.spv");
+    m_pipeline.initialize<Vertex>(window, m_renderer.getLogicalDevice(), m_renderer.getSwapchain(), m_depthImage, types, m_renderPass);
 
-    m_descriptorSetUniformBuffer.initialize(m_renderer.getLogicalDevice(), m_descriptorPool, m_shader.getDescriptorSetLayout()[0]);
+    m_descriptorSetUniformBuffer.initialize(m_renderer.getLogicalDevice(), m_descriptorPool, m_pipeline.getDescriptorSetLayout()[0]);
     m_descriptorSetUniformBuffer.write(m_renderer.getLogicalDevice(), m_uniformBuffer);
 
-    m_imageSet.initialize(m_renderer.getLogicalDevice(), m_descriptorPool, m_shader.getDescriptorSetLayout()[1]);
+    m_imageSet.initialize(m_renderer.getLogicalDevice(), m_descriptorPool, m_pipeline.getDescriptorSetLayout()[1]);
     m_imageSet.write(m_renderer.getLogicalDevice(), m_images);
 
     m_square.setShape(m_renderer.getLogicalDevice(), m_renderer.getPhysicalDevice(), m_memoryPool, "al");
 
     test.setPosition(glm::vec3(1, 1, 1));
+    test2.setPosition(glm::vec3(1, 1.5, 1));
 }
 
 void VulkanHandle::updateCommandBuffers()
@@ -55,7 +58,8 @@ void VulkanHandle::updateCommandBuffers()
     for(int i = 0; i < m_renderer.getSwapchain().getSize(); i++)
     {
         m_renderer.getCommandBuffers()[i].beginCommandBufferRecord();
-        m_renderer.getCommandBuffers()[i].recordElement(m_shader, test, sets, m_square, i, m_renderer.getSwapchain());
+        m_renderer.getCommandBuffers()[i].recordElement(m_pipeline, m_renderPass, test, sets, m_square, i, m_renderer.getSwapchain());
+        m_renderer.getCommandBuffers()[i].recordElement(m_pipeline, m_renderPass, test2, sets, m_square, i, m_renderer.getSwapchain());
         m_renderer.getCommandBuffers()[i].endCommandBufferRecord();
     }
 }
@@ -85,6 +89,9 @@ void VulkanHandle::render(GLFWwindow* window)
                               m_memoryPool,
                               m_renderer.getSwapchain().getExtent());
 
+        m_renderPass.destroy(m_renderer.getLogicalDevice());
+        m_renderPass.initialize(m_renderer.getLogicalDevice(), m_renderer.getSwapchain(), m_depthImage);
+
         m_descriptorPool.destroy(m_renderer.getLogicalDevice());
         m_descriptorPool.setPool(m_renderer.getLogicalDevice(), 1, 1, 2);
 
@@ -96,14 +103,14 @@ void VulkanHandle::render(GLFWwindow* window)
         m_images[0].setImage(m_renderer.getLogicalDevice(), m_renderer.getPhysicalDevice(), m_memoryPool, "test.jpeg");
 
         std::vector<Vulkan::DescriptorType> types { m_uniformBuffer, m_images[0] };
-        m_shader.destroy(m_renderer.getLogicalDevice());
-        m_shader.initialize(window, m_renderer.getLogicalDevice(), m_renderer.getSwapchain(), m_depthImage, types);
+        m_pipeline.destroy(m_renderer.getLogicalDevice());
+        m_pipeline.initialize<Vertex>(window, m_renderer.getLogicalDevice(), m_renderer.getSwapchain(), m_depthImage, types, m_renderPass);
 
 
-        m_descriptorSetUniformBuffer.initialize(m_renderer.getLogicalDevice(), m_descriptorPool, m_shader.getDescriptorSetLayout()[0]);
+        m_descriptorSetUniformBuffer.initialize(m_renderer.getLogicalDevice(), m_descriptorPool, m_pipeline.getDescriptorSetLayout()[0]);
         m_descriptorSetUniformBuffer.write(m_renderer.getLogicalDevice(), m_uniformBuffer);
 
-        m_imageSet.initialize(m_renderer.getLogicalDevice(), m_descriptorPool, m_shader.getDescriptorSetLayout()[1]);
+        m_imageSet.initialize(m_renderer.getLogicalDevice(), m_descriptorPool, m_pipeline.getDescriptorSetLayout()[1]);
         m_imageSet.write(m_renderer.getLogicalDevice(), m_images);
     }
 }

@@ -2,19 +2,18 @@
 // Created by Michael Ferents on 14/03/2022.
 //
 
-#include "Shader.h"
+#include "PipeLine.h"
 
 using namespace Wuu::Vulkan;
 
-template<typename T>
-void Shader<T>::setPath(std::string_view vertPath, std::string_view fragPath)
+void PipeLine::setPath(std::string_view vertPath, std::string_view fragPath)
 {
     m_vertShaderPath = vertPath;
     m_fragShaderPath = fragPath;
 }
 
 template<typename T>
-void Shader<T>::initialize(GLFWwindow *window, LogicalDevice &logicalDevice, Swapchain &swapchain, DepthImage &depthImage, std::vector<DescriptorType>& descriptorTypes)
+void PipeLine::initialize(GLFWwindow *window, LogicalDevice &logicalDevice, Swapchain &swapchain, DepthImage &depthImage, std::vector<DescriptorType>& descriptorTypes, RenderPass& renderPass)
 {
     auto vertShaderCode = readFile(m_vertShaderPath.data());
     auto vertShaderCreateInfo =
@@ -37,8 +36,8 @@ void Shader<T>::initialize(GLFWwindow *window, LogicalDevice &logicalDevice, Swa
     auto pipelineShaderStages =
             std::vector<vk::PipelineShaderStageCreateInfo> { vertShaderStageInfo, fragShaderStageInfo };
 
-    auto bindingDescription = VertexType::getBindingDescription();
-    auto attributeDescription = VertexType::getAttributeDescriptions();
+    auto bindingDescription = T::getBindingDescription();
+    auto attributeDescription = T::getAttributeDescriptions();
 
     vk::PipelineVertexInputStateCreateInfo vertexInputStateCreateInfo {};
     vertexInputStateCreateInfo.vertexBindingDescriptionCount = 1;
@@ -82,30 +81,6 @@ void Shader<T>::initialize(GLFWwindow *window, LogicalDevice &logicalDevice, Swa
     depthStencilStateCreateInfo.depthBoundsTestEnable = VK_FALSE;
     depthStencilStateCreateInfo.stencilTestEnable = VK_TRUE;
 
-    /*
-    vk::DescriptorSetLayoutBinding descriptorSetLayoutBinding {};
-    descriptorSetLayoutBinding.binding = 0;
-    descriptorSetLayoutBinding.descriptorType = vk::DescriptorType::eUniformBuffer;
-    descriptorSetLayoutBinding.descriptorCount = 1;
-    descriptorSetLayoutBinding.stageFlags = vk::ShaderStageFlagBits::eVertex;
-
-    vk::DescriptorSetLayoutBinding samplerLayoutBinding {};
-    samplerLayoutBinding.binding = 1;
-    samplerLayoutBinding.descriptorCount = 1;
-    samplerLayoutBinding.descriptorType = vk::DescriptorType::eCombinedImageSampler;
-    samplerLayoutBinding.pImmutableSamplers = nullptr;
-    samplerLayoutBinding.stageFlags = vk::ShaderStageFlagBits::eFragment;
-
-    std::array<vk::DescriptorSetLayoutBinding, 2> bindings = { descriptorSetLayoutBinding, samplerLayoutBinding };
-
-    vk::DescriptorSetLayoutCreateInfo descriptorSetLayoutCreateInfo {};
-    descriptorSetLayoutCreateInfo.bindingCount = static_cast<uint32_t>(bindings.size());
-    descriptorSetLayoutCreateInfo.pBindings = bindings.data();
-
-    m_descriptorSetLayout = logicalDevice.getLogicalDevice().createDescriptorSetLayout(descriptorSetLayoutCreateInfo);
-
-     */
-
     std::vector<vk::DescriptorSetLayoutBinding> descriptorBindings;
 
     for(auto& type : descriptorTypes)
@@ -143,80 +118,19 @@ void Shader<T>::initialize(GLFWwindow *window, LogicalDevice &logicalDevice, Swa
 
     m_pipelineLayout = logicalDevice.getLogicalDevice().createPipelineLayout(pipelineLayoutCreateInfo);
 
-    vk::AttachmentDescription colorAttachment {};
-    colorAttachment.format = swapchain.getFormat();
-    colorAttachment.samples = vk::SampleCountFlagBits::e1;
-    colorAttachment.loadOp = vk::AttachmentLoadOp::eClear;
-    colorAttachment.storeOp = vk::AttachmentStoreOp::eStore;
-    colorAttachment.stencilLoadOp = vk::AttachmentLoadOp::eDontCare;
-    colorAttachment.stencilStoreOp = vk::AttachmentStoreOp::eDontCare;
-    colorAttachment.initialLayout = vk::ImageLayout::eUndefined;
-    colorAttachment.finalLayout = vk::ImageLayout::ePresentSrcKHR;
-
-    vk::AttachmentDescription depthAttachment {};
-    depthAttachment.format = vk::Format::eD32Sfloat;
-    depthAttachment.samples = vk::SampleCountFlagBits::e1;
-    depthAttachment.loadOp = vk::AttachmentLoadOp::eClear;
-    depthAttachment.storeOp = vk::AttachmentStoreOp::eStore;
-    depthAttachment.stencilLoadOp = vk::AttachmentLoadOp::eDontCare;
-    depthAttachment.stencilStoreOp = vk::AttachmentStoreOp::eDontCare;
-    depthAttachment.initialLayout = vk::ImageLayout::eUndefined;
-    depthAttachment.finalLayout = vk::ImageLayout::eDepthStencilAttachmentOptimal;
-
-    vk::AttachmentReference colorAttachmentRef(0, vk::ImageLayout::eColorAttachmentOptimal);
-    vk::AttachmentReference depthAttachmentRef(1, vk::ImageLayout::eDepthStencilAttachmentOptimal);
-
-    vk::SubpassDescription subpass;
-    subpass.pipelineBindPoint = vk::PipelineBindPoint::eGraphics;
-    subpass.colorAttachmentCount = 1;
-    subpass.pColorAttachments = &colorAttachmentRef;
-    subpass.pDepthStencilAttachment = &depthAttachmentRef;
-
-    vk::SubpassDependency dependency {};
-    dependency.srcSubpass = VK_SUBPASS_EXTERNAL;
-    dependency.dstSubpass = 0;
-    dependency.srcStageMask = vk::PipelineStageFlagBits::eColorAttachmentOutput;
-    dependency.dstStageMask = vk::PipelineStageFlagBits::eColorAttachmentOutput;
-    dependency.dstAccessMask = vk::AccessFlagBits::eColorAttachmentRead | vk::AccessFlagBits::eColorAttachmentWrite;
-    std::array<vk::AttachmentDescription, 2> attachments = { {colorAttachment, depthAttachment} };
-
-    m_renderPass = logicalDevice.getLogicalDevice().createRenderPass(vk::RenderPassCreateInfo{{}, 2, attachments.data(), 1, &subpass, 1, &dependency});
-
     auto pipelineCreateInfo = vk::GraphicsPipelineCreateInfo { {}, 2, pipelineShaderStages.data(),
                                                                &vertexInputStateCreateInfo, &inputAssembly, nullptr,
                                                                &viewportState, &rasterizer, &multisampling, &depthStencilStateCreateInfo,
-                                                               &colorBlending, nullptr, m_pipelineLayout, m_renderPass, 0};
+                                                               &colorBlending, nullptr, m_pipelineLayout, renderPass.getRenderPass(), 0};
 
     m_pipeline = logicalDevice.getLogicalDevice().createGraphicsPipeline({}, pipelineCreateInfo).value;
 
-    m_frameBuffers.resize(swapchain.getSize());
-
-    for(size_t i = 0; i < swapchain.getSize(); i++)
-    {
-        std::array<vk::ImageView, 2> attachments = {
-                (swapchain.getImage()[i].getImageView()),
-                depthImage.getImageView()
-        };
-
-        m_frameBuffers[i] = logicalDevice.getLogicalDevice().createFramebuffer(vk::FramebufferCreateInfo {
-                {}, m_renderPass, static_cast<uint32_t>(attachments.size()), attachments.data(),
-                swapchain.getExtent().width, swapchain.getExtent().height, 1
-        });
-    }
-
 }
 
-template<typename T>
-void Shader<T>::destroy(LogicalDevice& logicalDevice)
+void PipeLine::destroy(LogicalDevice& logicalDevice)
 {
-    for(auto& frameBuffer : m_frameBuffers)
-    {
-        logicalDevice.getLogicalDevice().destroyFramebuffer(frameBuffer);
-    }
-
     logicalDevice.getLogicalDevice().destroyPipeline(m_pipeline);
     logicalDevice.getLogicalDevice().destroyPipelineLayout(m_pipelineLayout);
-    logicalDevice.getLogicalDevice().destroyRenderPass(m_renderPass);
 }
 
-template class Wuu::Vulkan::Shader<Vertex>;
+template void Wuu::Vulkan::PipeLine::initialize<Vertex>(GLFWwindow *window, LogicalDevice &logicalDevice, Swapchain &swapchain, DepthImage &depthImage, std::vector<DescriptorType>& descriptorTypes, RenderPass& renderPass);

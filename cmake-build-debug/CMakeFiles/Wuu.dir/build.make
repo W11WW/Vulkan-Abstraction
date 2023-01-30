@@ -287,18 +287,18 @@ CMakeFiles/Wuu.dir/UI/Vulkan/MemoryCommandBuffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/MemoryCommandBuffer.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryCommandBuffer.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/MemoryCommandBuffer.cpp.s
 
-CMakeFiles/Wuu.dir/UI/Vulkan/Shader.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/Shader.cpp.o: ../UI/Vulkan/Shader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/Shader.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Wuu.dir/UI/Vulkan/Shader.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Shader.cpp
+CMakeFiles/Wuu.dir/UI/Vulkan/PipeLine.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/UI/Vulkan/PipeLine.cpp.o: ../UI/Vulkan/PipeLine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/PipeLine.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Wuu.dir/UI/Vulkan/PipeLine.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PipeLine.cpp
 
-CMakeFiles/Wuu.dir/UI/Vulkan/Shader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/Shader.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Shader.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/Shader.cpp.i
+CMakeFiles/Wuu.dir/UI/Vulkan/PipeLine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/PipeLine.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PipeLine.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/PipeLine.cpp.i
 
-CMakeFiles/Wuu.dir/UI/Vulkan/Shader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/Shader.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Shader.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/Shader.cpp.s
+CMakeFiles/Wuu.dir/UI/Vulkan/PipeLine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/PipeLine.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PipeLine.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/PipeLine.cpp.s
 
 CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorUniformBuffer.cpp.o: CMakeFiles/Wuu.dir/flags.make
 CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorUniformBuffer.cpp.o: ../UI/Vulkan/DescriptorUniformBuffer.cpp
@@ -664,6 +664,19 @@ CMakeFiles/Wuu.dir/UI/UIHandle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/UIHandle.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/UIHandle.cpp -o CMakeFiles/Wuu.dir/UI/UIHandle.cpp.s
 
+CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.o: ../UI/Vulkan/RenderPass.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/RenderPass.cpp
+
+CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/RenderPass.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.i
+
+CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/RenderPass.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.s
+
 # Object files for target Wuu
 Wuu_OBJECTS = \
 "CMakeFiles/Wuu.dir/main.cpp.o" \
@@ -683,7 +696,7 @@ Wuu_OBJECTS = \
 "CMakeFiles/Wuu.dir/UI/Vulkan/DepthImage.cpp.o" \
 "CMakeFiles/Wuu.dir/UI/Vulkan/SwapchainImage.cpp.o" \
 "CMakeFiles/Wuu.dir/UI/Vulkan/MemoryCommandBuffer.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/Shader.cpp.o" \
+"CMakeFiles/Wuu.dir/UI/Vulkan/PipeLine.cpp.o" \
 "CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorUniformBuffer.cpp.o" \
 "CMakeFiles/Wuu.dir/UI/Vulkan/Buffer.cpp.o" \
 "CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorImage.cpp.o" \
@@ -711,7 +724,8 @@ Wuu_OBJECTS = \
 "CMakeFiles/Wuu.dir/UI/Button.cpp.o" \
 "CMakeFiles/Wuu.dir/UI/Text.cpp.o" \
 "CMakeFiles/Wuu.dir/UI/Layout.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/UIHandle.cpp.o"
+"CMakeFiles/Wuu.dir/UI/UIHandle.cpp.o" \
+"CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.o"
 
 # External object files for target Wuu
 Wuu_EXTERNAL_OBJECTS =
@@ -733,7 +747,7 @@ Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/MemoryPool.cpp.o
 Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/DepthImage.cpp.o
 Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/SwapchainImage.cpp.o
 Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/MemoryCommandBuffer.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/Shader.cpp.o
+Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/PipeLine.cpp.o
 Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorUniformBuffer.cpp.o
 Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/Buffer.cpp.o
 Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorImage.cpp.o
@@ -762,13 +776,14 @@ Wuu: CMakeFiles/Wuu.dir/UI/Button.cpp.o
 Wuu: CMakeFiles/Wuu.dir/UI/Text.cpp.o
 Wuu: CMakeFiles/Wuu.dir/UI/Layout.cpp.o
 Wuu: CMakeFiles/Wuu.dir/UI/UIHandle.cpp.o
+Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.o
 Wuu: CMakeFiles/Wuu.dir/build.make
 Wuu: /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/lib/libvulkan.dylib
 Wuu: /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/lib/libvulkan.1.dylib
 Wuu: /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/lib/libvulkan.1.2.170.dylib
 Wuu: glfw-3/src/libglfw3.a
 Wuu: CMakeFiles/Wuu.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Linking CXX executable Wuu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Linking CXX executable Wuu"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Wuu.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

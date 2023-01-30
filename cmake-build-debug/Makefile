@@ -968,6 +968,30 @@ UI/Vulkan/PhysicalDevice.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/PhysicalDevice.cpp.s
 .PHONY : UI/Vulkan/PhysicalDevice.cpp.s
 
+UI/Vulkan/PipeLine.o: UI/Vulkan/PipeLine.cpp.o
+.PHONY : UI/Vulkan/PipeLine.o
+
+# target to build an object file
+UI/Vulkan/PipeLine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/PipeLine.cpp.o
+.PHONY : UI/Vulkan/PipeLine.cpp.o
+
+UI/Vulkan/PipeLine.i: UI/Vulkan/PipeLine.cpp.i
+.PHONY : UI/Vulkan/PipeLine.i
+
+# target to preprocess a source file
+UI/Vulkan/PipeLine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/PipeLine.cpp.i
+.PHONY : UI/Vulkan/PipeLine.cpp.i
+
+UI/Vulkan/PipeLine.s: UI/Vulkan/PipeLine.cpp.s
+.PHONY : UI/Vulkan/PipeLine.s
+
+# target to generate assembly for a file
+UI/Vulkan/PipeLine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/PipeLine.cpp.s
+.PHONY : UI/Vulkan/PipeLine.cpp.s
+
 UI/Vulkan/Queue.o: UI/Vulkan/Queue.cpp.o
 .PHONY : UI/Vulkan/Queue.o
 
@@ -992,6 +1016,30 @@ UI/Vulkan/Queue.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Queue.cpp.s
 .PHONY : UI/Vulkan/Queue.cpp.s
 
+UI/Vulkan/RenderPass.o: UI/Vulkan/RenderPass.cpp.o
+.PHONY : UI/Vulkan/RenderPass.o
+
+# target to build an object file
+UI/Vulkan/RenderPass.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.o
+.PHONY : UI/Vulkan/RenderPass.cpp.o
+
+UI/Vulkan/RenderPass.i: UI/Vulkan/RenderPass.cpp.i
+.PHONY : UI/Vulkan/RenderPass.i
+
+# target to preprocess a source file
+UI/Vulkan/RenderPass.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.i
+.PHONY : UI/Vulkan/RenderPass.cpp.i
+
+UI/Vulkan/RenderPass.s: UI/Vulkan/RenderPass.cpp.s
+.PHONY : UI/Vulkan/RenderPass.s
+
+# target to generate assembly for a file
+UI/Vulkan/RenderPass.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.s
+.PHONY : UI/Vulkan/RenderPass.cpp.s
+
 UI/Vulkan/Renderer.o: UI/Vulkan/Renderer.cpp.o
 .PHONY : UI/Vulkan/Renderer.o
 
@@ -1015,30 +1063,6 @@ UI/Vulkan/Renderer.s: UI/Vulkan/Renderer.cpp.s
 UI/Vulkan/Renderer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Renderer.cpp.s
 .PHONY : UI/Vulkan/Renderer.cpp.s
-
-UI/Vulkan/Shader.o: UI/Vulkan/Shader.cpp.o
-.PHONY : UI/Vulkan/Shader.o
-
-# target to build an object file
-UI/Vulkan/Shader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Shader.cpp.o
-.PHONY : UI/Vulkan/Shader.cpp.o
-
-UI/Vulkan/Shader.i: UI/Vulkan/Shader.cpp.i
-.PHONY : UI/Vulkan/Shader.i
-
-# target to preprocess a source file
-UI/Vulkan/Shader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Shader.cpp.i
-.PHONY : UI/Vulkan/Shader.cpp.i
-
-UI/Vulkan/Shader.s: UI/Vulkan/Shader.cpp.s
-.PHONY : UI/Vulkan/Shader.s
-
-# target to generate assembly for a file
-UI/Vulkan/Shader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Shader.cpp.s
-.PHONY : UI/Vulkan/Shader.cpp.s
 
 UI/Vulkan/Shape.o: UI/Vulkan/Shape.cpp.o
 .PHONY : UI/Vulkan/Shape.o
@@ -1415,15 +1439,18 @@ help:
 	@echo "... UI/Vulkan/PhysicalDevice.o"
 	@echo "... UI/Vulkan/PhysicalDevice.i"
 	@echo "... UI/Vulkan/PhysicalDevice.s"
+	@echo "... UI/Vulkan/PipeLine.o"
+	@echo "... UI/Vulkan/PipeLine.i"
+	@echo "... UI/Vulkan/PipeLine.s"
 	@echo "... UI/Vulkan/Queue.o"
 	@echo "... UI/Vulkan/Queue.i"
 	@echo "... UI/Vulkan/Queue.s"
+	@echo "... UI/Vulkan/RenderPass.o"
+	@echo "... UI/Vulkan/RenderPass.i"
+	@echo "... UI/Vulkan/RenderPass.s"
 	@echo "... UI/Vulkan/Renderer.o"
 	@echo "... UI/Vulkan/Renderer.i"
 	@echo "... UI/Vulkan/Renderer.s"
-	@echo "... UI/Vulkan/Shader.o"
-	@echo "... UI/Vulkan/Shader.i"
-	@echo "... UI/Vulkan/Shader.s"
 	@echo "... UI/Vulkan/Shape.o"
 	@echo "... UI/Vulkan/Shape.i"
 	@echo "... UI/Vulkan/Shape.s"

@@ -39,9 +39,10 @@ CMakeFiles/Wuu.dir/Core/Program.cpp.o
  ../UI/Vulkan/MemoryFunctions.h
  ../UI/Vulkan/MemoryPool.h
  ../UI/Vulkan/PhysicalDevice.h
+ ../UI/Vulkan/PipeLine.h
  ../UI/Vulkan/Queue.h
+ ../UI/Vulkan/RenderPass.h
  ../UI/Vulkan/Renderer.h
- ../UI/Vulkan/Shader.h
  ../UI/Vulkan/Shape.h
  ../UI/Vulkan/Surface.h
  ../UI/Vulkan/Swapchain.h
@@ -972,8 +973,9 @@ CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSet.cpp.o
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryFunctions.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryPool.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PhysicalDevice.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PipeLine.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Queue.h
- /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Shader.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/RenderPass.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Surface.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Swapchain.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/SwapchainImage.h
@@ -1168,8 +1170,9 @@ CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetImage.cpp.o
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryFunctions.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryPool.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PhysicalDevice.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PipeLine.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Queue.h
- /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Shader.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/RenderPass.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Surface.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Swapchain.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/SwapchainImage.h
@@ -1377,8 +1380,9 @@ CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetUniformBuffer.cpp.o
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryFunctions.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryPool.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PhysicalDevice.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PipeLine.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Queue.h
- /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Shader.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/RenderPass.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Surface.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Swapchain.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/SwapchainImage.h
@@ -1795,8 +1799,9 @@ CMakeFiles/Wuu.dir/UI/Vulkan/ElementCommandBuffer.cpp.o
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryFunctions.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryPool.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PhysicalDevice.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PipeLine.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Queue.h
- /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Shader.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/RenderPass.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Shape.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Surface.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Swapchain.h
@@ -2047,65 +2052,7 @@ CMakeFiles/Wuu.dir/UI/Vulkan/PhysicalDevice.cpp.o
  /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xcb.h
  /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xlib.h
  /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xlib_xrandr.h
-CMakeFiles/Wuu.dir/UI/Vulkan/Queue.cpp.o
- ../glfw-3/include/GLFW/glfw3.h
- /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Instance.h
- /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/LogicalDevice.h
- /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PhysicalDevice.h
- /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Queue.cpp
- /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Queue.h
- /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Surface.h
- /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Utils.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vk_platform.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan.hpp
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_android.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_beta.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_core.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_directfb.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_fuchsia.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_ggp.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_ios.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_macos.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_metal.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_vi.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_wayland.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_win32.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xcb.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xlib.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xlib_xrandr.h
-CMakeFiles/Wuu.dir/UI/Vulkan/Renderer.cpp.o
- ../glfw-3/include/GLFW/glfw3.h
- /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Image.h
- /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Instance.h
- /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/LogicalDevice.h
- /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PhysicalDevice.h
- /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Queue.h
- /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Renderer.cpp
- /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Renderer.h
- /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Surface.h
- /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Swapchain.h
- /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/SwapchainImage.h
- /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Utils.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vk_platform.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan.hpp
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_android.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_beta.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_core.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_directfb.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_fuchsia.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_ggp.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_ios.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_macos.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_metal.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_vi.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_wayland.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_win32.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xcb.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xlib.h
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xlib_xrandr.h
-CMakeFiles/Wuu.dir/UI/Vulkan/Shader.cpp.o
+CMakeFiles/Wuu.dir/UI/Vulkan/PipeLine.cpp.o
  ../glfw-3/include/GLFW/glfw3.h
  ../glm/common.hpp
  ../glm/detail/_fixes.hpp
@@ -2270,15 +2217,113 @@ CMakeFiles/Wuu.dir/UI/Vulkan/Shader.cpp.o
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryFunctions.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryPool.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PhysicalDevice.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PipeLine.cpp
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PipeLine.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Queue.h
- /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Shader.cpp
- /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Shader.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/RenderPass.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Surface.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Swapchain.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/SwapchainImage.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Utils.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/VertexTypes.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/stb_image.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vk_platform.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan.hpp
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_android.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_beta.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_core.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_directfb.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_fuchsia.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_ggp.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_ios.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_macos.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_metal.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_vi.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_wayland.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_win32.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xcb.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xlib.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xlib_xrandr.h
+CMakeFiles/Wuu.dir/UI/Vulkan/Queue.cpp.o
+ ../glfw-3/include/GLFW/glfw3.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Instance.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/LogicalDevice.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PhysicalDevice.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Queue.cpp
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Queue.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Surface.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Utils.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vk_platform.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan.hpp
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_android.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_beta.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_core.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_directfb.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_fuchsia.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_ggp.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_ios.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_macos.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_metal.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_vi.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_wayland.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_win32.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xcb.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xlib.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xlib_xrandr.h
+CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.o
+ ../glfw-3/include/GLFW/glfw3.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Buffer.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/CommandBuffer.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/CommandPool.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DepthImage.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Image.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Instance.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/LogicalDevice.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryCommandBuffer.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryFunctions.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryPool.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PhysicalDevice.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Queue.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/RenderPass.cpp
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/RenderPass.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Surface.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Swapchain.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/SwapchainImage.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Utils.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/stb_image.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vk_platform.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan.hpp
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_android.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_beta.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_core.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_directfb.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_fuchsia.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_ggp.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_ios.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_macos.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_metal.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_vi.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_wayland.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_win32.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xcb.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xlib.h
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xlib_xrandr.h
+CMakeFiles/Wuu.dir/UI/Vulkan/Renderer.cpp.o
+ ../glfw-3/include/GLFW/glfw3.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Image.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Instance.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/LogicalDevice.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PhysicalDevice.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Queue.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Renderer.cpp
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Renderer.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Surface.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Swapchain.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/SwapchainImage.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Utils.h
  /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vk_platform.h
  /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan.h
  /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan.hpp
@@ -2754,9 +2799,10 @@ CMakeFiles/Wuu.dir/UI/Vulkan/UIRenderer.cpp.o
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryFunctions.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryPool.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PhysicalDevice.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PipeLine.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Queue.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/RenderPass.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Renderer.h
- /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Shader.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Shape.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Surface.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Swapchain.h
@@ -2821,9 +2867,10 @@ CMakeFiles/Wuu.dir/UI/VulkanHandle.cpp.o
  ../UI/Vulkan/MemoryFunctions.h
  ../UI/Vulkan/MemoryPool.h
  ../UI/Vulkan/PhysicalDevice.h
+ ../UI/Vulkan/PipeLine.h
  ../UI/Vulkan/Queue.h
+ ../UI/Vulkan/RenderPass.h
  ../UI/Vulkan/Renderer.h
- ../UI/Vulkan/Shader.h
  ../UI/Vulkan/Shape.h
  ../UI/Vulkan/Surface.h
  ../UI/Vulkan/Swapchain.h
@@ -3046,9 +3093,10 @@ CMakeFiles/Wuu.dir/UI/Window.cpp.o
  ../UI/Vulkan/MemoryFunctions.h
  ../UI/Vulkan/MemoryPool.h
  ../UI/Vulkan/PhysicalDevice.h
+ ../UI/Vulkan/PipeLine.h
  ../UI/Vulkan/Queue.h
+ ../UI/Vulkan/RenderPass.h
  ../UI/Vulkan/Renderer.h
- ../UI/Vulkan/Shader.h
  ../UI/Vulkan/Shape.h
  ../UI/Vulkan/Surface.h
  ../UI/Vulkan/Swapchain.h
@@ -3300,9 +3348,10 @@ CMakeFiles/Wuu.dir/main.cpp.o
  ../UI/Vulkan/MemoryFunctions.h
  ../UI/Vulkan/MemoryPool.h
  ../UI/Vulkan/PhysicalDevice.h
+ ../UI/Vulkan/PipeLine.h
  ../UI/Vulkan/Queue.h
+ ../UI/Vulkan/RenderPass.h
  ../UI/Vulkan/Renderer.h
- ../UI/Vulkan/Shader.h
  ../UI/Vulkan/Shape.h
  ../UI/Vulkan/Surface.h
  ../UI/Vulkan/Swapchain.h

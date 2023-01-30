@@ -413,22 +413,28 @@
 		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PhysicalDevice.h">
 			<Option target="Wuu"/>
 		</Unit>
+		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PipeLine.cpp">
+			<Option target="Wuu"/>
+		</Unit>
+		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PipeLine.h">
+			<Option target="Wuu"/>
+		</Unit>
 		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Queue.cpp">
 			<Option target="Wuu"/>
 		</Unit>
 		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Queue.h">
 			<Option target="Wuu"/>
 		</Unit>
+		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/RenderPass.cpp">
+			<Option target="Wuu"/>
+		</Unit>
+		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/RenderPass.h">
+			<Option target="Wuu"/>
+		</Unit>
 		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Renderer.cpp">
 			<Option target="Wuu"/>
 		</Unit>
 		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Renderer.h">
-			<Option target="Wuu"/>
-		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Shader.cpp">
-			<Option target="Wuu"/>
-		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Shader.h">
 			<Option target="Wuu"/>
 		</Unit>
 		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Shape.cpp">

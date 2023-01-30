@@ -14,7 +14,7 @@
 #include "UI/Vulkan/UniformBufferType.h"
 #include "UI/Vulkan/DescriptorSetUniformBuffer.h"
 #include "UI/Vulkan/DescriptorPool.h"
-#include "UI/Vulkan/Shader.h"
+#include "UI/Vulkan/PipeLine.h"
 #include "UI/Vulkan/Shape.h"
 #include "UI/Vulkan/DescriptorImage.h"
 #include "UI/Vulkan/DescriptorSetImage.h"
@@ -46,7 +46,8 @@ namespace Wuu {
         Vulkan::DescriptorUniformBuffer<UniformBufferObject> m_uniformBuffer;
         Vulkan::DescriptorPool m_descriptorPool;
         Vulkan::DescriptorSetUniformBuffer m_descriptorSetUniformBuffer;
-        Vulkan::Shader<Vertex> m_shader;
+        Vulkan::RenderPass m_renderPass;
+        Vulkan::PipeLine m_pipeline;
 
         Vulkan::Shape m_square {};
         std::vector<Vulkan::DescriptorImage> m_images {};
