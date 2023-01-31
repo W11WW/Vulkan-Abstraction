@@ -26,7 +26,7 @@ namespace Wuu::Vulkan {
 
         virtual void initialize(LogicalDevice& logicalDevice, PhysicalDevice& physicalDevice);
 
-        virtual inline void updateUniformBuffer(LogicalDevice& logicalDevice, Swapchain& swapchain, Element& element);
+        virtual inline void updateUniformBuffer(LogicalDevice& logicalDevice, PhysicalDevice& physicalDevice, Swapchain& swapchain);
 
         auto& getBufferInfo() noexcept { return m_bufferInfo; }
 

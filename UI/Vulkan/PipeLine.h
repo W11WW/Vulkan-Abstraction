@@ -11,6 +11,7 @@
 #include "Utils.h"
 #include <vector>
 #include "VertexTypes.h"
+#include "PushConstantType.h"
 #include "RenderPass.h"
 
 // TODO: eventually change it so it accepts different viewports and descriptor rules
@@ -25,7 +26,7 @@ namespace Wuu::Vulkan {
 
         virtual void destroy(LogicalDevice &logicalDevice);
 
-        template<typename T>
+        template<typename VertexType, typename PushConstantType>
         void initialize(GLFWwindow *window, LogicalDevice &logicalDevice, Swapchain &swapchain, DepthImage &depthImage,
                         std::vector<DescriptorType> &descriptorTypes, RenderPass &renderPass);
 

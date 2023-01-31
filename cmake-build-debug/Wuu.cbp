@@ -419,6 +419,12 @@
 		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PipeLine.h">
 			<Option target="Wuu"/>
 		</Unit>
+		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PushConstantFunctions.h">
+			<Option target="Wuu"/>
+		</Unit>
+		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PushConstantType.h">
+			<Option target="Wuu"/>
+		</Unit>
 		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Queue.cpp">
 			<Option target="Wuu"/>
 		</Unit>

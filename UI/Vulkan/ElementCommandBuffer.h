@@ -7,6 +7,7 @@
 #include "CommandBuffer.h"
 #include "DescriptorSetUniformBuffer.h"
 #include "DescriptorSetImage.h"
+#include "PushConstantFunctions.h"
 #include "PipeLine.h"
 #include "UI/Element.h"
 #include "Shape.h"
@@ -20,7 +21,7 @@ namespace Wuu::Vulkan
 
         void beginCommandBufferRecord() final;
         void endCommandBufferRecord() final;
-        void recordElement(PipeLine& pipeline, RenderPass& renderPass, Element& element, std::vector<vk::DescriptorSet>& sets, Shape& shape, int index, Swapchain& swapchain);
+        void recordElement(PipeLine& pipeline, RenderPass& renderPass, std::vector<Element>& element, std::vector<vk::DescriptorSet>& sets, Shape& shape, int index, Swapchain& swapchain, PhysicalDevice& physicalDevice);
 
     };
 }

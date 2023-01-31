@@ -15,17 +15,17 @@ namespace Wuu::Vulkan {
     class PhysicalDevice {
     public:
 
-        explicit PhysicalDevice(std::string_view customDevice = "DeForce") : m_physicalDeviceName(customDevice) {}
+        explicit PhysicalDevice(std::string_view customDevice = "DeForce") {}
 
         virtual void enumeratePhysicalDevices(Instance& instance);
 
         [[nodiscard]] auto& getPhysicalDevice() noexcept { return m_physicalDevice; }
-        [[nodiscard]] const auto& getPhysicalDeviceName() const noexcept { return m_physicalDeviceName; }
+        [[nodiscard]] const auto& getPhysicalDeviceProperties() const noexcept { return m_physicalDeviceProperties; }
 
     protected:
 
-        std::string m_physicalDeviceName;
         vk::PhysicalDevice m_physicalDevice;
+        vk::PhysicalDeviceProperties m_physicalDeviceProperties;
 
     };
 

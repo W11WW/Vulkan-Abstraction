@@ -16,4 +16,6 @@ void PhysicalDevice::enumeratePhysicalDevices(Instance &instance)
                                        std::find_if(physicalDevices.begin(), physicalDevices.end(), [this](const vk::PhysicalDevice& physicalDevice) {
                                            return strstr(physicalDevice.getProperties().deviceName, "Apple M1");
                                        }))];
+
+    m_physicalDeviceProperties = m_physicalDevice.getProperties();
 }

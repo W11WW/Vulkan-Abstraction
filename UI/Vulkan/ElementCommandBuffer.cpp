@@ -14,11 +14,12 @@ void ElementCommandBuffer::beginCommandBufferRecord()
 
 void ElementCommandBuffer::recordElement(PipeLine& pipeline,
                                          RenderPass& renderPass,
-                                         Element& element,
+                                         std::vector<Element>& element,
                                          std::vector<vk::DescriptorSet>& sets,
                                          Shape& shape,
                                          int index,
-                                         Swapchain& swapchain)
+                                         Swapchain& swapchain,
+                                         PhysicalDevice& physicalDevice)
 {
     std::array<vk::ClearValue, 2> clearValues {};
     std::array<float, 4> color = { 0.0f, 0.0f, 0.0f, 0.9f };
@@ -35,10 +36,19 @@ void ElementCommandBuffer::recordElement(PipeLine& pipeline,
     vk::DeviceSize offsets[] = {0};
 
     m_commandBuffer.bindVertexBuffers(0, 1, vertexBuffers, offsets);
+    m_commandBuffer.bindIndexBuffer(shape.getIndexBuffer().getBuffer(), 0, vk::IndexType::eUint32);
+
     m_commandBuffer.bindDescriptorSets(vk::PipelineBindPoint::eGraphics, pipeline.getPipelineLayout(), 0, 1, &sets[0], 0, nullptr);
     m_commandBuffer.bindDescriptorSets(vk::PipelineBindPoint::eGraphics, pipeline.getPipelineLayout(), 1, 1, &sets[1], 0, nullptr);
-    m_commandBuffer.bindIndexBuffer(shape.getIndexBuffer().getBuffer(), 0, vk::IndexType::eUint32);
-    m_commandBuffer.drawIndexed(shape.getIndexBuffer().getIndicesSize(), 1, 0, 0, 0);
+
+    for(uint32_t i = 0; i < 2; i++)
+    {
+        PushConstantData data {};
+        createPushConstantObject(data, element[i]);
+
+        m_commandBuffer.pushConstants(pipeline.getPipelineLayout(), vk::ShaderStageFlagBits::eVertex, 0, sizeof(PushConstantData), &data);
+        m_commandBuffer.drawIndexed(shape.getIndexBuffer().getIndicesSize(), 1, 0, 0, 0);
+    }
 
     m_commandBuffer.endRenderPass();
 }

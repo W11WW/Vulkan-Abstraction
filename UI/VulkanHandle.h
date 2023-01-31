@@ -33,8 +33,6 @@ namespace Wuu {
         void render(GLFWwindow* window);
 
         void updateCommandBuffers();
-        void updateBuffers();
-        void updateImages();
 
         void destroy();
 

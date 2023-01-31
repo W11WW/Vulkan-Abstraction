@@ -12,7 +12,7 @@ void PipeLine::setPath(std::string_view vertPath, std::string_view fragPath)
     m_fragShaderPath = fragPath;
 }
 
-template<typename T>
+template<typename VertexType, typename PushConstantType>
 void PipeLine::initialize(GLFWwindow *window, LogicalDevice &logicalDevice, Swapchain &swapchain, DepthImage &depthImage, std::vector<DescriptorType>& descriptorTypes, RenderPass& renderPass)
 {
     auto vertShaderCode = readFile(m_vertShaderPath.data());
@@ -36,8 +36,8 @@ void PipeLine::initialize(GLFWwindow *window, LogicalDevice &logicalDevice, Swap
     auto pipelineShaderStages =
             std::vector<vk::PipelineShaderStageCreateInfo> { vertShaderStageInfo, fragShaderStageInfo };
 
-    auto bindingDescription = T::getBindingDescription();
-    auto attributeDescription = T::getAttributeDescriptions();
+    auto bindingDescription = VertexType::getBindingDescription();
+    auto attributeDescription = VertexType::getAttributeDescriptions();
 
     vk::PipelineVertexInputStateCreateInfo vertexInputStateCreateInfo {};
     vertexInputStateCreateInfo.vertexBindingDescriptionCount = 1;
@@ -112,9 +112,17 @@ void PipeLine::initialize(GLFWwindow *window, LogicalDevice &logicalDevice, Swap
     m_descriptorSetLayout[0] = logicalDevice.getLogicalDevice().createDescriptorSetLayout(descriptorSetLayoutCreateInfoOne);
     m_descriptorSetLayout[1] = logicalDevice.getLogicalDevice().createDescriptorSetLayout(descriptorSetLayoutCreateInfoTwo);
 
+    vk::PushConstantRange pushConstantRange {};
+    pushConstantRange.stageFlags = vk::ShaderStageFlagBits::eVertex;
+    pushConstantRange.offset = 0;
+    pushConstantRange.size = sizeof(PushConstantType);
+
     vk::PipelineLayoutCreateInfo pipelineLayoutCreateInfo {};
     pipelineLayoutCreateInfo.setLayoutCount = 2;
     pipelineLayoutCreateInfo.pSetLayouts = m_descriptorSetLayout.data();
+    pipelineLayoutCreateInfo.pushConstantRangeCount = 1;
+    pipelineLayoutCreateInfo.pPushConstantRanges = &pushConstantRange;
+
 
     m_pipelineLayout = logicalDevice.getLogicalDevice().createPipelineLayout(pipelineLayoutCreateInfo);
 
@@ -133,4 +141,4 @@ void PipeLine::destroy(LogicalDevice& logicalDevice)
     logicalDevice.getLogicalDevice().destroyPipelineLayout(m_pipelineLayout);
 }
 
-template void Wuu::Vulkan::PipeLine::initialize<Vertex>(GLFWwindow *window, LogicalDevice &logicalDevice, Swapchain &swapchain, DepthImage &depthImage, std::vector<DescriptorType>& descriptorTypes, RenderPass& renderPass);
+template void Wuu::Vulkan::PipeLine::initialize<Vertex, PushConstantData>(GLFWwindow *window, LogicalDevice &logicalDevice, Swapchain &swapchain, DepthImage &depthImage, std::vector<DescriptorType>& descriptorTypes, RenderPass& renderPass);

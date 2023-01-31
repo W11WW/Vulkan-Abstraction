@@ -40,6 +40,8 @@ CMakeFiles/Wuu.dir/Core/Program.cpp.o
  ../UI/Vulkan/MemoryPool.h
  ../UI/Vulkan/PhysicalDevice.h
  ../UI/Vulkan/PipeLine.h
+ ../UI/Vulkan/PushConstantFunctions.h
+ ../UI/Vulkan/PushConstantType.h
  ../UI/Vulkan/Queue.h
  ../UI/Vulkan/RenderPass.h
  ../UI/Vulkan/Renderer.h
@@ -974,6 +976,7 @@ CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSet.cpp.o
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryPool.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PhysicalDevice.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PipeLine.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PushConstantType.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Queue.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/RenderPass.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Surface.h
@@ -1171,6 +1174,7 @@ CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetImage.cpp.o
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryPool.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PhysicalDevice.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PipeLine.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PushConstantType.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Queue.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/RenderPass.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Surface.h
@@ -1381,6 +1385,7 @@ CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetUniformBuffer.cpp.o
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryPool.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PhysicalDevice.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PipeLine.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PushConstantType.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Queue.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/RenderPass.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Surface.h
@@ -1800,6 +1805,8 @@ CMakeFiles/Wuu.dir/UI/Vulkan/ElementCommandBuffer.cpp.o
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryPool.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PhysicalDevice.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PipeLine.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PushConstantFunctions.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PushConstantType.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Queue.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/RenderPass.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Shape.h
@@ -2219,6 +2226,7 @@ CMakeFiles/Wuu.dir/UI/Vulkan/PipeLine.cpp.o
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PhysicalDevice.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PipeLine.cpp
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PipeLine.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PushConstantType.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Queue.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/RenderPass.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Surface.h
@@ -2800,6 +2808,8 @@ CMakeFiles/Wuu.dir/UI/Vulkan/UIRenderer.cpp.o
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryPool.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PhysicalDevice.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PipeLine.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PushConstantFunctions.h
+ /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PushConstantType.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Queue.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/RenderPass.h
  /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Renderer.h
@@ -2868,6 +2878,8 @@ CMakeFiles/Wuu.dir/UI/VulkanHandle.cpp.o
  ../UI/Vulkan/MemoryPool.h
  ../UI/Vulkan/PhysicalDevice.h
  ../UI/Vulkan/PipeLine.h
+ ../UI/Vulkan/PushConstantFunctions.h
+ ../UI/Vulkan/PushConstantType.h
  ../UI/Vulkan/Queue.h
  ../UI/Vulkan/RenderPass.h
  ../UI/Vulkan/Renderer.h
@@ -3094,6 +3106,8 @@ CMakeFiles/Wuu.dir/UI/Window.cpp.o
  ../UI/Vulkan/MemoryPool.h
  ../UI/Vulkan/PhysicalDevice.h
  ../UI/Vulkan/PipeLine.h
+ ../UI/Vulkan/PushConstantFunctions.h
+ ../UI/Vulkan/PushConstantType.h
  ../UI/Vulkan/Queue.h
  ../UI/Vulkan/RenderPass.h
  ../UI/Vulkan/Renderer.h
@@ -3349,6 +3363,8 @@ CMakeFiles/Wuu.dir/main.cpp.o
  ../UI/Vulkan/MemoryPool.h
  ../UI/Vulkan/PhysicalDevice.h
  ../UI/Vulkan/PipeLine.h
+ ../UI/Vulkan/PushConstantFunctions.h
+ ../UI/Vulkan/PushConstantType.h
  ../UI/Vulkan/Queue.h
  ../UI/Vulkan/RenderPass.h
  ../UI/Vulkan/Renderer.h

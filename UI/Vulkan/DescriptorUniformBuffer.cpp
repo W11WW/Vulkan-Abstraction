@@ -9,6 +9,7 @@ using namespace Wuu::Vulkan;
 template<typename T>
 void DescriptorUniformBuffer<T>::initialize(LogicalDevice &logicalDevice, PhysicalDevice &physicalDevice)
 {
+
     createBuffer(logicalDevice, physicalDevice, sizeof(UniformBufferObject), vk::BufferUsageFlagBits::eUniformBuffer, vk::MemoryPropertyFlagBits::eHostCoherent |
     vk::MemoryPropertyFlagBits::eHostVisible, m_buffer, m_deviceMemory);
 
@@ -16,11 +17,12 @@ void DescriptorUniformBuffer<T>::initialize(LogicalDevice &logicalDevice, Physic
 }
 
 template<typename T>
-void DescriptorUniformBuffer<T>::updateUniformBuffer(LogicalDevice &logicalDevice, Swapchain &swapchain, Element& element)
+void DescriptorUniformBuffer<T>::updateUniformBuffer(LogicalDevice &logicalDevice, PhysicalDevice& physicalDevice, Swapchain &swapchain)
 {
 
+
     T ubo {};
-    createUniformBufferObject(ubo, element, swapchain);
+    createUniformBufferObject(ubo, swapchain);
 
     void* data;
     logicalDevice.getLogicalDevice().mapMemory(m_deviceMemory, 0, sizeof(UniformBufferObject), vk::MemoryMapFlags(), &data);

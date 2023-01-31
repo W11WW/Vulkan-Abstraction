@@ -10,12 +10,9 @@
 
 namespace Wuu::Vulkan {
 
-    static inline void createUniformBufferObject(UniformBufferObject& ubo, Element& element, Swapchain& swapchain) noexcept
+    static inline void createUniformBufferObject(UniformBufferObject& ubo, Swapchain& swapchain) noexcept
     {
-        ubo.model = glm::mat4(1.0f);
-        ubo.model = glm::translate(ubo.model, element.getPosition());
-        ubo.model = glm::scale(ubo.model, glm::vec3 (0.7f, 0.7f, 0.7f));
-        ubo.view = glm::lookAt(glm::vec3(2.0f, 2.0f, 2.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+        ubo.view = glm::lookAt(glm::vec3(4.0f, 4.0f, 4.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 0.0f, 1.0f));
         ubo.proj = glm::perspective(glm::radians(45.0f), (float) swapchain.getExtent().width / (float) swapchain.getExtent().height, 0.1f, 20.0f);
         ubo.proj[1][1] *= -1;
     }
