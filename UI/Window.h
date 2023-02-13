@@ -9,9 +9,9 @@
 
 #include "VulkanHandle.h"
 #include "WindowHandle.h"
-#include "UIHandle.h"
+#include "Context.h"
 
-namespace Wuu {
+namespace Wuu::UI {
 
     class Window {
     public:
@@ -19,16 +19,17 @@ namespace Wuu {
         Window() = default;
 
         void initialize();
-        void run();
         void destroy();
+
+        auto create_context() -> std::unique_ptr<Context>;
+        auto is_running() -> bool;
+        void poll_events();
+
+        auto getGLFWWindow() -> GLFWwindow* { return m_window; }
 
     private:
 
         GLFWwindow* m_window;
-
-        VulkanHandle m_vulkanHandle;
-        WindowHandle m_windowHandle;
-        UIHandle m_uiHandle;
 
     };
 

@@ -5,7 +5,7 @@
 #ifndef WUU_SHAPE_H
 #define WUU_SHAPE_H
 
-#include "tiny_obj_loader.h"
+#include "UI/Vulkan/Third-Party/tiny_obj_loader.h"
 
 #include "VertexBuffer.h"
 #include "VertexTypes.h"

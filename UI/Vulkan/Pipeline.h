@@ -18,11 +18,11 @@
 
 namespace Wuu::Vulkan {
 
-    class PipeLine {
+    class Pipeline {
 
     public:
 
-        PipeLine() = default;
+        Pipeline() = default;
 
         virtual void destroy(LogicalDevice &logicalDevice);
 

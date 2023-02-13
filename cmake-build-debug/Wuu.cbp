@@ -260,31 +260,16 @@
 		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/Networking/SocketErrors.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Button.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Context.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Button.h">
-			<Option target="Wuu"/>
-		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Element.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Context.h">
 			<Option target="Wuu"/>
 		</Unit>
 		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Layout.cpp">
 			<Option target="Wuu"/>
 		</Unit>
 		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Layout.h">
-			<Option target="Wuu"/>
-		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Text.cpp">
-			<Option target="Wuu"/>
-		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Text.h">
-			<Option target="Wuu"/>
-		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/UIHandle.cpp">
-			<Option target="Wuu"/>
-		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/UIHandle.h">
 			<Option target="Wuu"/>
 		</Unit>
 		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Buffer.cpp">
@@ -353,22 +338,10 @@
 		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorUniformBuffer.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/ElementCommandBuffer.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/FrameBuffer.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/ElementCommandBuffer.h">
-			<Option target="Wuu"/>
-		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/GeneralCommandBuffer.cpp">
-			<Option target="Wuu"/>
-		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/GeneralCommandBuffer.h">
-			<Option target="Wuu"/>
-		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/GeneralRenderer.cpp">
-			<Option target="Wuu"/>
-		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/GeneralRenderer.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/FrameBuffer.h">
 			<Option target="Wuu"/>
 		</Unit>
 		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Image.cpp">
@@ -413,10 +386,10 @@
 		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PhysicalDevice.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PipeLine.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Pipeline.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PipeLine.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Pipeline.h">
 			<Option target="Wuu"/>
 		</Unit>
 		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PushConstantFunctions.h">
@@ -449,6 +422,12 @@
 		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Shape.h">
 			<Option target="Wuu"/>
 		</Unit>
+		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Subpass.cpp">
+			<Option target="Wuu"/>
+		</Unit>
+		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Subpass.h">
+			<Option target="Wuu"/>
+		</Unit>
 		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Surface.cpp">
 			<Option target="Wuu"/>
 		</Unit>
@@ -465,6 +444,12 @@
 			<Option target="Wuu"/>
 		</Unit>
 		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/SwapchainImage.h">
+			<Option target="Wuu"/>
+		</Unit>
+		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/UICommandBuffer.cpp">
+			<Option target="Wuu"/>
+		</Unit>
+		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/UICommandBuffer.h">
 			<Option target="Wuu"/>
 		</Unit>
 		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/UIRenderer.cpp">

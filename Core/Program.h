@@ -21,7 +21,9 @@ namespace Wuu {
 
     private:
 
-        Window window {};
+        UI::Window window {};
+
+        //std::thread NetworkingThread(&Networking::Client::run, &client);
         Networking::Client client {};
 
         Data dataStructure {};

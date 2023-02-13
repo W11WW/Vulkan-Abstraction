@@ -2,18 +2,18 @@
 // Created by Michael Ferents on 14/03/2022.
 //
 
-#include "PipeLine.h"
+#include "Pipeline.h"
 
 using namespace Wuu::Vulkan;
 
-void PipeLine::setPath(std::string_view vertPath, std::string_view fragPath)
+void Pipeline::setPath(std::string_view vertPath, std::string_view fragPath)
 {
     m_vertShaderPath = vertPath;
     m_fragShaderPath = fragPath;
 }
 
 template<typename VertexType, typename PushConstantType>
-void PipeLine::initialize(GLFWwindow *window, LogicalDevice &logicalDevice, Swapchain &swapchain, DepthImage &depthImage, std::vector<DescriptorType>& descriptorTypes, RenderPass& renderPass)
+void Pipeline::initialize(GLFWwindow *window, LogicalDevice &logicalDevice, Swapchain &swapchain, DepthImage &depthImage, std::vector<DescriptorType>& descriptorTypes, RenderPass& renderPass)
 {
     auto vertShaderCode = readFile(m_vertShaderPath.data());
     auto vertShaderCreateInfo =
@@ -135,10 +135,10 @@ void PipeLine::initialize(GLFWwindow *window, LogicalDevice &logicalDevice, Swap
 
 }
 
-void PipeLine::destroy(LogicalDevice& logicalDevice)
+void Pipeline::destroy(LogicalDevice& logicalDevice)
 {
     logicalDevice.getLogicalDevice().destroyPipeline(m_pipeline);
     logicalDevice.getLogicalDevice().destroyPipelineLayout(m_pipelineLayout);
 }
 
-template void Wuu::Vulkan::PipeLine::initialize<Vertex, PushConstantData>(GLFWwindow *window, LogicalDevice &logicalDevice, Swapchain &swapchain, DepthImage &depthImage, std::vector<DescriptorType>& descriptorTypes, RenderPass& renderPass);
+template void Wuu::Vulkan::Pipeline::initialize<Vertex, PushConstantData>(GLFWwindow *window, LogicalDevice &logicalDevice, Swapchain &swapchain, DepthImage &depthImage, std::vector<DescriptorType>& descriptorTypes, RenderPass& renderPass);

@@ -5,7 +5,7 @@
 #ifndef WUU_DESCRIPTORSET_H
 #define WUU_DESCRIPTORSET_H
 #include <vulkan/vulkan.hpp>
-#include "PipeLine.h"
+#include "Pipeline.h"
 #include "DescriptorPool.h"
 #include "LogicalDevice.h"
 #include "VertexTypes.h"

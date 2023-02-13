@@ -5,7 +5,9 @@
 #ifndef WUU_UIRENDERER_H
 #define WUU_UIRENDERER_H
 #include "Renderer.h"
-#include "ElementCommandBuffer.h"
+#include "UICommandBuffer.h"
+
+#include <array>
 
 namespace Wuu::Vulkan
 {
@@ -22,12 +24,13 @@ namespace Wuu::Vulkan
         bool render(GLFWwindow* window) final;
 
         [[nodiscard]] auto& getCommandBuffers() noexcept { return m_commandBuffers; }
+        [[nodiscard]] auto& getCommandPool() noexcept { return m_commandPool; }
 
     private:
 
         CommandPool m_commandPool;
 
-        std::vector<ElementCommandBuffer> m_commandBuffers;
+        std::vector<std::array<UICommandBuffer, 2>> m_commandBuffers;
 
         vk::Semaphore m_imageAvailableSemaphore;
         vk::Semaphore m_renderFinishedSemaphore;

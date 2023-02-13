@@ -7,7 +7,7 @@
 #include <GLFW/glfw3.h>
 #include "WindowUtils.h"
 
-namespace Wuu {
+namespace Wuu::UI {
 
     class WindowHandle {
     public:

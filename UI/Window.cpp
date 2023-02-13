@@ -4,7 +4,7 @@
 
 #include "Window.h"
 
-using namespace Wuu;
+using namespace Wuu::UI;
 
 void Window::initialize()
 {
@@ -19,7 +19,24 @@ void Window::initialize()
     if(!m_window) { glfwTerminate(); }
 
     glfwMakeContextCurrent(m_window);
-    glfwSetWindowUserPointer(m_window, &m_windowHandle);
+}
+
+auto Window::is_running() -> bool
+{
+    return !glfwWindowShouldClose(m_window);
+}
+
+void Window::poll_events()
+{
+    glfwPollEvents();
+}
+
+auto Window::create_context() -> std::unique_ptr<Context>
+{
+
+    std::unique_ptr<Context> ctx(new Context);
+
+    glfwSetWindowUserPointer(m_window, ctx->getWindowHandlePointer());
 
     auto mFunc = [](GLFWwindow* window, double xpos, double ypos)
     {
@@ -41,29 +58,15 @@ void Window::initialize()
         static_cast<WindowHandle*>(glfwGetWindowUserPointer(window))->mouse_button_callback(window, button, action, mods);
     };
     glfwSetMouseButtonCallback(m_window, mbFunc);
-    m_vulkanHandle.initialize(m_window);
-}
 
-void Window::run()
-{
-    m_vulkanHandle.updateCommandBuffers();
+    ctx->getVulkanHandle().initialize(m_window);
+    ctx->getVulkanHandle().updateCommandBuffers();
 
-    while(!glfwWindowShouldClose(m_window))
-    {
-        glfwPollEvents();
-
-        // check input buffer
-
-        m_windowHandle.m_callbackInfo.reset();
-
-        m_vulkanHandle.render(m_window);
-    }
+    return ctx;
 }
 
 void Window::destroy()
 {
     glfwDestroyWindow(m_window);
     glfwTerminate();
-
-    m_vulkanHandle.destroy();
 }

@@ -8,13 +8,23 @@ using namespace Wuu;
 
 void Program::run()
 {
-    //std::thread NetworkingThread(&Networking::Client::run, &client);
-
     window.initialize();
 
-    window.run();
+    auto ctx = window.create_context();
 
-    //NetworkingThread.join();
+    while(window.is_running())
+    {
+        window.poll_events();
+
+        ctx->Button();
+        ctx->Image();
+        ctx->Text();
+
+        ctx->render(window.getGLFWWindow());
+
+        ctx->update_input();
+        ctx->reset_input();
+    }
 }
 
 void Program::destroy()

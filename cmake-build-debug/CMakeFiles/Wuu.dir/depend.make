@@ -16,8 +16,7 @@ CMakeFiles/Wuu.dir/Core/Program.cpp.o: \
  ../Networking/Packet.h \
  ../Networking/Socket.h \
  ../Networking/SocketErrors.h \
- ../UI/Element.h \
- ../UI/UIHandle.h \
+ ../UI/Context.h \
  ../UI/Vulkan/Buffer.h \
  ../UI/Vulkan/CommandBuffer.h \
  ../UI/Vulkan/CommandPool.h \
@@ -30,7 +29,6 @@ CMakeFiles/Wuu.dir/Core/Program.cpp.o: \
  ../UI/Vulkan/DescriptorSetUniformBuffer.h \
  ../UI/Vulkan/DescriptorType.h \
  ../UI/Vulkan/DescriptorUniformBuffer.h \
- ../UI/Vulkan/ElementCommandBuffer.h \
  ../UI/Vulkan/Image.h \
  ../UI/Vulkan/IndexBuffer.h \
  ../UI/Vulkan/Instance.h \
@@ -49,6 +47,7 @@ CMakeFiles/Wuu.dir/Core/Program.cpp.o: \
  ../UI/Vulkan/Surface.h \
  ../UI/Vulkan/Swapchain.h \
  ../UI/Vulkan/SwapchainImage.h \
+ ../UI/Vulkan/UICommandBuffer.h \
  ../UI/Vulkan/UIRenderer.h \
  ../UI/Vulkan/UniformBufferType.h \
  ../UI/Vulkan/Utils.h \
@@ -287,7 +286,51 @@ CMakeFiles/Wuu.dir/Networking/IPv6ServerSocket.cpp.o: \
 CMakeFiles/Wuu.dir/Networking/Packet.cpp.o: \
  ../Networking/Packet.cpp \
  ../Networking/Packet.h
-CMakeFiles/Wuu.dir/UI/Button.cpp.o: \
+CMakeFiles/Wuu.dir/UI/Context.cpp.o: \
+ ../Core/Data.h \
+ ../Core/DataGuard.h \
+ ../Core/User.h \
+ ../Core/Util.h \
+ ../Networking/Packet.h \
+ ../UI/Vulkan/Buffer.h \
+ ../UI/Vulkan/CommandBuffer.h \
+ ../UI/Vulkan/CommandPool.h \
+ ../UI/Vulkan/DepthImage.h \
+ ../UI/Vulkan/DescriptorFunctions.h \
+ ../UI/Vulkan/DescriptorImage.h \
+ ../UI/Vulkan/DescriptorPool.h \
+ ../UI/Vulkan/DescriptorSet.h \
+ ../UI/Vulkan/DescriptorSetImage.h \
+ ../UI/Vulkan/DescriptorSetUniformBuffer.h \
+ ../UI/Vulkan/DescriptorType.h \
+ ../UI/Vulkan/DescriptorUniformBuffer.h \
+ ../UI/Vulkan/Image.h \
+ ../UI/Vulkan/IndexBuffer.h \
+ ../UI/Vulkan/Instance.h \
+ ../UI/Vulkan/LogicalDevice.h \
+ ../UI/Vulkan/MemoryCommandBuffer.h \
+ ../UI/Vulkan/MemoryFunctions.h \
+ ../UI/Vulkan/MemoryPool.h \
+ ../UI/Vulkan/PhysicalDevice.h \
+ ../UI/Vulkan/PipeLine.h \
+ ../UI/Vulkan/PushConstantFunctions.h \
+ ../UI/Vulkan/PushConstantType.h \
+ ../UI/Vulkan/Queue.h \
+ ../UI/Vulkan/RenderPass.h \
+ ../UI/Vulkan/Renderer.h \
+ ../UI/Vulkan/Shape.h \
+ ../UI/Vulkan/Surface.h \
+ ../UI/Vulkan/Swapchain.h \
+ ../UI/Vulkan/SwapchainImage.h \
+ ../UI/Vulkan/UICommandBuffer.h \
+ ../UI/Vulkan/UIRenderer.h \
+ ../UI/Vulkan/UniformBufferType.h \
+ ../UI/Vulkan/Utils.h \
+ ../UI/Vulkan/VertexBuffer.h \
+ ../UI/Vulkan/VertexTypes.h \
+ ../UI/Vulkan/stb_image.h \
+ ../UI/Vulkan/tiny_obj_loader.h \
+ ../glfw-3/include/GLFW/glfw3.h \
  ../glm/common.hpp \
  ../glm/detail/_fixes.hpp \
  ../glm/detail/_swizzle.hpp \
@@ -450,181 +493,32 @@ CMakeFiles/Wuu.dir/UI/Button.cpp.o: \
  ../glm/vec3.hpp \
  ../glm/vec4.hpp \
  ../glm/vector_relational.hpp \
- ../UI/Button.cpp \
- ../UI/Button.h \
- ../UI/Element.h
+ ../UI/Context.cpp \
+ ../UI/Context.h \
+ ../UI/VulkanHandle.h \
+ ../UI/WindowHandle.h \
+ ../UI/WindowUtils.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vk_platform.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan.hpp \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_android.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_beta.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_core.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_directfb.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_fuchsia.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_ggp.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_ios.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_macos.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_metal.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_vi.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_wayland.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_win32.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xcb.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xlib.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xlib_xrandr.h
 CMakeFiles/Wuu.dir/UI/Layout.cpp.o: \
  ../UI/Layout.cpp \
  ../UI/Layout.h
-CMakeFiles/Wuu.dir/UI/Text.cpp.o: \
- ../glm/common.hpp \
- ../glm/detail/_fixes.hpp \
- ../glm/detail/_swizzle.hpp \
- ../glm/detail/_swizzle_func.hpp \
- ../glm/detail/_vectorize.hpp \
- ../glm/detail/compute_common.hpp \
- ../glm/detail/compute_vector_relational.hpp \
- ../glm/detail/func_common.inl \
- ../glm/detail/func_common_simd.inl \
- ../glm/detail/func_exponential.inl \
- ../glm/detail/func_exponential_simd.inl \
- ../glm/detail/func_geometric.inl \
- ../glm/detail/func_geometric_simd.inl \
- ../glm/detail/func_integer.inl \
- ../glm/detail/func_integer_simd.inl \
- ../glm/detail/func_matrix.inl \
- ../glm/detail/func_matrix_simd.inl \
- ../glm/detail/func_packing.inl \
- ../glm/detail/func_packing_simd.inl \
- ../glm/detail/func_trigonometric.inl \
- ../glm/detail/func_trigonometric_simd.inl \
- ../glm/detail/func_vector_relational.inl \
- ../glm/detail/func_vector_relational_simd.inl \
- ../glm/detail/qualifier.hpp \
- ../glm/detail/setup.hpp \
- ../glm/detail/type_half.hpp \
- ../glm/detail/type_half.inl \
- ../glm/detail/type_mat2x2.hpp \
- ../glm/detail/type_mat2x2.inl \
- ../glm/detail/type_mat2x3.hpp \
- ../glm/detail/type_mat2x3.inl \
- ../glm/detail/type_mat2x4.hpp \
- ../glm/detail/type_mat2x4.inl \
- ../glm/detail/type_mat3x2.hpp \
- ../glm/detail/type_mat3x2.inl \
- ../glm/detail/type_mat3x3.hpp \
- ../glm/detail/type_mat3x3.inl \
- ../glm/detail/type_mat3x4.hpp \
- ../glm/detail/type_mat3x4.inl \
- ../glm/detail/type_mat4x2.hpp \
- ../glm/detail/type_mat4x2.inl \
- ../glm/detail/type_mat4x3.hpp \
- ../glm/detail/type_mat4x3.inl \
- ../glm/detail/type_mat4x4.hpp \
- ../glm/detail/type_mat4x4.inl \
- ../glm/detail/type_mat4x4_simd.inl \
- ../glm/detail/type_vec1.hpp \
- ../glm/detail/type_vec1.inl \
- ../glm/detail/type_vec2.hpp \
- ../glm/detail/type_vec2.inl \
- ../glm/detail/type_vec3.hpp \
- ../glm/detail/type_vec3.inl \
- ../glm/detail/type_vec4.hpp \
- ../glm/detail/type_vec4.inl \
- ../glm/detail/type_vec4_simd.inl \
- ../glm/exponential.hpp \
- ../glm/ext/matrix_clip_space.hpp \
- ../glm/ext/matrix_clip_space.inl \
- ../glm/ext/matrix_double2x2.hpp \
- ../glm/ext/matrix_double2x2_precision.hpp \
- ../glm/ext/matrix_double2x3.hpp \
- ../glm/ext/matrix_double2x3_precision.hpp \
- ../glm/ext/matrix_double2x4.hpp \
- ../glm/ext/matrix_double2x4_precision.hpp \
- ../glm/ext/matrix_double3x2.hpp \
- ../glm/ext/matrix_double3x2_precision.hpp \
- ../glm/ext/matrix_double3x3.hpp \
- ../glm/ext/matrix_double3x3_precision.hpp \
- ../glm/ext/matrix_double3x4.hpp \
- ../glm/ext/matrix_double3x4_precision.hpp \
- ../glm/ext/matrix_double4x2.hpp \
- ../glm/ext/matrix_double4x2_precision.hpp \
- ../glm/ext/matrix_double4x3.hpp \
- ../glm/ext/matrix_double4x3_precision.hpp \
- ../glm/ext/matrix_double4x4.hpp \
- ../glm/ext/matrix_double4x4_precision.hpp \
- ../glm/ext/matrix_float2x2.hpp \
- ../glm/ext/matrix_float2x2_precision.hpp \
- ../glm/ext/matrix_float2x3.hpp \
- ../glm/ext/matrix_float2x3_precision.hpp \
- ../glm/ext/matrix_float2x4.hpp \
- ../glm/ext/matrix_float2x4_precision.hpp \
- ../glm/ext/matrix_float3x2.hpp \
- ../glm/ext/matrix_float3x2_precision.hpp \
- ../glm/ext/matrix_float3x3.hpp \
- ../glm/ext/matrix_float3x3_precision.hpp \
- ../glm/ext/matrix_float3x4.hpp \
- ../glm/ext/matrix_float3x4_precision.hpp \
- ../glm/ext/matrix_float4x2.hpp \
- ../glm/ext/matrix_float4x2_precision.hpp \
- ../glm/ext/matrix_float4x3.hpp \
- ../glm/ext/matrix_float4x3_precision.hpp \
- ../glm/ext/matrix_float4x4.hpp \
- ../glm/ext/matrix_float4x4_precision.hpp \
- ../glm/ext/matrix_projection.hpp \
- ../glm/ext/matrix_projection.inl \
- ../glm/ext/matrix_transform.hpp \
- ../glm/ext/scalar_constants.hpp \
- ../glm/ext/scalar_constants.inl \
- ../glm/ext/scalar_int_sized.hpp \
- ../glm/ext/scalar_uint_sized.hpp \
- ../glm/ext/vector_bool2.hpp \
- ../glm/ext/vector_bool2_precision.hpp \
- ../glm/ext/vector_bool3.hpp \
- ../glm/ext/vector_bool3_precision.hpp \
- ../glm/ext/vector_bool4.hpp \
- ../glm/ext/vector_bool4_precision.hpp \
- ../glm/ext/vector_double2.hpp \
- ../glm/ext/vector_double2_precision.hpp \
- ../glm/ext/vector_double3.hpp \
- ../glm/ext/vector_double3_precision.hpp \
- ../glm/ext/vector_double4.hpp \
- ../glm/ext/vector_double4_precision.hpp \
- ../glm/ext/vector_float2.hpp \
- ../glm/ext/vector_float2_precision.hpp \
- ../glm/ext/vector_float3.hpp \
- ../glm/ext/vector_float3_precision.hpp \
- ../glm/ext/vector_float4.hpp \
- ../glm/ext/vector_float4_precision.hpp \
- ../glm/ext/vector_int2.hpp \
- ../glm/ext/vector_int2_sized.hpp \
- ../glm/ext/vector_int3.hpp \
- ../glm/ext/vector_int3_sized.hpp \
- ../glm/ext/vector_int4.hpp \
- ../glm/ext/vector_int4_sized.hpp \
- ../glm/ext/vector_uint2.hpp \
- ../glm/ext/vector_uint2_sized.hpp \
- ../glm/ext/vector_uint3.hpp \
- ../glm/ext/vector_uint3_sized.hpp \
- ../glm/ext/vector_uint4.hpp \
- ../glm/ext/vector_uint4_sized.hpp \
- ../glm/fwd.hpp \
- ../glm/geometric.hpp \
- ../glm/glm.hpp \
- ../glm/gtc/constants.hpp \
- ../glm/gtc/constants.inl \
- ../glm/gtc/matrix_transform.hpp \
- ../glm/gtc/matrix_transform.inl \
- ../glm/integer.hpp \
- ../glm/mat2x2.hpp \
- ../glm/mat2x3.hpp \
- ../glm/mat2x4.hpp \
- ../glm/mat3x2.hpp \
- ../glm/mat3x3.hpp \
- ../glm/mat3x4.hpp \
- ../glm/mat4x2.hpp \
- ../glm/mat4x3.hpp \
- ../glm/mat4x4.hpp \
- ../glm/matrix.hpp \
- ../glm/packing.hpp \
- ../glm/simd/common.h \
- ../glm/simd/exponential.h \
- ../glm/simd/geometric.h \
- ../glm/simd/integer.h \
- ../glm/simd/matrix.h \
- ../glm/simd/neon.h \
- ../glm/simd/platform.h \
- ../glm/trigonometric.hpp \
- ../glm/vec2.hpp \
- ../glm/vec3.hpp \
- ../glm/vec4.hpp \
- ../glm/vector_relational.hpp \
- ../UI/Element.h \
- ../UI/Text.cpp \
- ../UI/Text.h
-CMakeFiles/Wuu.dir/UI/UIHandle.cpp.o: \
- ../UI/UIHandle.cpp \
- ../UI/UIHandle.h
 CMakeFiles/Wuu.dir/UI/Vulkan/Buffer.cpp.o: \
  ../glfw-3/include/GLFW/glfw3.h \
  ../UI/Vulkan/Buffer.cpp \
@@ -865,6 +759,8 @@ CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSet.cpp.o: \
  ../glm/detail/type_vec4.inl \
  ../glm/detail/type_vec4_simd.inl \
  ../glm/exponential.hpp \
+ ../glm/ext/matrix_clip_space.hpp \
+ ../glm/ext/matrix_clip_space.inl \
  ../glm/ext/matrix_double2x2.hpp \
  ../glm/ext/matrix_double2x2_precision.hpp \
  ../glm/ext/matrix_double2x3.hpp \
@@ -901,6 +797,11 @@ CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSet.cpp.o: \
  ../glm/ext/matrix_float4x3_precision.hpp \
  ../glm/ext/matrix_float4x4.hpp \
  ../glm/ext/matrix_float4x4_precision.hpp \
+ ../glm/ext/matrix_projection.hpp \
+ ../glm/ext/matrix_projection.inl \
+ ../glm/ext/matrix_transform.hpp \
+ ../glm/ext/scalar_constants.hpp \
+ ../glm/ext/scalar_constants.inl \
  ../glm/ext/scalar_int_sized.hpp \
  ../glm/ext/scalar_uint_sized.hpp \
  ../glm/ext/vector_bool2.hpp \
@@ -936,6 +837,10 @@ CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSet.cpp.o: \
  ../glm/fwd.hpp \
  ../glm/geometric.hpp \
  ../glm/glm.hpp \
+ ../glm/gtc/constants.hpp \
+ ../glm/gtc/constants.inl \
+ ../glm/gtc/matrix_transform.hpp \
+ ../glm/gtc/matrix_transform.inl \
  ../glm/integer.hpp \
  ../glm/mat2x2.hpp \
  ../glm/mat2x3.hpp \
@@ -1061,6 +966,8 @@ CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetImage.cpp.o: \
  ../glm/detail/type_vec4.inl \
  ../glm/detail/type_vec4_simd.inl \
  ../glm/exponential.hpp \
+ ../glm/ext/matrix_clip_space.hpp \
+ ../glm/ext/matrix_clip_space.inl \
  ../glm/ext/matrix_double2x2.hpp \
  ../glm/ext/matrix_double2x2_precision.hpp \
  ../glm/ext/matrix_double2x3.hpp \
@@ -1097,6 +1004,11 @@ CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetImage.cpp.o: \
  ../glm/ext/matrix_float4x3_precision.hpp \
  ../glm/ext/matrix_float4x4.hpp \
  ../glm/ext/matrix_float4x4_precision.hpp \
+ ../glm/ext/matrix_projection.hpp \
+ ../glm/ext/matrix_projection.inl \
+ ../glm/ext/matrix_transform.hpp \
+ ../glm/ext/scalar_constants.hpp \
+ ../glm/ext/scalar_constants.inl \
  ../glm/ext/scalar_int_sized.hpp \
  ../glm/ext/scalar_uint_sized.hpp \
  ../glm/ext/vector_bool2.hpp \
@@ -1132,6 +1044,10 @@ CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetImage.cpp.o: \
  ../glm/fwd.hpp \
  ../glm/geometric.hpp \
  ../glm/glm.hpp \
+ ../glm/gtc/constants.hpp \
+ ../glm/gtc/constants.inl \
+ ../glm/gtc/matrix_transform.hpp \
+ ../glm/gtc/matrix_transform.inl \
  ../glm/integer.hpp \
  ../glm/mat2x2.hpp \
  ../glm/mat2x3.hpp \
@@ -1202,7 +1118,6 @@ CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetImage.cpp.o: \
  /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xlib.h \
  /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xlib_xrandr.h
 CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetUniformBuffer.cpp.o: \
- ../UI/Element.h \
  ../glfw-3/include/GLFW/glfw3.h \
  ../glm/common.hpp \
  ../glm/detail/_fixes.hpp \
@@ -1414,7 +1329,6 @@ CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetUniformBuffer.cpp.o: \
  /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xlib.h \
  /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xlib_xrandr.h
 CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorUniformBuffer.cpp.o: \
- ../UI/Element.h \
  ../glfw-3/include/GLFW/glfw3.h \
  ../glm/common.hpp \
  ../glm/detail/_fixes.hpp \
@@ -1599,290 +1513,6 @@ CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorUniformBuffer.cpp.o: \
  ../UI/Vulkan/UniformBufferType.h \
  ../UI/Vulkan/Utils.h \
  ../UI/Vulkan/stb_image.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vk_platform.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan.hpp \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_android.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_beta.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_core.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_directfb.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_fuchsia.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_ggp.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_ios.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_macos.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_metal.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_vi.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_wayland.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_win32.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xcb.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xlib.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xlib_xrandr.h
-CMakeFiles/Wuu.dir/UI/Vulkan/ElementCommandBuffer.cpp.o: \
- ../UI/Element.h \
- ../glfw-3/include/GLFW/glfw3.h \
- ../glm/common.hpp \
- ../glm/detail/_fixes.hpp \
- ../glm/detail/_swizzle.hpp \
- ../glm/detail/_swizzle_func.hpp \
- ../glm/detail/_vectorize.hpp \
- ../glm/detail/compute_common.hpp \
- ../glm/detail/compute_vector_relational.hpp \
- ../glm/detail/func_common.inl \
- ../glm/detail/func_common_simd.inl \
- ../glm/detail/func_exponential.inl \
- ../glm/detail/func_exponential_simd.inl \
- ../glm/detail/func_geometric.inl \
- ../glm/detail/func_geometric_simd.inl \
- ../glm/detail/func_integer.inl \
- ../glm/detail/func_integer_simd.inl \
- ../glm/detail/func_matrix.inl \
- ../glm/detail/func_matrix_simd.inl \
- ../glm/detail/func_packing.inl \
- ../glm/detail/func_packing_simd.inl \
- ../glm/detail/func_trigonometric.inl \
- ../glm/detail/func_trigonometric_simd.inl \
- ../glm/detail/func_vector_relational.inl \
- ../glm/detail/func_vector_relational_simd.inl \
- ../glm/detail/qualifier.hpp \
- ../glm/detail/setup.hpp \
- ../glm/detail/type_half.hpp \
- ../glm/detail/type_half.inl \
- ../glm/detail/type_mat2x2.hpp \
- ../glm/detail/type_mat2x2.inl \
- ../glm/detail/type_mat2x3.hpp \
- ../glm/detail/type_mat2x3.inl \
- ../glm/detail/type_mat2x4.hpp \
- ../glm/detail/type_mat2x4.inl \
- ../glm/detail/type_mat3x2.hpp \
- ../glm/detail/type_mat3x2.inl \
- ../glm/detail/type_mat3x3.hpp \
- ../glm/detail/type_mat3x3.inl \
- ../glm/detail/type_mat3x4.hpp \
- ../glm/detail/type_mat3x4.inl \
- ../glm/detail/type_mat4x2.hpp \
- ../glm/detail/type_mat4x2.inl \
- ../glm/detail/type_mat4x3.hpp \
- ../glm/detail/type_mat4x3.inl \
- ../glm/detail/type_mat4x4.hpp \
- ../glm/detail/type_mat4x4.inl \
- ../glm/detail/type_mat4x4_simd.inl \
- ../glm/detail/type_vec1.hpp \
- ../glm/detail/type_vec1.inl \
- ../glm/detail/type_vec2.hpp \
- ../glm/detail/type_vec2.inl \
- ../glm/detail/type_vec3.hpp \
- ../glm/detail/type_vec3.inl \
- ../glm/detail/type_vec4.hpp \
- ../glm/detail/type_vec4.inl \
- ../glm/detail/type_vec4_simd.inl \
- ../glm/exponential.hpp \
- ../glm/ext/matrix_clip_space.hpp \
- ../glm/ext/matrix_clip_space.inl \
- ../glm/ext/matrix_double2x2.hpp \
- ../glm/ext/matrix_double2x2_precision.hpp \
- ../glm/ext/matrix_double2x3.hpp \
- ../glm/ext/matrix_double2x3_precision.hpp \
- ../glm/ext/matrix_double2x4.hpp \
- ../glm/ext/matrix_double2x4_precision.hpp \
- ../glm/ext/matrix_double3x2.hpp \
- ../glm/ext/matrix_double3x2_precision.hpp \
- ../glm/ext/matrix_double3x3.hpp \
- ../glm/ext/matrix_double3x3_precision.hpp \
- ../glm/ext/matrix_double3x4.hpp \
- ../glm/ext/matrix_double3x4_precision.hpp \
- ../glm/ext/matrix_double4x2.hpp \
- ../glm/ext/matrix_double4x2_precision.hpp \
- ../glm/ext/matrix_double4x3.hpp \
- ../glm/ext/matrix_double4x3_precision.hpp \
- ../glm/ext/matrix_double4x4.hpp \
- ../glm/ext/matrix_double4x4_precision.hpp \
- ../glm/ext/matrix_float2x2.hpp \
- ../glm/ext/matrix_float2x2_precision.hpp \
- ../glm/ext/matrix_float2x3.hpp \
- ../glm/ext/matrix_float2x3_precision.hpp \
- ../glm/ext/matrix_float2x4.hpp \
- ../glm/ext/matrix_float2x4_precision.hpp \
- ../glm/ext/matrix_float3x2.hpp \
- ../glm/ext/matrix_float3x2_precision.hpp \
- ../glm/ext/matrix_float3x3.hpp \
- ../glm/ext/matrix_float3x3_precision.hpp \
- ../glm/ext/matrix_float3x4.hpp \
- ../glm/ext/matrix_float3x4_precision.hpp \
- ../glm/ext/matrix_float4x2.hpp \
- ../glm/ext/matrix_float4x2_precision.hpp \
- ../glm/ext/matrix_float4x3.hpp \
- ../glm/ext/matrix_float4x3_precision.hpp \
- ../glm/ext/matrix_float4x4.hpp \
- ../glm/ext/matrix_float4x4_precision.hpp \
- ../glm/ext/matrix_projection.hpp \
- ../glm/ext/matrix_projection.inl \
- ../glm/ext/matrix_transform.hpp \
- ../glm/ext/scalar_constants.hpp \
- ../glm/ext/scalar_constants.inl \
- ../glm/ext/scalar_int_sized.hpp \
- ../glm/ext/scalar_uint_sized.hpp \
- ../glm/ext/vector_bool2.hpp \
- ../glm/ext/vector_bool2_precision.hpp \
- ../glm/ext/vector_bool3.hpp \
- ../glm/ext/vector_bool3_precision.hpp \
- ../glm/ext/vector_bool4.hpp \
- ../glm/ext/vector_bool4_precision.hpp \
- ../glm/ext/vector_double2.hpp \
- ../glm/ext/vector_double2_precision.hpp \
- ../glm/ext/vector_double3.hpp \
- ../glm/ext/vector_double3_precision.hpp \
- ../glm/ext/vector_double4.hpp \
- ../glm/ext/vector_double4_precision.hpp \
- ../glm/ext/vector_float2.hpp \
- ../glm/ext/vector_float2_precision.hpp \
- ../glm/ext/vector_float3.hpp \
- ../glm/ext/vector_float3_precision.hpp \
- ../glm/ext/vector_float4.hpp \
- ../glm/ext/vector_float4_precision.hpp \
- ../glm/ext/vector_int2.hpp \
- ../glm/ext/vector_int2_sized.hpp \
- ../glm/ext/vector_int3.hpp \
- ../glm/ext/vector_int3_sized.hpp \
- ../glm/ext/vector_int4.hpp \
- ../glm/ext/vector_int4_sized.hpp \
- ../glm/ext/vector_uint2.hpp \
- ../glm/ext/vector_uint2_sized.hpp \
- ../glm/ext/vector_uint3.hpp \
- ../glm/ext/vector_uint3_sized.hpp \
- ../glm/ext/vector_uint4.hpp \
- ../glm/ext/vector_uint4_sized.hpp \
- ../glm/fwd.hpp \
- ../glm/geometric.hpp \
- ../glm/glm.hpp \
- ../glm/gtc/constants.hpp \
- ../glm/gtc/constants.inl \
- ../glm/gtc/matrix_transform.hpp \
- ../glm/gtc/matrix_transform.inl \
- ../glm/integer.hpp \
- ../glm/mat2x2.hpp \
- ../glm/mat2x3.hpp \
- ../glm/mat2x4.hpp \
- ../glm/mat3x2.hpp \
- ../glm/mat3x3.hpp \
- ../glm/mat3x4.hpp \
- ../glm/mat4x2.hpp \
- ../glm/mat4x3.hpp \
- ../glm/mat4x4.hpp \
- ../glm/matrix.hpp \
- ../glm/packing.hpp \
- ../glm/simd/common.h \
- ../glm/simd/exponential.h \
- ../glm/simd/geometric.h \
- ../glm/simd/integer.h \
- ../glm/simd/matrix.h \
- ../glm/simd/neon.h \
- ../glm/simd/platform.h \
- ../glm/trigonometric.hpp \
- ../glm/vec2.hpp \
- ../glm/vec3.hpp \
- ../glm/vec4.hpp \
- ../glm/vector_relational.hpp \
- ../UI/Vulkan/Buffer.h \
- ../UI/Vulkan/CommandBuffer.h \
- ../UI/Vulkan/CommandPool.h \
- ../UI/Vulkan/DepthImage.h \
- ../UI/Vulkan/DescriptorFunctions.h \
- ../UI/Vulkan/DescriptorImage.h \
- ../UI/Vulkan/DescriptorPool.h \
- ../UI/Vulkan/DescriptorSet.h \
- ../UI/Vulkan/DescriptorSetImage.h \
- ../UI/Vulkan/DescriptorSetUniformBuffer.h \
- ../UI/Vulkan/DescriptorType.h \
- ../UI/Vulkan/DescriptorUniformBuffer.h \
- ../UI/Vulkan/ElementCommandBuffer.cpp \
- ../UI/Vulkan/ElementCommandBuffer.h \
- ../UI/Vulkan/Image.h \
- ../UI/Vulkan/IndexBuffer.h \
- ../UI/Vulkan/Instance.h \
- ../UI/Vulkan/LogicalDevice.h \
- ../UI/Vulkan/MemoryCommandBuffer.h \
- ../UI/Vulkan/MemoryFunctions.h \
- ../UI/Vulkan/MemoryPool.h \
- ../UI/Vulkan/PhysicalDevice.h \
- ../UI/Vulkan/PipeLine.h \
- ../UI/Vulkan/PushConstantFunctions.h \
- ../UI/Vulkan/PushConstantType.h \
- ../UI/Vulkan/Queue.h \
- ../UI/Vulkan/RenderPass.h \
- ../UI/Vulkan/Shape.h \
- ../UI/Vulkan/Surface.h \
- ../UI/Vulkan/Swapchain.h \
- ../UI/Vulkan/SwapchainImage.h \
- ../UI/Vulkan/UniformBufferType.h \
- ../UI/Vulkan/Utils.h \
- ../UI/Vulkan/VertexBuffer.h \
- ../UI/Vulkan/VertexTypes.h \
- ../UI/Vulkan/stb_image.h \
- ../UI/Vulkan/tiny_obj_loader.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vk_platform.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan.hpp \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_android.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_beta.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_core.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_directfb.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_fuchsia.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_ggp.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_ios.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_macos.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_metal.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_vi.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_wayland.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_win32.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xcb.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xlib.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xlib_xrandr.h
-CMakeFiles/Wuu.dir/UI/Vulkan/GeneralCommandBuffer.cpp.o: \
- ../glfw-3/include/GLFW/glfw3.h \
- ../UI/Vulkan/CommandBuffer.h \
- ../UI/Vulkan/CommandPool.h \
- ../UI/Vulkan/GeneralCommandBuffer.cpp \
- ../UI/Vulkan/GeneralCommandBuffer.h \
- ../UI/Vulkan/Instance.h \
- ../UI/Vulkan/LogicalDevice.h \
- ../UI/Vulkan/PhysicalDevice.h \
- ../UI/Vulkan/Surface.h \
- ../UI/Vulkan/Utils.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vk_platform.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan.hpp \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_android.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_beta.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_core.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_directfb.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_fuchsia.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_ggp.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_ios.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_macos.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_metal.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_vi.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_wayland.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_win32.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xcb.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xlib.h \
- /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xlib_xrandr.h
-CMakeFiles/Wuu.dir/UI/Vulkan/GeneralRenderer.cpp.o: \
- ../glfw-3/include/GLFW/glfw3.h \
- ../UI/Vulkan/CommandBuffer.h \
- ../UI/Vulkan/CommandPool.h \
- ../UI/Vulkan/GeneralCommandBuffer.h \
- ../UI/Vulkan/GeneralRenderer.cpp \
- ../UI/Vulkan/GeneralRenderer.h \
- ../UI/Vulkan/Image.h \
- ../UI/Vulkan/Instance.h \
- ../UI/Vulkan/LogicalDevice.h \
- ../UI/Vulkan/PhysicalDevice.h \
- ../UI/Vulkan/Queue.h \
- ../UI/Vulkan/Renderer.h \
- ../UI/Vulkan/Surface.h \
- ../UI/Vulkan/Swapchain.h \
- ../UI/Vulkan/SwapchainImage.h \
- ../UI/Vulkan/Utils.h \
  /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vk_platform.h \
  /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan.h \
  /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan.hpp \
@@ -2117,6 +1747,8 @@ CMakeFiles/Wuu.dir/UI/Vulkan/PipeLine.cpp.o: \
  ../glm/detail/type_vec4.inl \
  ../glm/detail/type_vec4_simd.inl \
  ../glm/exponential.hpp \
+ ../glm/ext/matrix_clip_space.hpp \
+ ../glm/ext/matrix_clip_space.inl \
  ../glm/ext/matrix_double2x2.hpp \
  ../glm/ext/matrix_double2x2_precision.hpp \
  ../glm/ext/matrix_double2x3.hpp \
@@ -2153,6 +1785,11 @@ CMakeFiles/Wuu.dir/UI/Vulkan/PipeLine.cpp.o: \
  ../glm/ext/matrix_float4x3_precision.hpp \
  ../glm/ext/matrix_float4x4.hpp \
  ../glm/ext/matrix_float4x4_precision.hpp \
+ ../glm/ext/matrix_projection.hpp \
+ ../glm/ext/matrix_projection.inl \
+ ../glm/ext/matrix_transform.hpp \
+ ../glm/ext/scalar_constants.hpp \
+ ../glm/ext/scalar_constants.inl \
  ../glm/ext/scalar_int_sized.hpp \
  ../glm/ext/scalar_uint_sized.hpp \
  ../glm/ext/vector_bool2.hpp \
@@ -2188,6 +1825,10 @@ CMakeFiles/Wuu.dir/UI/Vulkan/PipeLine.cpp.o: \
  ../glm/fwd.hpp \
  ../glm/geometric.hpp \
  ../glm/glm.hpp \
+ ../glm/gtc/constants.hpp \
+ ../glm/gtc/constants.inl \
+ ../glm/gtc/matrix_transform.hpp \
+ ../glm/gtc/matrix_transform.inl \
  ../glm/integer.hpp \
  ../glm/mat2x2.hpp \
  ../glm/mat2x3.hpp \
@@ -2621,8 +2262,7 @@ CMakeFiles/Wuu.dir/UI/Vulkan/SwapchainImage.cpp.o: \
  /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xcb.h \
  /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xlib.h \
  /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xlib_xrandr.h
-CMakeFiles/Wuu.dir/UI/Vulkan/UIRenderer.cpp.o: \
- ../UI/Element.h \
+CMakeFiles/Wuu.dir/UI/Vulkan/UICommandBuffer.cpp.o: \
  ../glfw-3/include/GLFW/glfw3.h \
  ../glm/common.hpp \
  ../glm/detail/_fixes.hpp \
@@ -2798,7 +2438,225 @@ CMakeFiles/Wuu.dir/UI/Vulkan/UIRenderer.cpp.o: \
  ../UI/Vulkan/DescriptorSetUniformBuffer.h \
  ../UI/Vulkan/DescriptorType.h \
  ../UI/Vulkan/DescriptorUniformBuffer.h \
- ../UI/Vulkan/ElementCommandBuffer.h \
+ ../UI/Vulkan/Image.h \
+ ../UI/Vulkan/IndexBuffer.h \
+ ../UI/Vulkan/Instance.h \
+ ../UI/Vulkan/LogicalDevice.h \
+ ../UI/Vulkan/MemoryCommandBuffer.h \
+ ../UI/Vulkan/MemoryFunctions.h \
+ ../UI/Vulkan/MemoryPool.h \
+ ../UI/Vulkan/PhysicalDevice.h \
+ ../UI/Vulkan/PipeLine.h \
+ ../UI/Vulkan/PushConstantFunctions.h \
+ ../UI/Vulkan/PushConstantType.h \
+ ../UI/Vulkan/Queue.h \
+ ../UI/Vulkan/RenderPass.h \
+ ../UI/Vulkan/Shape.h \
+ ../UI/Vulkan/Surface.h \
+ ../UI/Vulkan/Swapchain.h \
+ ../UI/Vulkan/SwapchainImage.h \
+ ../UI/Vulkan/UICommandBuffer.cpp \
+ ../UI/Vulkan/UICommandBuffer.h \
+ ../UI/Vulkan/UniformBufferType.h \
+ ../UI/Vulkan/Utils.h \
+ ../UI/Vulkan/VertexBuffer.h \
+ ../UI/Vulkan/VertexTypes.h \
+ ../UI/Vulkan/stb_image.h \
+ ../UI/Vulkan/tiny_obj_loader.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vk_platform.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan.hpp \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_android.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_beta.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_core.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_directfb.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_fuchsia.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_ggp.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_ios.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_macos.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_metal.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_vi.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_wayland.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_win32.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xcb.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xlib.h \
+ /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include/vulkan/vulkan_xlib_xrandr.h
+CMakeFiles/Wuu.dir/UI/Vulkan/UIRenderer.cpp.o: \
+ ../glfw-3/include/GLFW/glfw3.h \
+ ../glm/common.hpp \
+ ../glm/detail/_fixes.hpp \
+ ../glm/detail/_swizzle.hpp \
+ ../glm/detail/_swizzle_func.hpp \
+ ../glm/detail/_vectorize.hpp \
+ ../glm/detail/compute_common.hpp \
+ ../glm/detail/compute_vector_relational.hpp \
+ ../glm/detail/func_common.inl \
+ ../glm/detail/func_common_simd.inl \
+ ../glm/detail/func_exponential.inl \
+ ../glm/detail/func_exponential_simd.inl \
+ ../glm/detail/func_geometric.inl \
+ ../glm/detail/func_geometric_simd.inl \
+ ../glm/detail/func_integer.inl \
+ ../glm/detail/func_integer_simd.inl \
+ ../glm/detail/func_matrix.inl \
+ ../glm/detail/func_matrix_simd.inl \
+ ../glm/detail/func_packing.inl \
+ ../glm/detail/func_packing_simd.inl \
+ ../glm/detail/func_trigonometric.inl \
+ ../glm/detail/func_trigonometric_simd.inl \
+ ../glm/detail/func_vector_relational.inl \
+ ../glm/detail/func_vector_relational_simd.inl \
+ ../glm/detail/qualifier.hpp \
+ ../glm/detail/setup.hpp \
+ ../glm/detail/type_half.hpp \
+ ../glm/detail/type_half.inl \
+ ../glm/detail/type_mat2x2.hpp \
+ ../glm/detail/type_mat2x2.inl \
+ ../glm/detail/type_mat2x3.hpp \
+ ../glm/detail/type_mat2x3.inl \
+ ../glm/detail/type_mat2x4.hpp \
+ ../glm/detail/type_mat2x4.inl \
+ ../glm/detail/type_mat3x2.hpp \
+ ../glm/detail/type_mat3x2.inl \
+ ../glm/detail/type_mat3x3.hpp \
+ ../glm/detail/type_mat3x3.inl \
+ ../glm/detail/type_mat3x4.hpp \
+ ../glm/detail/type_mat3x4.inl \
+ ../glm/detail/type_mat4x2.hpp \
+ ../glm/detail/type_mat4x2.inl \
+ ../glm/detail/type_mat4x3.hpp \
+ ../glm/detail/type_mat4x3.inl \
+ ../glm/detail/type_mat4x4.hpp \
+ ../glm/detail/type_mat4x4.inl \
+ ../glm/detail/type_mat4x4_simd.inl \
+ ../glm/detail/type_vec1.hpp \
+ ../glm/detail/type_vec1.inl \
+ ../glm/detail/type_vec2.hpp \
+ ../glm/detail/type_vec2.inl \
+ ../glm/detail/type_vec3.hpp \
+ ../glm/detail/type_vec3.inl \
+ ../glm/detail/type_vec4.hpp \
+ ../glm/detail/type_vec4.inl \
+ ../glm/detail/type_vec4_simd.inl \
+ ../glm/exponential.hpp \
+ ../glm/ext/matrix_clip_space.hpp \
+ ../glm/ext/matrix_clip_space.inl \
+ ../glm/ext/matrix_double2x2.hpp \
+ ../glm/ext/matrix_double2x2_precision.hpp \
+ ../glm/ext/matrix_double2x3.hpp \
+ ../glm/ext/matrix_double2x3_precision.hpp \
+ ../glm/ext/matrix_double2x4.hpp \
+ ../glm/ext/matrix_double2x4_precision.hpp \
+ ../glm/ext/matrix_double3x2.hpp \
+ ../glm/ext/matrix_double3x2_precision.hpp \
+ ../glm/ext/matrix_double3x3.hpp \
+ ../glm/ext/matrix_double3x3_precision.hpp \
+ ../glm/ext/matrix_double3x4.hpp \
+ ../glm/ext/matrix_double3x4_precision.hpp \
+ ../glm/ext/matrix_double4x2.hpp \
+ ../glm/ext/matrix_double4x2_precision.hpp \
+ ../glm/ext/matrix_double4x3.hpp \
+ ../glm/ext/matrix_double4x3_precision.hpp \
+ ../glm/ext/matrix_double4x4.hpp \
+ ../glm/ext/matrix_double4x4_precision.hpp \
+ ../glm/ext/matrix_float2x2.hpp \
+ ../glm/ext/matrix_float2x2_precision.hpp \
+ ../glm/ext/matrix_float2x3.hpp \
+ ../glm/ext/matrix_float2x3_precision.hpp \
+ ../glm/ext/matrix_float2x4.hpp \
+ ../glm/ext/matrix_float2x4_precision.hpp \
+ ../glm/ext/matrix_float3x2.hpp \
+ ../glm/ext/matrix_float3x2_precision.hpp \
+ ../glm/ext/matrix_float3x3.hpp \
+ ../glm/ext/matrix_float3x3_precision.hpp \
+ ../glm/ext/matrix_float3x4.hpp \
+ ../glm/ext/matrix_float3x4_precision.hpp \
+ ../glm/ext/matrix_float4x2.hpp \
+ ../glm/ext/matrix_float4x2_precision.hpp \
+ ../glm/ext/matrix_float4x3.hpp \
+ ../glm/ext/matrix_float4x3_precision.hpp \
+ ../glm/ext/matrix_float4x4.hpp \
+ ../glm/ext/matrix_float4x4_precision.hpp \
+ ../glm/ext/matrix_projection.hpp \
+ ../glm/ext/matrix_projection.inl \
+ ../glm/ext/matrix_transform.hpp \
+ ../glm/ext/scalar_constants.hpp \
+ ../glm/ext/scalar_constants.inl \
+ ../glm/ext/scalar_int_sized.hpp \
+ ../glm/ext/scalar_uint_sized.hpp \
+ ../glm/ext/vector_bool2.hpp \
+ ../glm/ext/vector_bool2_precision.hpp \
+ ../glm/ext/vector_bool3.hpp \
+ ../glm/ext/vector_bool3_precision.hpp \
+ ../glm/ext/vector_bool4.hpp \
+ ../glm/ext/vector_bool4_precision.hpp \
+ ../glm/ext/vector_double2.hpp \
+ ../glm/ext/vector_double2_precision.hpp \
+ ../glm/ext/vector_double3.hpp \
+ ../glm/ext/vector_double3_precision.hpp \
+ ../glm/ext/vector_double4.hpp \
+ ../glm/ext/vector_double4_precision.hpp \
+ ../glm/ext/vector_float2.hpp \
+ ../glm/ext/vector_float2_precision.hpp \
+ ../glm/ext/vector_float3.hpp \
+ ../glm/ext/vector_float3_precision.hpp \
+ ../glm/ext/vector_float4.hpp \
+ ../glm/ext/vector_float4_precision.hpp \
+ ../glm/ext/vector_int2.hpp \
+ ../glm/ext/vector_int2_sized.hpp \
+ ../glm/ext/vector_int3.hpp \
+ ../glm/ext/vector_int3_sized.hpp \
+ ../glm/ext/vector_int4.hpp \
+ ../glm/ext/vector_int4_sized.hpp \
+ ../glm/ext/vector_uint2.hpp \
+ ../glm/ext/vector_uint2_sized.hpp \
+ ../glm/ext/vector_uint3.hpp \
+ ../glm/ext/vector_uint3_sized.hpp \
+ ../glm/ext/vector_uint4.hpp \
+ ../glm/ext/vector_uint4_sized.hpp \
+ ../glm/fwd.hpp \
+ ../glm/geometric.hpp \
+ ../glm/glm.hpp \
+ ../glm/gtc/constants.hpp \
+ ../glm/gtc/constants.inl \
+ ../glm/gtc/matrix_transform.hpp \
+ ../glm/gtc/matrix_transform.inl \
+ ../glm/integer.hpp \
+ ../glm/mat2x2.hpp \
+ ../glm/mat2x3.hpp \
+ ../glm/mat2x4.hpp \
+ ../glm/mat3x2.hpp \
+ ../glm/mat3x3.hpp \
+ ../glm/mat3x4.hpp \
+ ../glm/mat4x2.hpp \
+ ../glm/mat4x3.hpp \
+ ../glm/mat4x4.hpp \
+ ../glm/matrix.hpp \
+ ../glm/packing.hpp \
+ ../glm/simd/common.h \
+ ../glm/simd/exponential.h \
+ ../glm/simd/geometric.h \
+ ../glm/simd/integer.h \
+ ../glm/simd/matrix.h \
+ ../glm/simd/neon.h \
+ ../glm/simd/platform.h \
+ ../glm/trigonometric.hpp \
+ ../glm/vec2.hpp \
+ ../glm/vec3.hpp \
+ ../glm/vec4.hpp \
+ ../glm/vector_relational.hpp \
+ ../UI/Vulkan/Buffer.h \
+ ../UI/Vulkan/CommandBuffer.h \
+ ../UI/Vulkan/CommandPool.h \
+ ../UI/Vulkan/DepthImage.h \
+ ../UI/Vulkan/DescriptorFunctions.h \
+ ../UI/Vulkan/DescriptorImage.h \
+ ../UI/Vulkan/DescriptorPool.h \
+ ../UI/Vulkan/DescriptorSet.h \
+ ../UI/Vulkan/DescriptorSetImage.h \
+ ../UI/Vulkan/DescriptorSetUniformBuffer.h \
+ ../UI/Vulkan/DescriptorType.h \
+ ../UI/Vulkan/DescriptorUniformBuffer.h \
  ../UI/Vulkan/Image.h \
  ../UI/Vulkan/IndexBuffer.h \
  ../UI/Vulkan/Instance.h \
@@ -2817,6 +2675,7 @@ CMakeFiles/Wuu.dir/UI/Vulkan/UIRenderer.cpp.o: \
  ../UI/Vulkan/Surface.h \
  ../UI/Vulkan/Swapchain.h \
  ../UI/Vulkan/SwapchainImage.h \
+ ../UI/Vulkan/UICommandBuffer.h \
  ../UI/Vulkan/UIRenderer.cpp \
  ../UI/Vulkan/UIRenderer.h \
  ../UI/Vulkan/UniformBufferType.h \
@@ -2855,7 +2714,6 @@ CMakeFiles/Wuu.dir/UI/VulkanHandle.cpp.o: \
  ../Core/User.h \
  ../Core/Util.h \
  ../Networking/Packet.h \
- ../UI/Element.h \
  ../UI/Vulkan/Buffer.h \
  ../UI/Vulkan/CommandBuffer.h \
  ../UI/Vulkan/CommandPool.h \
@@ -2868,7 +2726,6 @@ CMakeFiles/Wuu.dir/UI/VulkanHandle.cpp.o: \
  ../UI/Vulkan/DescriptorSetUniformBuffer.h \
  ../UI/Vulkan/DescriptorType.h \
  ../UI/Vulkan/DescriptorUniformBuffer.h \
- ../UI/Vulkan/ElementCommandBuffer.h \
  ../UI/Vulkan/Image.h \
  ../UI/Vulkan/IndexBuffer.h \
  ../UI/Vulkan/Instance.h \
@@ -2887,6 +2744,7 @@ CMakeFiles/Wuu.dir/UI/VulkanHandle.cpp.o: \
  ../UI/Vulkan/Surface.h \
  ../UI/Vulkan/Swapchain.h \
  ../UI/Vulkan/SwapchainImage.h \
+ ../UI/Vulkan/UICommandBuffer.h \
  ../UI/Vulkan/UIRenderer.h \
  ../UI/Vulkan/UniformBufferType.h \
  ../UI/Vulkan/Utils.h \
@@ -3083,7 +2941,6 @@ CMakeFiles/Wuu.dir/UI/Window.cpp.o: \
  ../Core/User.h \
  ../Core/Util.h \
  ../Networking/Packet.h \
- ../UI/Element.h \
  ../UI/Vulkan/Buffer.h \
  ../UI/Vulkan/CommandBuffer.h \
  ../UI/Vulkan/CommandPool.h \
@@ -3096,7 +2953,6 @@ CMakeFiles/Wuu.dir/UI/Window.cpp.o: \
  ../UI/Vulkan/DescriptorSetUniformBuffer.h \
  ../UI/Vulkan/DescriptorType.h \
  ../UI/Vulkan/DescriptorUniformBuffer.h \
- ../UI/Vulkan/ElementCommandBuffer.h \
  ../UI/Vulkan/Image.h \
  ../UI/Vulkan/IndexBuffer.h \
  ../UI/Vulkan/Instance.h \
@@ -3115,6 +2971,7 @@ CMakeFiles/Wuu.dir/UI/Window.cpp.o: \
  ../UI/Vulkan/Surface.h \
  ../UI/Vulkan/Swapchain.h \
  ../UI/Vulkan/SwapchainImage.h \
+ ../UI/Vulkan/UICommandBuffer.h \
  ../UI/Vulkan/UIRenderer.h \
  ../UI/Vulkan/UniformBufferType.h \
  ../UI/Vulkan/Utils.h \
@@ -3285,7 +3142,7 @@ CMakeFiles/Wuu.dir/UI/Window.cpp.o: \
  ../glm/vec3.hpp \
  ../glm/vec4.hpp \
  ../glm/vector_relational.hpp \
- ../UI/UIHandle.h \
+ ../UI/Context.h \
  ../UI/VulkanHandle.h \
  ../UI/Window.cpp \
  ../UI/Window.h \
@@ -3339,8 +3196,7 @@ CMakeFiles/Wuu.dir/main.cpp.o: \
  ../Networking/Packet.h \
  ../Networking/Socket.h \
  ../Networking/SocketErrors.h \
- ../UI/Element.h \
- ../UI/UIHandle.h \
+ ../UI/Context.h \
  ../UI/Vulkan/Buffer.h \
  ../UI/Vulkan/CommandBuffer.h \
  ../UI/Vulkan/CommandPool.h \
@@ -3353,7 +3209,6 @@ CMakeFiles/Wuu.dir/main.cpp.o: \
  ../UI/Vulkan/DescriptorSetUniformBuffer.h \
  ../UI/Vulkan/DescriptorType.h \
  ../UI/Vulkan/DescriptorUniformBuffer.h \
- ../UI/Vulkan/ElementCommandBuffer.h \
  ../UI/Vulkan/Image.h \
  ../UI/Vulkan/IndexBuffer.h \
  ../UI/Vulkan/Instance.h \
@@ -3372,6 +3227,7 @@ CMakeFiles/Wuu.dir/main.cpp.o: \
  ../UI/Vulkan/Surface.h \
  ../UI/Vulkan/Swapchain.h \
  ../UI/Vulkan/SwapchainImage.h \
+ ../UI/Vulkan/UICommandBuffer.h \
  ../UI/Vulkan/UIRenderer.h \
  ../UI/Vulkan/UniformBufferType.h \
  ../UI/Vulkan/Utils.h \

@@ -9,7 +9,7 @@
 #include "MemoryPool.h"
 #include "MemoryCommandBuffer.h"
 #include "Buffer.h"
-#include "stb_image.h"
+#include "UI/Vulkan/Third-Party/stb_image.h"
 
 namespace Wuu::Vulkan {
 

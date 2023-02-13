@@ -7,7 +7,7 @@
 
 #include <iostream>
 
-namespace Wuu {
+namespace Wuu::UI {
 
 
     class WindowCallbackInfo {

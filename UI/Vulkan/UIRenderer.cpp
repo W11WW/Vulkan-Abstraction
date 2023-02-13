@@ -16,22 +16,11 @@ void UIRenderer::initialize(GLFWwindow* window)
     m_renderFinishedSemaphore = m_logicalDevice.getLogicalDevice().createSemaphore(semaphoreCreateInfo);
 
     m_commandPool.setPool(m_logicalDevice, static_cast<const uint32_t&&>(m_logicalDevice.getGraphicsQueueIndex()));
-    m_commandBuffers.resize(m_swapchain.getSize());
-
-    for(auto& buffer : m_commandBuffers)
-    {
-        buffer.setBuffer(m_logicalDevice, m_commandPool, vk::CommandBufferLevel::ePrimary);
-    }
 }
 
 UIRenderer::~UIRenderer()
 {
     m_logicalDevice.getLogicalDevice().waitIdle();
-
-    for(auto& commandBuffer : m_commandBuffers)
-    {
-        commandBuffer.destroy(m_logicalDevice, m_commandPool);
-    }
 
     m_commandPool.destroy(m_logicalDevice);
 
@@ -61,9 +50,17 @@ bool UIRenderer::render(GLFWwindow *window)
 
     vk::PipelineStageFlags waitStageMask = vk::PipelineStageFlagBits::eColorAttachmentOutput;
 
+    // this seems very bad for performance : /
+    std::vector<vk::CommandBuffer> cmdBuffers {};
+
+    for(auto& commandBufferPair : m_commandBuffers)
+    {
+        cmdBuffers.push_back(commandBufferPair[imageIndex].getCommandBuffer());
+    }
+
     // when m_imageAvailableSemaphore is true submit for rendering through command buffers and then notify m_renderFinishedSemaphore true when rendering is done on image
-    auto submitInfo = vk::SubmitInfo { 1, &m_imageAvailableSemaphore, &waitStageMask, 1,
-                                       &m_commandBuffers[imageIndex].getCommandBuffer(), 1, &m_renderFinishedSemaphore };
+    auto submitInfo = vk::SubmitInfo { 1, &m_imageAvailableSemaphore, &waitStageMask, 2,
+                                       cmdBuffers.data(), 1, &m_renderFinishedSemaphore };
 
     m_graphicsQueue.getQueue().submit(submitInfo, {});
 

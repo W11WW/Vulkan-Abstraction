@@ -4,7 +4,7 @@
 
 #include "WindowHandle.h"
 
-using namespace Wuu;
+using namespace Wuu::UI;
 
 void WindowHandle::mouse_callback(GLFWwindow *window, double xpos, double ypos)
 {

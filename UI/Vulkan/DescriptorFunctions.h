@@ -5,7 +5,6 @@
 #ifndef WUU_DESCRIPTORFUNCTIONS_H
 #define WUU_DESCRIPTORFUNCTIONS_H
 #include "UniformBufferType.h"
-#include "UI/Element.h"
 #include "Swapchain.h"
 
 namespace Wuu::Vulkan {

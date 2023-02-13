@@ -5,6 +5,7 @@
 #ifndef WUU_UNIFORMBUFFERTYPE_H
 #define WUU_UNIFORMBUFFERTYPE_H
 #include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
 
 struct UniformBufferObject
 {

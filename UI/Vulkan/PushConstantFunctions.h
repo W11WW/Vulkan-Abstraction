@@ -6,12 +6,11 @@
 #define WUU_PUSHCONSTANTFUNCTIONS_H
 
 #include "PushConstantType.h"
-#include "UI/Element.h"
 
-static inline void createPushConstantObject(PushConstantData& ubo, Element& element) noexcept
+static inline void createPushConstantObject(PushConstantData& ubo, glm::vec3 position) noexcept
 {
     ubo.model = glm::mat4(1.0f);
-    ubo.model = glm::translate(ubo.model, element.getPosition());
+    ubo.model = glm::translate(ubo.model, position);
     ubo.model = glm::scale(ubo.model, glm::vec3 (0.7f, 0.7f, 0.7f));
 }
 

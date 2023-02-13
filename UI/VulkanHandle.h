@@ -14,14 +14,14 @@
 #include "UI/Vulkan/UniformBufferType.h"
 #include "UI/Vulkan/DescriptorSetUniformBuffer.h"
 #include "UI/Vulkan/DescriptorPool.h"
-#include "UI/Vulkan/PipeLine.h"
+#include "UI/Vulkan/Pipeline.h"
 #include "UI/Vulkan/Shape.h"
 #include "UI/Vulkan/DescriptorImage.h"
 #include "UI/Vulkan/DescriptorSetImage.h"
 #include "UI/Vulkan/MemoryFunctions.h"
 #include "Core/Data.h"
 
-namespace Wuu {
+namespace Wuu::UI {
 
     class VulkanHandle {
     public:
@@ -45,14 +45,11 @@ namespace Wuu {
         Vulkan::DescriptorPool m_descriptorPool;
         Vulkan::DescriptorSetUniformBuffer m_descriptorSetUniformBuffer;
         Vulkan::RenderPass m_renderPass;
-        Vulkan::PipeLine m_pipeline;
+        Vulkan::Pipeline m_pipeline;
 
         Vulkan::Shape m_square {};
         std::vector<Vulkan::DescriptorImage> m_images {};
         Vulkan::DescriptorSetImage m_imageSet {};
-
-        Element test {};
-        Element test2 {};
 
     };
 

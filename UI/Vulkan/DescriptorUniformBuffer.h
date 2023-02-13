@@ -9,7 +9,6 @@
 #include "Swapchain.h"
 #include "MemoryFunctions.h"
 #include "DescriptorFunctions.h"
-#include "UI/Element.h"
 #include "UniformBufferType.h"
 
 // TODO: change so it saves data on multiple elements
