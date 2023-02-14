@@ -26,6 +26,7 @@ namespace Wuu::Vulkan {
         [[nodiscard]] inline auto& getFrameBuffers() noexcept { return m_frameBuffers; }
 
         [[nodiscard]] const auto& getSubpasses() const noexcept { return m_subpasses; }
+        void addSubpass(const Subpass& subpass) noexcept { m_subpasses.push_back(subpass); }
 
     private:
 

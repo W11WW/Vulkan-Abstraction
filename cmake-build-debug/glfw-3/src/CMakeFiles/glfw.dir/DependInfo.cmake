@@ -8,32 +8,34 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/cocoa_init.m" "/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/cocoa_init.m.o"
-  "/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/cocoa_joystick.m" "/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o"
-  "/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/cocoa_monitor.m" "/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o"
-  "/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/cocoa_time.c" "/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/cocoa_time.c.o"
-  "/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/cocoa_window.m" "/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/cocoa_window.m.o"
-  "/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/context.c" "/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/context.c.o"
-  "/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/egl_context.c" "/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/egl_context.c.o"
-  "/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/init.c" "/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/init.c.o"
-  "/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/input.c" "/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/input.c.o"
-  "/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/monitor.c" "/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/monitor.c.o"
-  "/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/nsgl_context.m" "/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/nsgl_context.m.o"
-  "/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/osmesa_context.c" "/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/osmesa_context.c.o"
-  "/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/posix_thread.c" "/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/posix_thread.c.o"
-  "/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/vulkan.c" "/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/vulkan.c.o"
-  "/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/window.c" "/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/window.c.o"
+  "D:/Goals/MoneyMoves/glfw-3/src/context.c" "D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/context.c.obj"
+  "D:/Goals/MoneyMoves/glfw-3/src/egl_context.c" "D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/egl_context.c.obj"
+  "D:/Goals/MoneyMoves/glfw-3/src/init.c" "D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/init.c.obj"
+  "D:/Goals/MoneyMoves/glfw-3/src/input.c" "D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/input.c.obj"
+  "D:/Goals/MoneyMoves/glfw-3/src/monitor.c" "D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/monitor.c.obj"
+  "D:/Goals/MoneyMoves/glfw-3/src/osmesa_context.c" "D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/osmesa_context.c.obj"
+  "D:/Goals/MoneyMoves/glfw-3/src/vulkan.c" "D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/vulkan.c.obj"
+  "D:/Goals/MoneyMoves/glfw-3/src/wgl_context.c" "D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/wgl_context.c.obj"
+  "D:/Goals/MoneyMoves/glfw-3/src/win32_init.c" "D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/win32_init.c.obj"
+  "D:/Goals/MoneyMoves/glfw-3/src/win32_joystick.c" "D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/win32_joystick.c.obj"
+  "D:/Goals/MoneyMoves/glfw-3/src/win32_monitor.c" "D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/win32_monitor.c.obj"
+  "D:/Goals/MoneyMoves/glfw-3/src/win32_thread.c" "D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/win32_thread.c.obj"
+  "D:/Goals/MoneyMoves/glfw-3/src/win32_time.c" "D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/win32_time.c.obj"
+  "D:/Goals/MoneyMoves/glfw-3/src/win32_window.c" "D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/win32_window.c.obj"
+  "D:/Goals/MoneyMoves/glfw-3/src/window.c" "D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/window.c.obj"
   )
-set(CMAKE_C_COMPILER_ID "AppleClang")
+set(CMAKE_C_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_C
+  "UNICODE"
+  "WINVER=0x0501"
   "_GLFW_USE_CONFIG_H"
+  "_UNICODE"
   )
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  "/Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include"
   "../glfw-3/include"
   "../glfw-3/src"
   "glfw-3/src"

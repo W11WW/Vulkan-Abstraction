@@ -7,7 +7,7 @@ using namespace Wuu::Vulkan;
 
 void RenderPass::initialize(LogicalDevice& logicalDevice, Swapchain& swapchain, DepthImage& depthImage)
 {
-    m_renderPass = logicalDevice.getLogicalDevice().createRenderPass(vk::RenderPassCreateInfo{{}, 2, attachments.data(), 1, &subpass, 1, &dependency});
+    m_renderPass = logicalDevice.getLogicalDevice().createRenderPass(vk::RenderPassCreateInfo{{}, 2, m_subpasses[0].getAttachmentDescriptions(), 1, &m_subpasses[0], 1, &dependency});
 
     m_frameBuffers.resize(swapchain.getSize());
 

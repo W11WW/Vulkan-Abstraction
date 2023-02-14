@@ -5,7 +5,13 @@
 #ifndef WUU_PROGRAM_H
 #define WUU_PROGRAM_H
 #include "UI/Window.h"
-#include "Networking/Client.h"
+
+#if defined(__APPLE__)
+    #include "Networking/Client.h"
+#elif defined(_WIN32) || defined(__WIN32__) || defined(WIN32) || defined(_WIN64)
+
+#endif
+
 #include "Data.h"
 #include <thread>
 
@@ -24,7 +30,7 @@ namespace Wuu {
         UI::Window window {};
 
         //std::thread NetworkingThread(&Networking::Client::run, &client);
-        Networking::Client client {};
+        //Networking::Client client {};
 
         Data dataStructure {};
 

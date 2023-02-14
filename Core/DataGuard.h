@@ -5,6 +5,7 @@
 #ifndef WUU_DATAGUARD_H
 #define WUU_DATAGUARD_H
 #include <vector>
+#include <memory>
 #include <mutex>
 
 namespace Wuu

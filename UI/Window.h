@@ -11,6 +11,8 @@
 #include "WindowHandle.h"
 #include "Context.h"
 
+#include <memory>
+
 namespace Wuu::UI {
 
     class Window {

@@ -8,178 +8,181 @@
 		<Option virtualFolders="CMake Files\;CMake Files\glfw-3\;CMake Files\glfw-3\src\;CMake Files\glm\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3"/>
+				<Option working_dir="D:/Goals/MoneyMoves/cmake-build-debug/glfw-3"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="uninstall">
-				<Option working_dir="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3"/>
+				<Option working_dir="D:/Goals/MoneyMoves/cmake-build-debug/glfw-3"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/Makefile&quot;  VERBOSE=1 uninstall"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/Makefile&quot;  VERBOSE=1 uninstall"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="glfw">
-				<Option output="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src"/>
+				<Option output="D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-D_GLFW_USE_CONFIG_H"/>
-					<Add directory="/Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include"/>
-					<Add directory="/Users/michaelferents/CLionProjects/Wuu/glfw-3/include"/>
-					<Add directory="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src"/>
-					<Add directory="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add option="-D_UNICODE"/>
+					<Add option="-DUNICODE"/>
+					<Add option="-DWINVER=0x0501"/>
+					<Add directory="D:/Goals/MoneyMoves/glfw-3/include"/>
+					<Add directory="D:/Goals/MoneyMoves/glfw-3/src"/>
+					<Add directory="D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0/x86_64-w64-mingw32"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0/backward"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/Makefile&quot;  VERBOSE=1 glfw"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src/Makefile&quot;  VERBOSE=1 glfw"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="glfw/fast">
-				<Option output="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src"/>
+				<Option output="D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-D_GLFW_USE_CONFIG_H"/>
-					<Add directory="/Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include"/>
-					<Add directory="/Users/michaelferents/CLionProjects/Wuu/glfw-3/include"/>
-					<Add directory="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src"/>
-					<Add directory="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add option="-D_UNICODE"/>
+					<Add option="-DUNICODE"/>
+					<Add option="-DWINVER=0x0501"/>
+					<Add directory="D:/Goals/MoneyMoves/glfw-3/include"/>
+					<Add directory="D:/Goals/MoneyMoves/glfw-3/src"/>
+					<Add directory="D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0/x86_64-w64-mingw32"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0/backward"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/Makefile&quot;  VERBOSE=1 glfw/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src/Makefile&quot;  VERBOSE=1 glfw/fast"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/glfw_config.h">
+		<Unit filename="D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src/glfw_config.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/include/GLFW/glfw3.h">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/include/GLFW/glfw3.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/include/GLFW/glfw3native.h">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/include/GLFW/glfw3native.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/cocoa_init.m">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/src/context.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/cocoa_joystick.h">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/src/egl_context.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/cocoa_joystick.m">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/src/egl_context.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/cocoa_monitor.m">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/src/init.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/cocoa_platform.h">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/src/input.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/cocoa_time.c">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/src/internal.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/cocoa_window.m">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/src/mappings.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/context.c">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/src/monitor.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/egl_context.c">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/src/osmesa_context.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/egl_context.h">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/src/osmesa_context.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/init.c">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/src/vulkan.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/input.c">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/src/wgl_context.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/internal.h">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/src/wgl_context.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/mappings.h">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/src/win32_init.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/monitor.c">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/src/win32_joystick.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/nsgl_context.h">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/src/win32_joystick.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/nsgl_context.m">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/src/win32_monitor.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/osmesa_context.c">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/src/win32_platform.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/osmesa_context.h">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/src/win32_thread.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/posix_thread.c">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/src/win32_time.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/posix_thread.h">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/src/win32_window.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/vulkan.c">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/src/window.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/window.c">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/CMakeLists.txt">
+		<Unit filename="D:/Goals/MoneyMoves/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/CMakeLists.txt">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\glfw-3\"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/cmake_uninstall.cmake.in">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/cmake_uninstall.cmake.in">
 			<Option virtualFolder="CMake Files\glfw-3\"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/CMakeLists.txt">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\glfw-3\src\"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/glfw3.pc.in">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/src/glfw3.pc.in">
 			<Option virtualFolder="CMake Files\glfw-3\src\"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/glfw3Config.cmake.in">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/src/glfw3Config.cmake.in">
 			<Option virtualFolder="CMake Files\glfw-3\src\"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/glfw_config.h.in">
+		<Unit filename="D:/Goals/MoneyMoves/glfw-3/src/glfw_config.h.in">
 			<Option virtualFolder="CMake Files\glfw-3\src\"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glm/CMakeLists.txt">
+		<Unit filename="D:/Goals/MoneyMoves/glm/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\glm\"/>
 		</Unit>
 	</Project>
