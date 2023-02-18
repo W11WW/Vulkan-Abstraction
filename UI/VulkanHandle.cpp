@@ -18,33 +18,6 @@ void VulkanHandle::initialize(GLFWwindow* window)
                           m_memoryPool,
                           m_renderer.getSwapchain().getExtent());
 
-    Vulkan::Subpass test {};
-
-    vk::AttachmentDescription colorAttachment {};
-    colorAttachment.format = m_renderer.getSwapchain().getFormat();
-    colorAttachment.samples = vk::SampleCountFlagBits::e1;
-    colorAttachment.loadOp = vk::AttachmentLoadOp::eClear;
-    colorAttachment.storeOp = vk::AttachmentStoreOp::eStore;
-    colorAttachment.stencilLoadOp = vk::AttachmentLoadOp::eDontCare;
-    colorAttachment.stencilStoreOp = vk::AttachmentStoreOp::eDontCare;
-    colorAttachment.initialLayout = vk::ImageLayout::eUndefined;
-    colorAttachment.finalLayout = vk::ImageLayout::ePresentSrcKHR;
-
-    vk::AttachmentDescription depthAttachment {};
-    depthAttachment.format = vk::Format::eD32Sfloat;
-    depthAttachment.samples = vk::SampleCountFlagBits::e1;
-    depthAttachment.loadOp = vk::AttachmentLoadOp::eClear;
-    depthAttachment.storeOp = vk::AttachmentStoreOp::eStore;
-    depthAttachment.stencilLoadOp = vk::AttachmentLoadOp::eDontCare;
-    depthAttachment.stencilStoreOp = vk::AttachmentStoreOp::eDontCare;
-    depthAttachment.initialLayout = vk::ImageLayout::eUndefined;
-    depthAttachment.finalLayout = vk::ImageLayout::eDepthStencilAttachmentOptimal;
-
-    test.getAttachmentDescriptions().push_back(colorAttachment);
-    test.getAttachmentDescriptions().push_back(depthAttachment);
-
-    test.setDescription();
-
     m_renderPass.initialize(m_renderer.getLogicalDevice(), m_renderer.getSwapchain(), m_depthImage);
 
     m_descriptorPool.setPool(m_renderer.getLogicalDevice(), 1, 1, 2);

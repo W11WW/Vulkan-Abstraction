@@ -4,66 +4,59 @@ set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
 
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
-  )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/Goals/MoneyMoves/Core/Data.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/Core/Data.cpp.obj"
-  "D:/Goals/MoneyMoves/Core/Program.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/Core/Program.cpp.obj"
-  "D:/Goals/MoneyMoves/Core/User.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/Core/User.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Context.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Context.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Layout.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Layout.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/Buffer.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/Buffer.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/CommandBuffer.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/CommandBuffer.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/CommandPool.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/CommandPool.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/DepthImage.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/DepthImage.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/DescriptorImage.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorImage.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/DescriptorPool.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorPool.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/DescriptorSet.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSet.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/DescriptorSetImage.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetImage.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/DescriptorSetUniformBuffer.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetUniformBuffer.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/DescriptorUniformBuffer.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorUniformBuffer.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/FrameBuffer.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/FrameBuffer.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/Image.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/Image.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/Instance.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/Instance.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/LogicalDevice.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/LogicalDevice.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/MemoryCommandBuffer.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/MemoryCommandBuffer.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/MemoryPool.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/MemoryPool.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/PhysicalDevice.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/PhysicalDevice.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/Pipeline.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/Pipeline.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/Queue.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/Queue.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/RenderPass.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/Renderer.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/Renderer.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/Shape.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/Shape.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/Subpass.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/Subpass.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/Surface.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/Surface.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/Swapchain.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/Swapchain.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/SwapchainImage.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/SwapchainImage.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/Third-Party/stb_image.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/stb_image.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/Third-Party/tiny_obj_loader.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/tiny_obj_loader.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/UICommandBuffer.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/UICommandBuffer.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Vulkan/UIRenderer.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Vulkan/UIRenderer.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/VulkanHandle.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/VulkanHandle.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/Window.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/Window.cpp.obj"
-  "D:/Goals/MoneyMoves/UI/WindowHandle.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/UI/WindowHandle.cpp.obj"
-  "D:/Goals/MoneyMoves/main.cpp" "D:/Goals/MoneyMoves/cmake-build-debug/CMakeFiles/Wuu.dir/main.cpp.obj"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
-
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../glfw-3/include"
-  "../glm/.."
-  "D:/Vulkan/newVulkan/Include"
   )
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/michaelferents/CLionProjects/Wuu/Core/Data.cpp" "CMakeFiles/Wuu.dir/Core/Data.cpp.o" "gcc" "CMakeFiles/Wuu.dir/Core/Data.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/Core/Program.cpp" "CMakeFiles/Wuu.dir/Core/Program.cpp.o" "gcc" "CMakeFiles/Wuu.dir/Core/Program.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/Core/User.cpp" "CMakeFiles/Wuu.dir/Core/User.cpp.o" "gcc" "CMakeFiles/Wuu.dir/Core/User.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/Networking/Client.cpp" "CMakeFiles/Wuu.dir/Networking/Client.cpp.o" "gcc" "CMakeFiles/Wuu.dir/Networking/Client.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/Networking/IPv4ClientSocket.cpp" "CMakeFiles/Wuu.dir/Networking/IPv4ClientSocket.cpp.o" "gcc" "CMakeFiles/Wuu.dir/Networking/IPv4ClientSocket.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/Networking/IPv4ServerSocket.cpp" "CMakeFiles/Wuu.dir/Networking/IPv4ServerSocket.cpp.o" "gcc" "CMakeFiles/Wuu.dir/Networking/IPv4ServerSocket.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/Networking/IPv6ClientSocket.cpp" "CMakeFiles/Wuu.dir/Networking/IPv6ClientSocket.cpp.o" "gcc" "CMakeFiles/Wuu.dir/Networking/IPv6ClientSocket.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/Networking/IPv6ServerSocket.cpp" "CMakeFiles/Wuu.dir/Networking/IPv6ServerSocket.cpp.o" "gcc" "CMakeFiles/Wuu.dir/Networking/IPv6ServerSocket.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/Networking/Packet.cpp" "CMakeFiles/Wuu.dir/Networking/Packet.cpp.o" "gcc" "CMakeFiles/Wuu.dir/Networking/Packet.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Context.cpp" "CMakeFiles/Wuu.dir/UI/Context.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Context.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Layout.cpp" "CMakeFiles/Wuu.dir/UI/Layout.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Layout.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Buffer.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/Buffer.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/Buffer.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/CommandBuffer.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/CommandBuffer.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/CommandBuffer.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/CommandPool.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/CommandPool.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/CommandPool.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DepthImage.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/DepthImage.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/DepthImage.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorImage.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorImage.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorImage.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorPool.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorPool.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorPool.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorSet.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSet.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSet.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorSetImage.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetImage.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetImage.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorSetUniformBuffer.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetUniformBuffer.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetUniformBuffer.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorUniformBuffer.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorUniformBuffer.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorUniformBuffer.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/FrameBuffer.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/FrameBuffer.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/FrameBuffer.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Image.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/Image.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/Image.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Instance.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/Instance.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/Instance.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/LogicalDevice.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/LogicalDevice.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/LogicalDevice.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryCommandBuffer.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/MemoryCommandBuffer.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/MemoryCommandBuffer.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryPool.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/MemoryPool.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/MemoryPool.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PhysicalDevice.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/PhysicalDevice.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/PhysicalDevice.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Pipeline.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/Pipeline.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/Pipeline.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Queue.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/Queue.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/Queue.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/RenderPass.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Renderer.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/Renderer.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/Renderer.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Shape.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/Shape.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/Shape.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Surface.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/Surface.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/Surface.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Swapchain.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/Swapchain.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/Swapchain.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/SwapchainImage.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/SwapchainImage.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/SwapchainImage.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Third-Party/stb_image.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/stb_image.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/stb_image.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Third-Party/tiny_obj_loader.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/tiny_obj_loader.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/tiny_obj_loader.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/UICommandBuffer.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/UICommandBuffer.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/UICommandBuffer.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/UIRenderer.cpp" "CMakeFiles/Wuu.dir/UI/Vulkan/UIRenderer.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Vulkan/UIRenderer.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/VulkanHandle.cpp" "CMakeFiles/Wuu.dir/UI/VulkanHandle.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/VulkanHandle.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/Window.cpp" "CMakeFiles/Wuu.dir/UI/Window.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/Window.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/UI/WindowHandle.cpp" "CMakeFiles/Wuu.dir/UI/WindowHandle.cpp.o" "gcc" "CMakeFiles/Wuu.dir/UI/WindowHandle.cpp.o.d"
+  "/Users/michaelferents/CLionProjects/Wuu/main.cpp" "CMakeFiles/Wuu.dir/main.cpp.o" "gcc" "CMakeFiles/Wuu.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "D:/Goals/MoneyMoves/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

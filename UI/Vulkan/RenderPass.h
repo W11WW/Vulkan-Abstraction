@@ -10,7 +10,6 @@
 #include "LogicalDevice.h"
 #include "Swapchain.h"
 #include "DepthImage.h"
-#include "Subpass.h"
 
 namespace Wuu::Vulkan {
 
@@ -25,14 +24,9 @@ namespace Wuu::Vulkan {
         [[nodiscard]] inline auto& getRenderPass() noexcept { return m_renderPass; }
         [[nodiscard]] inline auto& getFrameBuffers() noexcept { return m_frameBuffers; }
 
-        [[nodiscard]] const auto& getSubpasses() const noexcept { return m_subpasses; }
-        void addSubpass(const Subpass& subpass) noexcept { m_subpasses.push_back(subpass); }
-
     private:
 
         vk::RenderPass m_renderPass;
-
-        std::vector<Subpass> m_subpasses;
         std::vector<vk::Framebuffer> m_frameBuffers;
 
     };
