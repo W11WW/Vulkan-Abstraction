@@ -1,1 +1,42 @@
-Test 123
+TODO:
+
+Step 1
+
+Strip everything related to UI
+Implement Vulkan Memory Handler
+Continue expanding graphics capabilities
+{
+
+1. Change Shape -> Mesh [done]
+2. Redo Memory system [doing rn]
+3. get rid of UI classes and think about removing the renderer class
+4. Redo pipeline to specify types [done]
+{
+
+restricted in the sense it pre-sets the Shader Modules eg Vertex, Frag so perhaps create a seperate class for them ?
+
+}
+5. Redo Descriptor stuff since it seems too blowted
+6. Map out how the memory(Buffer/Image)/command buffers work [done]
+7. Map out how descriptor stuff work [done]
+8. Figure out RenderPass for multiple pipelines
+9. Looking more deeply into how the shader works(subpasses ect) such that we can multiple shaders per pipeline ect
+10. Remove templated class for descriptoruniformbuffer
+11. Perhaps remove DescriptorSetUniformBuffer and DescriptorSetImage as all both do is update a descriptor set with
+    the relative information. So instead we could make a
+
+}
+
+Start working on Math Stuff starting with Vectors and Matrices eventually working towards starting the quat book
+redo each class and comment(find best possible system on how to comment) on it
+
+Step 2
+
+Start learning about parallel processing
+Continue expanding graphics capabilities
+Explore the topic of hot shader reload and see if we truly need it
+start working on symbolic computation
+
+Step 3
+
+Explore the idea of a scripting language and if it is needed**

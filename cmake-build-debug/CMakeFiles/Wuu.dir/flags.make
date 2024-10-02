@@ -4,9 +4,9 @@
 # compile CXX with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include -I/Users/michaelferents/CLionProjects/Wuu/glfw-3/include -I/Users/michaelferents/CLionProjects/Wuu/glm/..
+CXX_INCLUDES = -I/Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include -I/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/include -I/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glm/../..
 
-CXX_FLAGSx86_64 = -g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -std=gnu++20
+CXX_FLAGSx86_64 =  -std=c++23 -g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.5 -std=gnu++2b
 
-CXX_FLAGS = -g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -std=gnu++20
+CXX_FLAGS =  -std=c++23 -g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.5 -std=gnu++2b
 

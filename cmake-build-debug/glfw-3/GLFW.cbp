@@ -5,7 +5,7 @@
 		<Option title="GLFW"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\glfw-3\;CMake Files\glfw-3\src\;CMake Files\glm\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\glfw-3\;CMake Files\glfw-3\src\;CMake Files\Third-Party\;CMake Files\Third-Party\glm\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3"/>
@@ -179,8 +179,8 @@
 		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/glfw_config.h.in">
 			<Option virtualFolder="CMake Files\glfw-3\src\"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glm/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\glm\"/>
+		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/Third-Party/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Third-Party\glm\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

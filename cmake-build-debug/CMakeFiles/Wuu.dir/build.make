@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/michaelferents/CLionProjects/Wuu
+CMAKE_SOURCE_DIR = /Users/michaelferents/CLionProjects/Vulkan-Abstraction
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/michaelferents/CLionProjects/Wuu/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Wuu.dir/depend.make
@@ -72,720 +72,688 @@ include CMakeFiles/Wuu.dir/flags.make
 CMakeFiles/Wuu.dir/main.cpp.o: CMakeFiles/Wuu.dir/flags.make
 CMakeFiles/Wuu.dir/main.cpp.o: ../main.cpp
 CMakeFiles/Wuu.dir/main.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Wuu.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/main.cpp.o -MF CMakeFiles/Wuu.dir/main.cpp.o.d -o CMakeFiles/Wuu.dir/main.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Wuu.dir/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/main.cpp.o -MF CMakeFiles/Wuu.dir/main.cpp.o.d -o CMakeFiles/Wuu.dir/main.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/main.cpp
 
 CMakeFiles/Wuu.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/main.cpp > CMakeFiles/Wuu.dir/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/main.cpp > CMakeFiles/Wuu.dir/main.cpp.i
 
 CMakeFiles/Wuu.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/main.cpp -o CMakeFiles/Wuu.dir/main.cpp.s
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Instance.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/Instance.cpp.o: ../UI/Vulkan/Instance.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/Instance.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/Instance.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/Instance.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/Instance.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/Instance.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Instance.cpp
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Instance.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/Instance.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Instance.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/Instance.cpp.i
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Instance.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/Instance.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Instance.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/Instance.cpp.s
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Surface.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/Surface.cpp.o: ../UI/Vulkan/Surface.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/Surface.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/Surface.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/Surface.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/Surface.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/Surface.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Surface.cpp
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Surface.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/Surface.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Surface.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/Surface.cpp.i
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Surface.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/Surface.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Surface.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/Surface.cpp.s
-
-CMakeFiles/Wuu.dir/UI/Vulkan/PhysicalDevice.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/PhysicalDevice.cpp.o: ../UI/Vulkan/PhysicalDevice.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/PhysicalDevice.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/PhysicalDevice.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/PhysicalDevice.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/PhysicalDevice.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/PhysicalDevice.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PhysicalDevice.cpp
-
-CMakeFiles/Wuu.dir/UI/Vulkan/PhysicalDevice.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/PhysicalDevice.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PhysicalDevice.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/PhysicalDevice.cpp.i
-
-CMakeFiles/Wuu.dir/UI/Vulkan/PhysicalDevice.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/PhysicalDevice.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PhysicalDevice.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/PhysicalDevice.cpp.s
-
-CMakeFiles/Wuu.dir/UI/Vulkan/LogicalDevice.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/LogicalDevice.cpp.o: ../UI/Vulkan/LogicalDevice.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/LogicalDevice.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/LogicalDevice.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/LogicalDevice.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/LogicalDevice.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/LogicalDevice.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/LogicalDevice.cpp
-
-CMakeFiles/Wuu.dir/UI/Vulkan/LogicalDevice.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/LogicalDevice.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/LogicalDevice.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/LogicalDevice.cpp.i
-
-CMakeFiles/Wuu.dir/UI/Vulkan/LogicalDevice.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/LogicalDevice.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/LogicalDevice.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/LogicalDevice.cpp.s
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Queue.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/Queue.cpp.o: ../UI/Vulkan/Queue.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/Queue.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/Queue.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/Queue.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/Queue.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/Queue.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Queue.cpp
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Queue.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/Queue.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Queue.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/Queue.cpp.i
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Queue.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/Queue.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Queue.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/Queue.cpp.s
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Swapchain.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/Swapchain.cpp.o: ../UI/Vulkan/Swapchain.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/Swapchain.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/Swapchain.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/Swapchain.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/Swapchain.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/Swapchain.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Swapchain.cpp
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Swapchain.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/Swapchain.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Swapchain.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/Swapchain.cpp.i
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Swapchain.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/Swapchain.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Swapchain.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/Swapchain.cpp.s
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Image.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/Image.cpp.o: ../UI/Vulkan/Image.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/Image.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/Image.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/Image.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/Image.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/Image.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Image.cpp
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Image.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/Image.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Image.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/Image.cpp.i
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Image.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/Image.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Image.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/Image.cpp.s
-
-CMakeFiles/Wuu.dir/UI/Vulkan/CommandPool.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/CommandPool.cpp.o: ../UI/Vulkan/CommandPool.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/CommandPool.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/CommandPool.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/CommandPool.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/CommandPool.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/CommandPool.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/CommandPool.cpp
-
-CMakeFiles/Wuu.dir/UI/Vulkan/CommandPool.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/CommandPool.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/CommandPool.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/CommandPool.cpp.i
-
-CMakeFiles/Wuu.dir/UI/Vulkan/CommandPool.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/CommandPool.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/CommandPool.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/CommandPool.cpp.s
-
-CMakeFiles/Wuu.dir/UI/Vulkan/CommandBuffer.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/CommandBuffer.cpp.o: ../UI/Vulkan/CommandBuffer.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/CommandBuffer.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/CommandBuffer.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/CommandBuffer.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/CommandBuffer.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/CommandBuffer.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/CommandBuffer.cpp
-
-CMakeFiles/Wuu.dir/UI/Vulkan/CommandBuffer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/CommandBuffer.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/CommandBuffer.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/CommandBuffer.cpp.i
-
-CMakeFiles/Wuu.dir/UI/Vulkan/CommandBuffer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/CommandBuffer.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/CommandBuffer.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/CommandBuffer.cpp.s
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Renderer.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/Renderer.cpp.o: ../UI/Vulkan/Renderer.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/Renderer.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/Renderer.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/Renderer.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/Renderer.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/Renderer.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Renderer.cpp
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Renderer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/Renderer.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Renderer.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/Renderer.cpp.i
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Renderer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/Renderer.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Renderer.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/Renderer.cpp.s
-
-CMakeFiles/Wuu.dir/UI/Vulkan/MemoryPool.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/MemoryPool.cpp.o: ../UI/Vulkan/MemoryPool.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/MemoryPool.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/MemoryPool.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/MemoryPool.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/MemoryPool.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/MemoryPool.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryPool.cpp
-
-CMakeFiles/Wuu.dir/UI/Vulkan/MemoryPool.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/MemoryPool.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryPool.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/MemoryPool.cpp.i
-
-CMakeFiles/Wuu.dir/UI/Vulkan/MemoryPool.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/MemoryPool.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryPool.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/MemoryPool.cpp.s
-
-CMakeFiles/Wuu.dir/UI/Vulkan/DepthImage.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/DepthImage.cpp.o: ../UI/Vulkan/DepthImage.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/DepthImage.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/DepthImage.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/DepthImage.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/DepthImage.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/DepthImage.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DepthImage.cpp
-
-CMakeFiles/Wuu.dir/UI/Vulkan/DepthImage.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/DepthImage.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DepthImage.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/DepthImage.cpp.i
-
-CMakeFiles/Wuu.dir/UI/Vulkan/DepthImage.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/DepthImage.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DepthImage.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/DepthImage.cpp.s
-
-CMakeFiles/Wuu.dir/UI/Vulkan/SwapchainImage.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/SwapchainImage.cpp.o: ../UI/Vulkan/SwapchainImage.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/SwapchainImage.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/SwapchainImage.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/SwapchainImage.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/SwapchainImage.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/SwapchainImage.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/SwapchainImage.cpp
-
-CMakeFiles/Wuu.dir/UI/Vulkan/SwapchainImage.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/SwapchainImage.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/SwapchainImage.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/SwapchainImage.cpp.i
-
-CMakeFiles/Wuu.dir/UI/Vulkan/SwapchainImage.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/SwapchainImage.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/SwapchainImage.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/SwapchainImage.cpp.s
-
-CMakeFiles/Wuu.dir/UI/Vulkan/MemoryCommandBuffer.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/MemoryCommandBuffer.cpp.o: ../UI/Vulkan/MemoryCommandBuffer.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/MemoryCommandBuffer.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/MemoryCommandBuffer.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/MemoryCommandBuffer.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/MemoryCommandBuffer.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/MemoryCommandBuffer.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryCommandBuffer.cpp
-
-CMakeFiles/Wuu.dir/UI/Vulkan/MemoryCommandBuffer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/MemoryCommandBuffer.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryCommandBuffer.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/MemoryCommandBuffer.cpp.i
-
-CMakeFiles/Wuu.dir/UI/Vulkan/MemoryCommandBuffer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/MemoryCommandBuffer.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryCommandBuffer.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/MemoryCommandBuffer.cpp.s
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Pipeline.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/Pipeline.cpp.o: ../UI/Vulkan/Pipeline.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/Pipeline.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/Pipeline.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/Pipeline.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/Pipeline.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/Pipeline.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Pipeline.cpp
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Pipeline.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/Pipeline.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Pipeline.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/Pipeline.cpp.i
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Pipeline.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/Pipeline.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Pipeline.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/Pipeline.cpp.s
-
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorUniformBuffer.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorUniformBuffer.cpp.o: ../UI/Vulkan/DescriptorUniformBuffer.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorUniformBuffer.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorUniformBuffer.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorUniformBuffer.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorUniformBuffer.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorUniformBuffer.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorUniformBuffer.cpp
-
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorUniformBuffer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorUniformBuffer.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorUniformBuffer.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorUniformBuffer.cpp.i
-
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorUniformBuffer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorUniformBuffer.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorUniformBuffer.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorUniformBuffer.cpp.s
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Buffer.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/Buffer.cpp.o: ../UI/Vulkan/Buffer.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/Buffer.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/Buffer.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/Buffer.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/Buffer.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/Buffer.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Buffer.cpp
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Buffer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/Buffer.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Buffer.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/Buffer.cpp.i
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Buffer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/Buffer.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Buffer.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/Buffer.cpp.s
-
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorImage.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorImage.cpp.o: ../UI/Vulkan/DescriptorImage.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorImage.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorImage.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorImage.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorImage.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorImage.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorImage.cpp
-
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorImage.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorImage.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorImage.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorImage.cpp.i
-
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorImage.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorImage.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorImage.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorImage.cpp.s
-
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorPool.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorPool.cpp.o: ../UI/Vulkan/DescriptorPool.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorPool.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorPool.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorPool.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorPool.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorPool.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorPool.cpp
-
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorPool.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorPool.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorPool.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorPool.cpp.i
-
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorPool.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorPool.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorPool.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorPool.cpp.s
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/stb_image.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/stb_image.cpp.o: ../UI/Vulkan/Third-Party/stb_image.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/stb_image.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/stb_image.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/stb_image.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/stb_image.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/stb_image.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Third-Party/stb_image.cpp
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/stb_image.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/stb_image.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Third-Party/stb_image.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/stb_image.cpp.i
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/stb_image.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/stb_image.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Third-Party/stb_image.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/stb_image.cpp.s
-
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSet.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSet.cpp.o: ../UI/Vulkan/DescriptorSet.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSet.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSet.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSet.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSet.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSet.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorSet.cpp
-
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSet.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSet.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorSet.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSet.cpp.i
-
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSet.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSet.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorSet.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSet.cpp.s
-
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetUniformBuffer.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetUniformBuffer.cpp.o: ../UI/Vulkan/DescriptorSetUniformBuffer.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetUniformBuffer.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetUniformBuffer.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetUniformBuffer.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetUniformBuffer.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetUniformBuffer.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorSetUniformBuffer.cpp
-
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetUniformBuffer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetUniformBuffer.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorSetUniformBuffer.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetUniformBuffer.cpp.i
-
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetUniformBuffer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetUniformBuffer.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorSetUniformBuffer.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetUniformBuffer.cpp.s
-
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetImage.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetImage.cpp.o: ../UI/Vulkan/DescriptorSetImage.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetImage.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetImage.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetImage.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetImage.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetImage.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorSetImage.cpp
-
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetImage.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetImage.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorSetImage.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetImage.cpp.i
-
-CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetImage.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetImage.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorSetImage.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetImage.cpp.s
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Shape.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/Shape.cpp.o: ../UI/Vulkan/Shape.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/Shape.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/Shape.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/Shape.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/Shape.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/Shape.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Shape.cpp
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Shape.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/Shape.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Shape.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/Shape.cpp.i
-
-CMakeFiles/Wuu.dir/UI/Vulkan/Shape.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/Shape.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Shape.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/Shape.cpp.s
-
-CMakeFiles/Wuu.dir/UI/Window.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Window.cpp.o: ../UI/Window.cpp
-CMakeFiles/Wuu.dir/UI/Window.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/Wuu.dir/UI/Window.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Window.cpp.o -MF CMakeFiles/Wuu.dir/UI/Window.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Window.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Window.cpp
-
-CMakeFiles/Wuu.dir/UI/Window.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Window.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Window.cpp > CMakeFiles/Wuu.dir/UI/Window.cpp.i
-
-CMakeFiles/Wuu.dir/UI/Window.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Window.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Window.cpp -o CMakeFiles/Wuu.dir/UI/Window.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/main.cpp -o CMakeFiles/Wuu.dir/main.cpp.s
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Instance.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Instance.cpp.o: ../Graphics/Vulkan/Instance.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Instance.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/Instance.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/Instance.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/Instance.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/Instance.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Instance.cpp
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Instance.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/Instance.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Instance.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/Instance.cpp.i
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Instance.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/Instance.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Instance.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/Instance.cpp.s
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Surface.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Surface.cpp.o: ../Graphics/Vulkan/Surface.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Surface.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/Surface.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/Surface.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/Surface.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/Surface.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Surface.cpp
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Surface.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/Surface.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Surface.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/Surface.cpp.i
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Surface.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/Surface.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Surface.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/Surface.cpp.s
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/PhysicalDevice.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/PhysicalDevice.cpp.o: ../Graphics/Vulkan/PhysicalDevice.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/PhysicalDevice.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/PhysicalDevice.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/PhysicalDevice.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/PhysicalDevice.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/PhysicalDevice.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/PhysicalDevice.cpp
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/PhysicalDevice.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/PhysicalDevice.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/PhysicalDevice.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/PhysicalDevice.cpp.i
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/PhysicalDevice.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/PhysicalDevice.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/PhysicalDevice.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/PhysicalDevice.cpp.s
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/LogicalDevice.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/LogicalDevice.cpp.o: ../Graphics/Vulkan/LogicalDevice.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/LogicalDevice.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/LogicalDevice.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/LogicalDevice.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/LogicalDevice.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/LogicalDevice.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/LogicalDevice.cpp
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/LogicalDevice.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/LogicalDevice.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/LogicalDevice.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/LogicalDevice.cpp.i
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/LogicalDevice.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/LogicalDevice.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/LogicalDevice.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/LogicalDevice.cpp.s
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Queue.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Queue.cpp.o: ../Graphics/Vulkan/Queue.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Queue.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/Queue.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/Queue.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/Queue.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/Queue.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Queue.cpp
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Queue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/Queue.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Queue.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/Queue.cpp.i
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Queue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/Queue.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Queue.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/Queue.cpp.s
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Swapchain.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Swapchain.cpp.o: ../Graphics/Vulkan/Swapchain.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Swapchain.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/Swapchain.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/Swapchain.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/Swapchain.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/Swapchain.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Swapchain.cpp
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Swapchain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/Swapchain.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Swapchain.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/Swapchain.cpp.i
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Swapchain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/Swapchain.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Swapchain.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/Swapchain.cpp.s
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Image.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Image.cpp.o: ../Graphics/Vulkan/Image.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Image.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/Image.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/Image.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/Image.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/Image.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Image.cpp
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Image.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/Image.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Image.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/Image.cpp.i
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Image.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/Image.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Image.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/Image.cpp.s
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandPool.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandPool.cpp.o: ../Graphics/Vulkan/CommandPool.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandPool.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandPool.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandPool.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandPool.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandPool.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/CommandPool.cpp
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandPool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandPool.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/CommandPool.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandPool.cpp.i
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandPool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandPool.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/CommandPool.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandPool.cpp.s
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandBuffer.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandBuffer.cpp.o: ../Graphics/Vulkan/CommandBuffer.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandBuffer.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandBuffer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandBuffer.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandBuffer.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandBuffer.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/CommandBuffer.cpp
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandBuffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandBuffer.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/CommandBuffer.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandBuffer.cpp.i
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandBuffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandBuffer.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/CommandBuffer.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandBuffer.cpp.s
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Renderer.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Renderer.cpp.o: ../Graphics/Vulkan/Renderer.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Renderer.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/Renderer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/Renderer.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/Renderer.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/Renderer.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Renderer.cpp
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Renderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/Renderer.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Renderer.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/Renderer.cpp.i
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Renderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/Renderer.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Renderer.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/Renderer.cpp.s
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryPool.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryPool.cpp.o: ../Graphics/Vulkan/MemoryPool.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryPool.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryPool.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryPool.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryPool.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryPool.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/MemoryPool.cpp
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryPool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryPool.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/MemoryPool.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryPool.cpp.i
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryPool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryPool.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/MemoryPool.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryPool.cpp.s
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DepthImage.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DepthImage.cpp.o: ../Graphics/Vulkan/DepthImage.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DepthImage.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/DepthImage.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/DepthImage.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/DepthImage.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/DepthImage.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DepthImage.cpp
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DepthImage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/DepthImage.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DepthImage.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/DepthImage.cpp.i
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DepthImage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/DepthImage.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DepthImage.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/DepthImage.cpp.s
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/SwapchainImage.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/SwapchainImage.cpp.o: ../Graphics/Vulkan/SwapchainImage.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/SwapchainImage.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/SwapchainImage.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/SwapchainImage.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/SwapchainImage.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/SwapchainImage.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/SwapchainImage.cpp
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/SwapchainImage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/SwapchainImage.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/SwapchainImage.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/SwapchainImage.cpp.i
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/SwapchainImage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/SwapchainImage.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/SwapchainImage.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/SwapchainImage.cpp.s
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryCommandBuffer.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryCommandBuffer.cpp.o: ../Graphics/Vulkan/MemoryCommandBuffer.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryCommandBuffer.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryCommandBuffer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryCommandBuffer.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryCommandBuffer.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryCommandBuffer.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/MemoryCommandBuffer.cpp
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryCommandBuffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryCommandBuffer.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/MemoryCommandBuffer.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryCommandBuffer.cpp.i
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryCommandBuffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryCommandBuffer.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/MemoryCommandBuffer.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryCommandBuffer.cpp.s
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Pipeline.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Pipeline.cpp.o: ../Graphics/Vulkan/Pipeline.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Pipeline.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/Pipeline.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/Pipeline.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/Pipeline.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/Pipeline.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Pipeline.cpp
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Pipeline.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/Pipeline.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Pipeline.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/Pipeline.cpp.i
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Pipeline.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/Pipeline.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Pipeline.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/Pipeline.cpp.s
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorUniformBuffer.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorUniformBuffer.cpp.o: ../Graphics/Vulkan/DescriptorUniformBuffer.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorUniformBuffer.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorUniformBuffer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorUniformBuffer.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorUniformBuffer.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorUniformBuffer.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorUniformBuffer.cpp
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorUniformBuffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorUniformBuffer.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorUniformBuffer.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorUniformBuffer.cpp.i
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorUniformBuffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorUniformBuffer.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorUniformBuffer.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorUniformBuffer.cpp.s
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Buffer.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Buffer.cpp.o: ../Graphics/Vulkan/Buffer.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Buffer.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/Buffer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/Buffer.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/Buffer.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/Buffer.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Buffer.cpp
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Buffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/Buffer.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Buffer.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/Buffer.cpp.i
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Buffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/Buffer.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Buffer.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/Buffer.cpp.s
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorImage.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorImage.cpp.o: ../Graphics/Vulkan/DescriptorImage.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorImage.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorImage.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorImage.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorImage.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorImage.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorImage.cpp
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorImage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorImage.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorImage.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorImage.cpp.i
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorImage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorImage.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorImage.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorImage.cpp.s
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorPool.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorPool.cpp.o: ../Graphics/Vulkan/DescriptorPool.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorPool.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorPool.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorPool.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorPool.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorPool.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorPool.cpp
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorPool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorPool.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorPool.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorPool.cpp.i
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorPool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorPool.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorPool.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorPool.cpp.s
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/stb_image.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/stb_image.cpp.o: ../Graphics/Vulkan/Third-Party/stb_image.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/stb_image.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/stb_image.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/stb_image.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/stb_image.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/stb_image.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Third-Party/stb_image.cpp
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/stb_image.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/stb_image.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Third-Party/stb_image.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/stb_image.cpp.i
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/stb_image.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/stb_image.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Third-Party/stb_image.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/stb_image.cpp.s
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSet.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSet.cpp.o: ../Graphics/Vulkan/DescriptorSet.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSet.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSet.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSet.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSet.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSet.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorSet.cpp
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSet.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorSet.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSet.cpp.i
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSet.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorSet.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSet.cpp.s
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetUniformBuffer.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetUniformBuffer.cpp.o: ../Graphics/Vulkan/DescriptorSetUniformBuffer.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetUniformBuffer.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetUniformBuffer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetUniformBuffer.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetUniformBuffer.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetUniformBuffer.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorSetUniformBuffer.cpp
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetUniformBuffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetUniformBuffer.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorSetUniformBuffer.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetUniformBuffer.cpp.i
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetUniformBuffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetUniformBuffer.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorSetUniformBuffer.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetUniformBuffer.cpp.s
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetImage.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetImage.cpp.o: ../Graphics/Vulkan/DescriptorSetImage.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetImage.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetImage.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetImage.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetImage.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetImage.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorSetImage.cpp
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetImage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetImage.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorSetImage.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetImage.cpp.i
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetImage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetImage.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorSetImage.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetImage.cpp.s
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Mesh.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Mesh.cpp.o: ../Graphics/Vulkan/Mesh.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Mesh.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/Mesh.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/Mesh.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/Mesh.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/Mesh.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Mesh.cpp
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Mesh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/Mesh.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Mesh.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/Mesh.cpp.i
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Mesh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/Mesh.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Mesh.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/Mesh.cpp.s
+
+CMakeFiles/Wuu.dir/Graphics/Window.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Window.cpp.o: ../Graphics/Window.cpp
+CMakeFiles/Wuu.dir/Graphics/Window.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Window.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Window.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Window.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Window.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Window.cpp
+
+CMakeFiles/Wuu.dir/Graphics/Window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Window.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Window.cpp > CMakeFiles/Wuu.dir/Graphics/Window.cpp.i
+
+CMakeFiles/Wuu.dir/Graphics/Window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Window.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Window.cpp -o CMakeFiles/Wuu.dir/Graphics/Window.cpp.s
 
 CMakeFiles/Wuu.dir/Core/Program.cpp.o: CMakeFiles/Wuu.dir/flags.make
 CMakeFiles/Wuu.dir/Core/Program.cpp.o: ../Core/Program.cpp
 CMakeFiles/Wuu.dir/Core/Program.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/Wuu.dir/Core/Program.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Core/Program.cpp.o -MF CMakeFiles/Wuu.dir/Core/Program.cpp.o.d -o CMakeFiles/Wuu.dir/Core/Program.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/Core/Program.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/Wuu.dir/Core/Program.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Core/Program.cpp.o -MF CMakeFiles/Wuu.dir/Core/Program.cpp.o.d -o CMakeFiles/Wuu.dir/Core/Program.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Core/Program.cpp
 
 CMakeFiles/Wuu.dir/Core/Program.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Core/Program.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/Core/Program.cpp > CMakeFiles/Wuu.dir/Core/Program.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Core/Program.cpp > CMakeFiles/Wuu.dir/Core/Program.cpp.i
 
 CMakeFiles/Wuu.dir/Core/Program.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Core/Program.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/Core/Program.cpp -o CMakeFiles/Wuu.dir/Core/Program.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Core/Program.cpp -o CMakeFiles/Wuu.dir/Core/Program.cpp.s
 
-CMakeFiles/Wuu.dir/Core/Data.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/Core/Data.cpp.o: ../Core/Data.cpp
-CMakeFiles/Wuu.dir/Core/Data.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/Wuu.dir/Core/Data.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Core/Data.cpp.o -MF CMakeFiles/Wuu.dir/Core/Data.cpp.o.d -o CMakeFiles/Wuu.dir/Core/Data.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/Core/Data.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/UIRenderer.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/UIRenderer.cpp.o: ../Graphics/Vulkan/UIRenderer.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/UIRenderer.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/UIRenderer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/UIRenderer.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/UIRenderer.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/UIRenderer.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/UIRenderer.cpp
 
-CMakeFiles/Wuu.dir/Core/Data.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Core/Data.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/Core/Data.cpp > CMakeFiles/Wuu.dir/Core/Data.cpp.i
+CMakeFiles/Wuu.dir/Graphics/Vulkan/UIRenderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/UIRenderer.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/UIRenderer.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/UIRenderer.cpp.i
 
-CMakeFiles/Wuu.dir/Core/Data.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Core/Data.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/Core/Data.cpp -o CMakeFiles/Wuu.dir/Core/Data.cpp.s
+CMakeFiles/Wuu.dir/Graphics/Vulkan/UIRenderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/UIRenderer.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/UIRenderer.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/UIRenderer.cpp.s
 
-CMakeFiles/Wuu.dir/UI/Vulkan/UIRenderer.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/UIRenderer.cpp.o: ../UI/Vulkan/UIRenderer.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/UIRenderer.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/UIRenderer.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/UIRenderer.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/UIRenderer.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/UIRenderer.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/UIRenderer.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/UICommandBuffer.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/UICommandBuffer.cpp.o: ../Graphics/Vulkan/UICommandBuffer.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/UICommandBuffer.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/UICommandBuffer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/UICommandBuffer.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/UICommandBuffer.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/UICommandBuffer.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/UICommandBuffer.cpp
 
-CMakeFiles/Wuu.dir/UI/Vulkan/UIRenderer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/UIRenderer.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/UIRenderer.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/UIRenderer.cpp.i
+CMakeFiles/Wuu.dir/Graphics/Vulkan/UICommandBuffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/UICommandBuffer.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/UICommandBuffer.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/UICommandBuffer.cpp.i
 
-CMakeFiles/Wuu.dir/UI/Vulkan/UIRenderer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/UIRenderer.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/UIRenderer.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/UIRenderer.cpp.s
+CMakeFiles/Wuu.dir/Graphics/Vulkan/UICommandBuffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/UICommandBuffer.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/UICommandBuffer.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/UICommandBuffer.cpp.s
 
-CMakeFiles/Wuu.dir/UI/Vulkan/UICommandBuffer.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/UICommandBuffer.cpp.o: ../UI/Vulkan/UICommandBuffer.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/UICommandBuffer.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/UICommandBuffer.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/UICommandBuffer.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/UICommandBuffer.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/UICommandBuffer.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/UICommandBuffer.cpp
+CMakeFiles/Wuu.dir/Graphics/VulkanHandle.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/VulkanHandle.cpp.o: ../Graphics/VulkanHandle.cpp
+CMakeFiles/Wuu.dir/Graphics/VulkanHandle.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/Wuu.dir/Graphics/VulkanHandle.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/VulkanHandle.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/VulkanHandle.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/VulkanHandle.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/VulkanHandle.cpp
 
-CMakeFiles/Wuu.dir/UI/Vulkan/UICommandBuffer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/UICommandBuffer.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/UICommandBuffer.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/UICommandBuffer.cpp.i
+CMakeFiles/Wuu.dir/Graphics/VulkanHandle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/VulkanHandle.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/VulkanHandle.cpp > CMakeFiles/Wuu.dir/Graphics/VulkanHandle.cpp.i
 
-CMakeFiles/Wuu.dir/UI/Vulkan/UICommandBuffer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/UICommandBuffer.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/UICommandBuffer.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/UICommandBuffer.cpp.s
+CMakeFiles/Wuu.dir/Graphics/VulkanHandle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/VulkanHandle.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/VulkanHandle.cpp -o CMakeFiles/Wuu.dir/Graphics/VulkanHandle.cpp.s
 
-CMakeFiles/Wuu.dir/Core/User.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/Core/User.cpp.o: ../Core/User.cpp
-CMakeFiles/Wuu.dir/Core/User.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/Wuu.dir/Core/User.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Core/User.cpp.o -MF CMakeFiles/Wuu.dir/Core/User.cpp.o.d -o CMakeFiles/Wuu.dir/Core/User.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/Core/User.cpp
+CMakeFiles/Wuu.dir/Graphics/WindowHandle.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/WindowHandle.cpp.o: ../Graphics/WindowHandle.cpp
+CMakeFiles/Wuu.dir/Graphics/WindowHandle.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/Wuu.dir/Graphics/WindowHandle.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/WindowHandle.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/WindowHandle.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/WindowHandle.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/WindowHandle.cpp
 
-CMakeFiles/Wuu.dir/Core/User.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Core/User.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/Core/User.cpp > CMakeFiles/Wuu.dir/Core/User.cpp.i
+CMakeFiles/Wuu.dir/Graphics/WindowHandle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/WindowHandle.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/WindowHandle.cpp > CMakeFiles/Wuu.dir/Graphics/WindowHandle.cpp.i
 
-CMakeFiles/Wuu.dir/Core/User.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Core/User.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/Core/User.cpp -o CMakeFiles/Wuu.dir/Core/User.cpp.s
+CMakeFiles/Wuu.dir/Graphics/WindowHandle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/WindowHandle.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/WindowHandle.cpp -o CMakeFiles/Wuu.dir/Graphics/WindowHandle.cpp.s
 
-CMakeFiles/Wuu.dir/UI/VulkanHandle.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/VulkanHandle.cpp.o: ../UI/VulkanHandle.cpp
-CMakeFiles/Wuu.dir/UI/VulkanHandle.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/Wuu.dir/UI/VulkanHandle.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/VulkanHandle.cpp.o -MF CMakeFiles/Wuu.dir/UI/VulkanHandle.cpp.o.d -o CMakeFiles/Wuu.dir/UI/VulkanHandle.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/VulkanHandle.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp.o: ../Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp
 
-CMakeFiles/Wuu.dir/UI/VulkanHandle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/VulkanHandle.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/VulkanHandle.cpp > CMakeFiles/Wuu.dir/UI/VulkanHandle.cpp.i
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp.i
 
-CMakeFiles/Wuu.dir/UI/VulkanHandle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/VulkanHandle.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/VulkanHandle.cpp -o CMakeFiles/Wuu.dir/UI/VulkanHandle.cpp.s
+CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp.s
 
-CMakeFiles/Wuu.dir/UI/WindowHandle.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/WindowHandle.cpp.o: ../UI/WindowHandle.cpp
-CMakeFiles/Wuu.dir/UI/WindowHandle.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/Wuu.dir/UI/WindowHandle.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/WindowHandle.cpp.o -MF CMakeFiles/Wuu.dir/UI/WindowHandle.cpp.o.d -o CMakeFiles/Wuu.dir/UI/WindowHandle.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/WindowHandle.cpp
+CMakeFiles/Wuu.dir/Graphics/Context.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Context.cpp.o: ../Graphics/Context.cpp
+CMakeFiles/Wuu.dir/Graphics/Context.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Context.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Context.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Context.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Context.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Context.cpp
 
-CMakeFiles/Wuu.dir/UI/WindowHandle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/WindowHandle.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/WindowHandle.cpp > CMakeFiles/Wuu.dir/UI/WindowHandle.cpp.i
+CMakeFiles/Wuu.dir/Graphics/Context.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Context.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Context.cpp > CMakeFiles/Wuu.dir/Graphics/Context.cpp.i
 
-CMakeFiles/Wuu.dir/UI/WindowHandle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/WindowHandle.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/WindowHandle.cpp -o CMakeFiles/Wuu.dir/UI/WindowHandle.cpp.s
+CMakeFiles/Wuu.dir/Graphics/Context.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Context.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Context.cpp -o CMakeFiles/Wuu.dir/Graphics/Context.cpp.s
 
-CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/tiny_obj_loader.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/tiny_obj_loader.cpp.o: ../UI/Vulkan/Third-Party/tiny_obj_loader.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/tiny_obj_loader.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/tiny_obj_loader.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/tiny_obj_loader.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/tiny_obj_loader.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/tiny_obj_loader.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Third-Party/tiny_obj_loader.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/RenderPass.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/RenderPass.cpp.o: ../Graphics/Vulkan/RenderPass.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/RenderPass.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/RenderPass.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/RenderPass.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/RenderPass.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/RenderPass.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/RenderPass.cpp
 
-CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/tiny_obj_loader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/tiny_obj_loader.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Third-Party/tiny_obj_loader.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/tiny_obj_loader.cpp.i
+CMakeFiles/Wuu.dir/Graphics/Vulkan/RenderPass.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/RenderPass.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/RenderPass.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/RenderPass.cpp.i
 
-CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/tiny_obj_loader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/tiny_obj_loader.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Third-Party/tiny_obj_loader.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/tiny_obj_loader.cpp.s
+CMakeFiles/Wuu.dir/Graphics/Vulkan/RenderPass.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/RenderPass.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/RenderPass.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/RenderPass.cpp.s
 
-CMakeFiles/Wuu.dir/UI/Layout.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Layout.cpp.o: ../UI/Layout.cpp
-CMakeFiles/Wuu.dir/UI/Layout.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/Wuu.dir/UI/Layout.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Layout.cpp.o -MF CMakeFiles/Wuu.dir/UI/Layout.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Layout.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Layout.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/FrameBuffer.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/FrameBuffer.cpp.o: ../Graphics/Vulkan/FrameBuffer.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/FrameBuffer.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/FrameBuffer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/FrameBuffer.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/FrameBuffer.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/FrameBuffer.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/FrameBuffer.cpp
 
-CMakeFiles/Wuu.dir/UI/Layout.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Layout.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Layout.cpp > CMakeFiles/Wuu.dir/UI/Layout.cpp.i
+CMakeFiles/Wuu.dir/Graphics/Vulkan/FrameBuffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/FrameBuffer.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/FrameBuffer.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/FrameBuffer.cpp.i
 
-CMakeFiles/Wuu.dir/UI/Layout.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Layout.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Layout.cpp -o CMakeFiles/Wuu.dir/UI/Layout.cpp.s
-
-CMakeFiles/Wuu.dir/UI/Context.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Context.cpp.o: ../UI/Context.cpp
-CMakeFiles/Wuu.dir/UI/Context.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/Wuu.dir/UI/Context.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Context.cpp.o -MF CMakeFiles/Wuu.dir/UI/Context.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Context.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Context.cpp
-
-CMakeFiles/Wuu.dir/UI/Context.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Context.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Context.cpp > CMakeFiles/Wuu.dir/UI/Context.cpp.i
-
-CMakeFiles/Wuu.dir/UI/Context.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Context.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Context.cpp -o CMakeFiles/Wuu.dir/UI/Context.cpp.s
-
-CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.o: ../UI/Vulkan/RenderPass.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/RenderPass.cpp
-
-CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/RenderPass.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.i
-
-CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/RenderPass.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.s
-
-CMakeFiles/Wuu.dir/UI/Vulkan/FrameBuffer.cpp.o: CMakeFiles/Wuu.dir/flags.make
-CMakeFiles/Wuu.dir/UI/Vulkan/FrameBuffer.cpp.o: ../UI/Vulkan/FrameBuffer.cpp
-CMakeFiles/Wuu.dir/UI/Vulkan/FrameBuffer.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/Wuu.dir/UI/Vulkan/FrameBuffer.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/UI/Vulkan/FrameBuffer.cpp.o -MF CMakeFiles/Wuu.dir/UI/Vulkan/FrameBuffer.cpp.o.d -o CMakeFiles/Wuu.dir/UI/Vulkan/FrameBuffer.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/FrameBuffer.cpp
-
-CMakeFiles/Wuu.dir/UI/Vulkan/FrameBuffer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/UI/Vulkan/FrameBuffer.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/FrameBuffer.cpp > CMakeFiles/Wuu.dir/UI/Vulkan/FrameBuffer.cpp.i
-
-CMakeFiles/Wuu.dir/UI/Vulkan/FrameBuffer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/UI/Vulkan/FrameBuffer.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/FrameBuffer.cpp -o CMakeFiles/Wuu.dir/UI/Vulkan/FrameBuffer.cpp.s
+CMakeFiles/Wuu.dir/Graphics/Vulkan/FrameBuffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/FrameBuffer.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/FrameBuffer.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/FrameBuffer.cpp.s
 
 CMakeFiles/Wuu.dir/Networking/Client.cpp.o: CMakeFiles/Wuu.dir/flags.make
 CMakeFiles/Wuu.dir/Networking/Client.cpp.o: ../Networking/Client.cpp
 CMakeFiles/Wuu.dir/Networking/Client.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/Wuu.dir/Networking/Client.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Networking/Client.cpp.o -MF CMakeFiles/Wuu.dir/Networking/Client.cpp.o.d -o CMakeFiles/Wuu.dir/Networking/Client.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/Networking/Client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/Wuu.dir/Networking/Client.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Networking/Client.cpp.o -MF CMakeFiles/Wuu.dir/Networking/Client.cpp.o.d -o CMakeFiles/Wuu.dir/Networking/Client.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/Client.cpp
 
 CMakeFiles/Wuu.dir/Networking/Client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Networking/Client.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/Networking/Client.cpp > CMakeFiles/Wuu.dir/Networking/Client.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/Client.cpp > CMakeFiles/Wuu.dir/Networking/Client.cpp.i
 
 CMakeFiles/Wuu.dir/Networking/Client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Networking/Client.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/Networking/Client.cpp -o CMakeFiles/Wuu.dir/Networking/Client.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/Client.cpp -o CMakeFiles/Wuu.dir/Networking/Client.cpp.s
 
 CMakeFiles/Wuu.dir/Networking/IPv6ServerSocket.cpp.o: CMakeFiles/Wuu.dir/flags.make
 CMakeFiles/Wuu.dir/Networking/IPv6ServerSocket.cpp.o: ../Networking/IPv6ServerSocket.cpp
 CMakeFiles/Wuu.dir/Networking/IPv6ServerSocket.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/Wuu.dir/Networking/IPv6ServerSocket.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Networking/IPv6ServerSocket.cpp.o -MF CMakeFiles/Wuu.dir/Networking/IPv6ServerSocket.cpp.o.d -o CMakeFiles/Wuu.dir/Networking/IPv6ServerSocket.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/Networking/IPv6ServerSocket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/Wuu.dir/Networking/IPv6ServerSocket.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Networking/IPv6ServerSocket.cpp.o -MF CMakeFiles/Wuu.dir/Networking/IPv6ServerSocket.cpp.o.d -o CMakeFiles/Wuu.dir/Networking/IPv6ServerSocket.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/IPv6ServerSocket.cpp
 
 CMakeFiles/Wuu.dir/Networking/IPv6ServerSocket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Networking/IPv6ServerSocket.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/Networking/IPv6ServerSocket.cpp > CMakeFiles/Wuu.dir/Networking/IPv6ServerSocket.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/IPv6ServerSocket.cpp > CMakeFiles/Wuu.dir/Networking/IPv6ServerSocket.cpp.i
 
 CMakeFiles/Wuu.dir/Networking/IPv6ServerSocket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Networking/IPv6ServerSocket.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/Networking/IPv6ServerSocket.cpp -o CMakeFiles/Wuu.dir/Networking/IPv6ServerSocket.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/IPv6ServerSocket.cpp -o CMakeFiles/Wuu.dir/Networking/IPv6ServerSocket.cpp.s
 
 CMakeFiles/Wuu.dir/Networking/IPv6ClientSocket.cpp.o: CMakeFiles/Wuu.dir/flags.make
 CMakeFiles/Wuu.dir/Networking/IPv6ClientSocket.cpp.o: ../Networking/IPv6ClientSocket.cpp
 CMakeFiles/Wuu.dir/Networking/IPv6ClientSocket.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/Wuu.dir/Networking/IPv6ClientSocket.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Networking/IPv6ClientSocket.cpp.o -MF CMakeFiles/Wuu.dir/Networking/IPv6ClientSocket.cpp.o.d -o CMakeFiles/Wuu.dir/Networking/IPv6ClientSocket.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/Networking/IPv6ClientSocket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/Wuu.dir/Networking/IPv6ClientSocket.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Networking/IPv6ClientSocket.cpp.o -MF CMakeFiles/Wuu.dir/Networking/IPv6ClientSocket.cpp.o.d -o CMakeFiles/Wuu.dir/Networking/IPv6ClientSocket.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/IPv6ClientSocket.cpp
 
 CMakeFiles/Wuu.dir/Networking/IPv6ClientSocket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Networking/IPv6ClientSocket.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/Networking/IPv6ClientSocket.cpp > CMakeFiles/Wuu.dir/Networking/IPv6ClientSocket.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/IPv6ClientSocket.cpp > CMakeFiles/Wuu.dir/Networking/IPv6ClientSocket.cpp.i
 
 CMakeFiles/Wuu.dir/Networking/IPv6ClientSocket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Networking/IPv6ClientSocket.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/Networking/IPv6ClientSocket.cpp -o CMakeFiles/Wuu.dir/Networking/IPv6ClientSocket.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/IPv6ClientSocket.cpp -o CMakeFiles/Wuu.dir/Networking/IPv6ClientSocket.cpp.s
 
 CMakeFiles/Wuu.dir/Networking/IPv4ServerSocket.cpp.o: CMakeFiles/Wuu.dir/flags.make
 CMakeFiles/Wuu.dir/Networking/IPv4ServerSocket.cpp.o: ../Networking/IPv4ServerSocket.cpp
 CMakeFiles/Wuu.dir/Networking/IPv4ServerSocket.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/Wuu.dir/Networking/IPv4ServerSocket.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Networking/IPv4ServerSocket.cpp.o -MF CMakeFiles/Wuu.dir/Networking/IPv4ServerSocket.cpp.o.d -o CMakeFiles/Wuu.dir/Networking/IPv4ServerSocket.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/Networking/IPv4ServerSocket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/Wuu.dir/Networking/IPv4ServerSocket.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Networking/IPv4ServerSocket.cpp.o -MF CMakeFiles/Wuu.dir/Networking/IPv4ServerSocket.cpp.o.d -o CMakeFiles/Wuu.dir/Networking/IPv4ServerSocket.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/IPv4ServerSocket.cpp
 
 CMakeFiles/Wuu.dir/Networking/IPv4ServerSocket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Networking/IPv4ServerSocket.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/Networking/IPv4ServerSocket.cpp > CMakeFiles/Wuu.dir/Networking/IPv4ServerSocket.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/IPv4ServerSocket.cpp > CMakeFiles/Wuu.dir/Networking/IPv4ServerSocket.cpp.i
 
 CMakeFiles/Wuu.dir/Networking/IPv4ServerSocket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Networking/IPv4ServerSocket.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/Networking/IPv4ServerSocket.cpp -o CMakeFiles/Wuu.dir/Networking/IPv4ServerSocket.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/IPv4ServerSocket.cpp -o CMakeFiles/Wuu.dir/Networking/IPv4ServerSocket.cpp.s
 
 CMakeFiles/Wuu.dir/Networking/IPv4ClientSocket.cpp.o: CMakeFiles/Wuu.dir/flags.make
 CMakeFiles/Wuu.dir/Networking/IPv4ClientSocket.cpp.o: ../Networking/IPv4ClientSocket.cpp
 CMakeFiles/Wuu.dir/Networking/IPv4ClientSocket.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/Wuu.dir/Networking/IPv4ClientSocket.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Networking/IPv4ClientSocket.cpp.o -MF CMakeFiles/Wuu.dir/Networking/IPv4ClientSocket.cpp.o.d -o CMakeFiles/Wuu.dir/Networking/IPv4ClientSocket.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/Networking/IPv4ClientSocket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/Wuu.dir/Networking/IPv4ClientSocket.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Networking/IPv4ClientSocket.cpp.o -MF CMakeFiles/Wuu.dir/Networking/IPv4ClientSocket.cpp.o.d -o CMakeFiles/Wuu.dir/Networking/IPv4ClientSocket.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/IPv4ClientSocket.cpp
 
 CMakeFiles/Wuu.dir/Networking/IPv4ClientSocket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Networking/IPv4ClientSocket.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/Networking/IPv4ClientSocket.cpp > CMakeFiles/Wuu.dir/Networking/IPv4ClientSocket.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/IPv4ClientSocket.cpp > CMakeFiles/Wuu.dir/Networking/IPv4ClientSocket.cpp.i
 
 CMakeFiles/Wuu.dir/Networking/IPv4ClientSocket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Networking/IPv4ClientSocket.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/Networking/IPv4ClientSocket.cpp -o CMakeFiles/Wuu.dir/Networking/IPv4ClientSocket.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/IPv4ClientSocket.cpp -o CMakeFiles/Wuu.dir/Networking/IPv4ClientSocket.cpp.s
 
 CMakeFiles/Wuu.dir/Networking/Packet.cpp.o: CMakeFiles/Wuu.dir/flags.make
 CMakeFiles/Wuu.dir/Networking/Packet.cpp.o: ../Networking/Packet.cpp
 CMakeFiles/Wuu.dir/Networking/Packet.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/Wuu.dir/Networking/Packet.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Networking/Packet.cpp.o -MF CMakeFiles/Wuu.dir/Networking/Packet.cpp.o.d -o CMakeFiles/Wuu.dir/Networking/Packet.cpp.o -c /Users/michaelferents/CLionProjects/Wuu/Networking/Packet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/Wuu.dir/Networking/Packet.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Networking/Packet.cpp.o -MF CMakeFiles/Wuu.dir/Networking/Packet.cpp.o.d -o CMakeFiles/Wuu.dir/Networking/Packet.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/Packet.cpp
 
 CMakeFiles/Wuu.dir/Networking/Packet.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Networking/Packet.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Wuu/Networking/Packet.cpp > CMakeFiles/Wuu.dir/Networking/Packet.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/Packet.cpp > CMakeFiles/Wuu.dir/Networking/Packet.cpp.i
 
 CMakeFiles/Wuu.dir/Networking/Packet.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Networking/Packet.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Wuu/Networking/Packet.cpp -o CMakeFiles/Wuu.dir/Networking/Packet.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/Packet.cpp -o CMakeFiles/Wuu.dir/Networking/Packet.cpp.s
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/ShaderModule.cpp.o: CMakeFiles/Wuu.dir/flags.make
+CMakeFiles/Wuu.dir/Graphics/Vulkan/ShaderModule.cpp.o: ../Graphics/Vulkan/ShaderModule.cpp
+CMakeFiles/Wuu.dir/Graphics/Vulkan/ShaderModule.cpp.o: CMakeFiles/Wuu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/Wuu.dir/Graphics/Vulkan/ShaderModule.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wuu.dir/Graphics/Vulkan/ShaderModule.cpp.o -MF CMakeFiles/Wuu.dir/Graphics/Vulkan/ShaderModule.cpp.o.d -o CMakeFiles/Wuu.dir/Graphics/Vulkan/ShaderModule.cpp.o -c /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/ShaderModule.cpp
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/ShaderModule.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wuu.dir/Graphics/Vulkan/ShaderModule.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/ShaderModule.cpp > CMakeFiles/Wuu.dir/Graphics/Vulkan/ShaderModule.cpp.i
+
+CMakeFiles/Wuu.dir/Graphics/Vulkan/ShaderModule.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wuu.dir/Graphics/Vulkan/ShaderModule.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/ShaderModule.cpp -o CMakeFiles/Wuu.dir/Graphics/Vulkan/ShaderModule.cpp.s
 
 # Object files for target Wuu
 Wuu_OBJECTS = \
 "CMakeFiles/Wuu.dir/main.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/Instance.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/Surface.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/PhysicalDevice.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/LogicalDevice.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/Queue.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/Swapchain.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/Image.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/CommandPool.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/CommandBuffer.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/Renderer.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/MemoryPool.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/DepthImage.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/SwapchainImage.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/MemoryCommandBuffer.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/Pipeline.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorUniformBuffer.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/Buffer.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorImage.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorPool.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/stb_image.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSet.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetUniformBuffer.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetImage.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/Shape.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Window.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/Instance.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/Surface.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/PhysicalDevice.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/LogicalDevice.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/Queue.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/Swapchain.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/Image.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandPool.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandBuffer.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/Renderer.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryPool.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/DepthImage.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/SwapchainImage.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryCommandBuffer.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/Pipeline.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorUniformBuffer.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/Buffer.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorImage.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorPool.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/stb_image.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSet.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetUniformBuffer.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetImage.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/Mesh.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Window.cpp.o" \
 "CMakeFiles/Wuu.dir/Core/Program.cpp.o" \
-"CMakeFiles/Wuu.dir/Core/Data.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/UIRenderer.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/UICommandBuffer.cpp.o" \
-"CMakeFiles/Wuu.dir/Core/User.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/VulkanHandle.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/WindowHandle.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/tiny_obj_loader.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Layout.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Context.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.o" \
-"CMakeFiles/Wuu.dir/UI/Vulkan/FrameBuffer.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/UIRenderer.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/UICommandBuffer.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/VulkanHandle.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/WindowHandle.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Context.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/RenderPass.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/FrameBuffer.cpp.o" \
 "CMakeFiles/Wuu.dir/Networking/Client.cpp.o" \
 "CMakeFiles/Wuu.dir/Networking/IPv6ServerSocket.cpp.o" \
 "CMakeFiles/Wuu.dir/Networking/IPv6ClientSocket.cpp.o" \
 "CMakeFiles/Wuu.dir/Networking/IPv4ServerSocket.cpp.o" \
 "CMakeFiles/Wuu.dir/Networking/IPv4ClientSocket.cpp.o" \
-"CMakeFiles/Wuu.dir/Networking/Packet.cpp.o"
+"CMakeFiles/Wuu.dir/Networking/Packet.cpp.o" \
+"CMakeFiles/Wuu.dir/Graphics/Vulkan/ShaderModule.cpp.o"
 
 # External object files for target Wuu
 Wuu_EXTERNAL_OBJECTS =
 
 Wuu: CMakeFiles/Wuu.dir/main.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/Instance.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/Surface.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/PhysicalDevice.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/LogicalDevice.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/Queue.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/Swapchain.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/Image.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/CommandPool.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/CommandBuffer.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/Renderer.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/MemoryPool.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/DepthImage.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/SwapchainImage.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/MemoryCommandBuffer.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/Pipeline.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorUniformBuffer.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/Buffer.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorImage.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorPool.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/stb_image.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSet.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetUniformBuffer.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetImage.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/Shape.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Window.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/Instance.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/Surface.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/PhysicalDevice.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/LogicalDevice.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/Queue.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/Swapchain.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/Image.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandPool.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/CommandBuffer.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/Renderer.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryPool.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/DepthImage.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/SwapchainImage.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/MemoryCommandBuffer.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/Pipeline.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorUniformBuffer.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/Buffer.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorImage.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorPool.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/stb_image.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSet.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetUniformBuffer.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/DescriptorSetImage.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/Mesh.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Window.cpp.o
 Wuu: CMakeFiles/Wuu.dir/Core/Program.cpp.o
-Wuu: CMakeFiles/Wuu.dir/Core/Data.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/UIRenderer.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/UICommandBuffer.cpp.o
-Wuu: CMakeFiles/Wuu.dir/Core/User.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/VulkanHandle.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/WindowHandle.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/tiny_obj_loader.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Layout.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Context.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.o
-Wuu: CMakeFiles/Wuu.dir/UI/Vulkan/FrameBuffer.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/UIRenderer.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/UICommandBuffer.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/VulkanHandle.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/WindowHandle.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Context.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/RenderPass.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/FrameBuffer.cpp.o
 Wuu: CMakeFiles/Wuu.dir/Networking/Client.cpp.o
 Wuu: CMakeFiles/Wuu.dir/Networking/IPv6ServerSocket.cpp.o
 Wuu: CMakeFiles/Wuu.dir/Networking/IPv6ClientSocket.cpp.o
 Wuu: CMakeFiles/Wuu.dir/Networking/IPv4ServerSocket.cpp.o
 Wuu: CMakeFiles/Wuu.dir/Networking/IPv4ClientSocket.cpp.o
 Wuu: CMakeFiles/Wuu.dir/Networking/Packet.cpp.o
+Wuu: CMakeFiles/Wuu.dir/Graphics/Vulkan/ShaderModule.cpp.o
 Wuu: CMakeFiles/Wuu.dir/build.make
 Wuu: /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/lib/libvulkan.dylib
 Wuu: /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/lib/libvulkan.1.dylib
 Wuu: /Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/lib/libvulkan.1.2.170.dylib
-Wuu: glfw-3/src/libglfw3.a
+Wuu: Third-Party/glfw-3/src/libglfw3.a
 Wuu: CMakeFiles/Wuu.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Linking CXX executable Wuu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Linking CXX executable Wuu"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Wuu.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -797,6 +765,6 @@ CMakeFiles/Wuu.dir/clean:
 .PHONY : CMakeFiles/Wuu.dir/clean
 
 CMakeFiles/Wuu.dir/depend:
-	cd /Users/michaelferents/CLionProjects/Wuu/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/michaelferents/CLionProjects/Wuu /Users/michaelferents/CLionProjects/Wuu /Users/michaelferents/CLionProjects/Wuu/cmake-build-debug /Users/michaelferents/CLionProjects/Wuu/cmake-build-debug /Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles/Wuu.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/michaelferents/CLionProjects/Vulkan-Abstraction /Users/michaelferents/CLionProjects/Vulkan-Abstraction /Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug /Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug /Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles/Wuu.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Wuu.dir/depend
 

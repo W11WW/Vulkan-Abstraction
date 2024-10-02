@@ -54,154 +54,154 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/michaelferents/CLionProjects/Wuu
+CMAKE_SOURCE_DIR = /Users/michaelferents/CLionProjects/Vulkan-Abstraction
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/michaelferents/CLionProjects/Wuu/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Wuu.dir/all
-all: glfw-3/all
-all: glm/all
+all: CMakeFiles/Vulkan-Abstraction.dir/all
+all: Third-Party/glfw-3/all
+all: Third-Party/glm/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: glfw-3/preinstall
-preinstall: glm/preinstall
+preinstall: Third-Party/glfw-3/preinstall
+preinstall: Third-Party/glm/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Wuu.dir/clean
-clean: glfw-3/clean
-clean: glm/clean
+clean: CMakeFiles/Vulkan-Abstraction.dir/clean
+clean: Third-Party/glfw-3/clean
+clean: Third-Party/glm/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory glfw-3
+# Directory level rules for directory Third-Party/glfw-3
 
 # Recursive "all" directory target.
-glfw-3/all: glfw-3/src/all
-.PHONY : glfw-3/all
+Third-Party/glfw-3/all: Third-Party/glfw-3/src/all
+.PHONY : Third-Party/glfw-3/all
 
 # Recursive "preinstall" directory target.
-glfw-3/preinstall: glfw-3/src/preinstall
-.PHONY : glfw-3/preinstall
+Third-Party/glfw-3/preinstall: Third-Party/glfw-3/src/preinstall
+.PHONY : Third-Party/glfw-3/preinstall
 
 # Recursive "clean" directory target.
-glfw-3/clean: glfw-3/CMakeFiles/uninstall.dir/clean
-glfw-3/clean: glfw-3/src/clean
-.PHONY : glfw-3/clean
+Third-Party/glfw-3/clean: Third-Party/glfw-3/CMakeFiles/uninstall.dir/clean
+Third-Party/glfw-3/clean: Third-Party/glfw-3/src/clean
+.PHONY : Third-Party/glfw-3/clean
 
 #=============================================================================
-# Directory level rules for directory glfw-3/src
+# Directory level rules for directory Third-Party/glfw-3/src
 
 # Recursive "all" directory target.
-glfw-3/src/all: glfw-3/src/CMakeFiles/glfw.dir/all
-.PHONY : glfw-3/src/all
+Third-Party/glfw-3/src/all: Third-Party/glfw-3/src/CMakeFiles/glfw.dir/all
+.PHONY : Third-Party/glfw-3/src/all
 
 # Recursive "preinstall" directory target.
-glfw-3/src/preinstall:
-.PHONY : glfw-3/src/preinstall
+Third-Party/glfw-3/src/preinstall:
+.PHONY : Third-Party/glfw-3/src/preinstall
 
 # Recursive "clean" directory target.
-glfw-3/src/clean: glfw-3/src/CMakeFiles/glfw.dir/clean
-.PHONY : glfw-3/src/clean
+Third-Party/glfw-3/src/clean: Third-Party/glfw-3/src/CMakeFiles/glfw.dir/clean
+.PHONY : Third-Party/glfw-3/src/clean
 
 #=============================================================================
-# Directory level rules for directory glm
+# Directory level rules for directory Third-Party/glm
 
 # Recursive "all" directory target.
-glm/all:
-.PHONY : glm/all
+Third-Party/glm/all:
+.PHONY : Third-Party/glm/all
 
 # Recursive "preinstall" directory target.
-glm/preinstall:
-.PHONY : glm/preinstall
+Third-Party/glm/preinstall:
+.PHONY : Third-Party/glm/preinstall
 
 # Recursive "clean" directory target.
-glm/clean:
-.PHONY : glm/clean
+Third-Party/glm/clean:
+.PHONY : Third-Party/glm/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Wuu.dir
+# Target rules for target CMakeFiles/Vulkan-Abstraction.dir
 
 # All Build rule for target.
-CMakeFiles/Wuu.dir/all: glfw-3/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45 "Built target Wuu"
-.PHONY : CMakeFiles/Wuu.dir/all
+CMakeFiles/Vulkan-Abstraction.dir/all: Third-Party/glfw-3/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43 "Built target Vulkan-Abstraction"
+.PHONY : CMakeFiles/Vulkan-Abstraction.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Wuu.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles 61
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Wuu.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/Wuu.dir/rule
+CMakeFiles/Vulkan-Abstraction.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles 59
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Vulkan-Abstraction.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/Vulkan-Abstraction.dir/rule
 
 # Convenience name for target.
-Wuu: CMakeFiles/Wuu.dir/rule
-.PHONY : Wuu
+Vulkan-Abstraction: CMakeFiles/Vulkan-Abstraction.dir/rule
+.PHONY : Vulkan-Abstraction
 
 # clean rule for target.
-CMakeFiles/Wuu.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/clean
-.PHONY : CMakeFiles/Wuu.dir/clean
+CMakeFiles/Vulkan-Abstraction.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/clean
+.PHONY : CMakeFiles/Vulkan-Abstraction.dir/clean
 
 #=============================================================================
-# Target rules for target glfw-3/CMakeFiles/uninstall.dir
+# Target rules for target Third-Party/glfw-3/CMakeFiles/uninstall.dir
 
 # All Build rule for target.
-glfw-3/CMakeFiles/uninstall.dir/all:
-	$(MAKE) $(MAKESILENT) -f glfw-3/CMakeFiles/uninstall.dir/build.make glfw-3/CMakeFiles/uninstall.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3/CMakeFiles/uninstall.dir/build.make glfw-3/CMakeFiles/uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num= "Built target uninstall"
-.PHONY : glfw-3/CMakeFiles/uninstall.dir/all
+Third-Party/glfw-3/CMakeFiles/uninstall.dir/all:
+	$(MAKE) $(MAKESILENT) -f Third-Party/glfw-3/CMakeFiles/uninstall.dir/build.make Third-Party/glfw-3/CMakeFiles/uninstall.dir/depend
+	$(MAKE) $(MAKESILENT) -f Third-Party/glfw-3/CMakeFiles/uninstall.dir/build.make Third-Party/glfw-3/CMakeFiles/uninstall.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num= "Built target uninstall"
+.PHONY : Third-Party/glfw-3/CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
-glfw-3/CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3/CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3/CMakeFiles/uninstall.dir/rule
+Third-Party/glfw-3/CMakeFiles/uninstall.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Third-Party/glfw-3/CMakeFiles/uninstall.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles 0
+.PHONY : Third-Party/glfw-3/CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
-uninstall: glfw-3/CMakeFiles/uninstall.dir/rule
+uninstall: Third-Party/glfw-3/CMakeFiles/uninstall.dir/rule
 .PHONY : uninstall
 
 # clean rule for target.
-glfw-3/CMakeFiles/uninstall.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3/CMakeFiles/uninstall.dir/build.make glfw-3/CMakeFiles/uninstall.dir/clean
-.PHONY : glfw-3/CMakeFiles/uninstall.dir/clean
+Third-Party/glfw-3/CMakeFiles/uninstall.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Third-Party/glfw-3/CMakeFiles/uninstall.dir/build.make Third-Party/glfw-3/CMakeFiles/uninstall.dir/clean
+.PHONY : Third-Party/glfw-3/CMakeFiles/uninstall.dir/clean
 
 #=============================================================================
-# Target rules for target glfw-3/src/CMakeFiles/glfw.dir
+# Target rules for target Third-Party/glfw-3/src/CMakeFiles/glfw.dir
 
 # All Build rule for target.
-glfw-3/src/CMakeFiles/glfw.dir/all:
-	$(MAKE) $(MAKESILENT) -f glfw-3/src/CMakeFiles/glfw.dir/build.make glfw-3/src/CMakeFiles/glfw.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3/src/CMakeFiles/glfw.dir/build.make glfw-3/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles --progress-num=46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61 "Built target glfw"
-.PHONY : glfw-3/src/CMakeFiles/glfw.dir/all
+Third-Party/glfw-3/src/CMakeFiles/glfw.dir/all:
+	$(MAKE) $(MAKESILENT) -f Third-Party/glfw-3/src/CMakeFiles/glfw.dir/build.make Third-Party/glfw-3/src/CMakeFiles/glfw.dir/depend
+	$(MAKE) $(MAKESILENT) -f Third-Party/glfw-3/src/CMakeFiles/glfw.dir/build.make Third-Party/glfw-3/src/CMakeFiles/glfw.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles --progress-num=44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59 "Built target glfw"
+.PHONY : Third-Party/glfw-3/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
-glfw-3/src/CMakeFiles/glfw.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3/src/CMakeFiles/glfw.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3/src/CMakeFiles/glfw.dir/rule
+Third-Party/glfw-3/src/CMakeFiles/glfw.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Third-Party/glfw-3/src/CMakeFiles/glfw.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles 0
+.PHONY : Third-Party/glfw-3/src/CMakeFiles/glfw.dir/rule
 
 # Convenience name for target.
-glfw: glfw-3/src/CMakeFiles/glfw.dir/rule
+glfw: Third-Party/glfw-3/src/CMakeFiles/glfw.dir/rule
 .PHONY : glfw
 
 # clean rule for target.
-glfw-3/src/CMakeFiles/glfw.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3/src/CMakeFiles/glfw.dir/build.make glfw-3/src/CMakeFiles/glfw.dir/clean
-.PHONY : glfw-3/src/CMakeFiles/glfw.dir/clean
+Third-Party/glfw-3/src/CMakeFiles/glfw.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Third-Party/glfw-3/src/CMakeFiles/glfw.dir/build.make Third-Party/glfw-3/src/CMakeFiles/glfw.dir/clean
+.PHONY : Third-Party/glfw-3/src/CMakeFiles/glfw.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

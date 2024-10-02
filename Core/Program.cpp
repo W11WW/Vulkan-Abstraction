@@ -4,8 +4,6 @@
 
 #include "Program.h"
 
-using namespace Wuu;
-
 void Program::run()
 {
     window.initialize();
@@ -16,18 +14,18 @@ void Program::run()
     {
         window.poll_events();
 
-        ctx->Button();
-        ctx->Image();
-        ctx->Text();
-
         ctx->render(window.getGLFWWindow());
 
         ctx->update_input();
         ctx->reset_input();
     }
+
+    testmain();
 }
 
 void Program::destroy()
 {
+    /*
     window.destroy();
+     */
 }

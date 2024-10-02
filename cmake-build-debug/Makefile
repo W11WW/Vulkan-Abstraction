@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/michaelferents/CLionProjects/Wuu
+CMAKE_SOURCE_DIR = /Users/michaelferents/CLionProjects/Vulkan-Abstraction
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/michaelferents/CLionProjects/Wuu/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles /Users/michaelferents/CLionProjects/Wuu/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles /Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -162,17 +162,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Wuu
+# Target rules for targets named Vulkan-Abstraction
 
 # Build rule for target.
-Wuu: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Wuu
-.PHONY : Wuu
+Vulkan-Abstraction: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Vulkan-Abstraction
+.PHONY : Vulkan-Abstraction
 
 # fast build rule for target.
-Wuu/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/build
-.PHONY : Wuu/fast
+Vulkan-Abstraction/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/build
+.PHONY : Vulkan-Abstraction/fast
 
 #=============================================================================
 # Target rules for targets named uninstall
@@ -184,7 +184,7 @@ uninstall: cmake_check_build_system
 
 # fast build rule for target.
 uninstall/fast:
-	$(MAKE) $(MAKESILENT) -f glfw-3/CMakeFiles/uninstall.dir/build.make glfw-3/CMakeFiles/uninstall.dir/build
+	$(MAKE) $(MAKESILENT) -f Third-Party/glfw-3/CMakeFiles/uninstall.dir/build.make Third-Party/glfw-3/CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
 #=============================================================================
@@ -197,39 +197,15 @@ glfw: cmake_check_build_system
 
 # fast build rule for target.
 glfw/fast:
-	$(MAKE) $(MAKESILENT) -f glfw-3/src/CMakeFiles/glfw.dir/build.make glfw-3/src/CMakeFiles/glfw.dir/build
+	$(MAKE) $(MAKESILENT) -f Third-Party/glfw-3/src/CMakeFiles/glfw.dir/build.make Third-Party/glfw-3/src/CMakeFiles/glfw.dir/build
 .PHONY : glfw/fast
-
-Core/Data.o: Core/Data.cpp.o
-.PHONY : Core/Data.o
-
-# target to build an object file
-Core/Data.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/Core/Data.cpp.o
-.PHONY : Core/Data.cpp.o
-
-Core/Data.i: Core/Data.cpp.i
-.PHONY : Core/Data.i
-
-# target to preprocess a source file
-Core/Data.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/Core/Data.cpp.i
-.PHONY : Core/Data.cpp.i
-
-Core/Data.s: Core/Data.cpp.s
-.PHONY : Core/Data.s
-
-# target to generate assembly for a file
-Core/Data.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/Core/Data.cpp.s
-.PHONY : Core/Data.cpp.s
 
 Core/Program.o: Core/Program.cpp.o
 .PHONY : Core/Program.o
 
 # target to build an object file
 Core/Program.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/Core/Program.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Core/Program.cpp.o
 .PHONY : Core/Program.cpp.o
 
 Core/Program.i: Core/Program.cpp.i
@@ -237,7 +213,7 @@ Core/Program.i: Core/Program.cpp.i
 
 # target to preprocess a source file
 Core/Program.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/Core/Program.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Core/Program.cpp.i
 .PHONY : Core/Program.cpp.i
 
 Core/Program.s: Core/Program.cpp.s
@@ -245,39 +221,831 @@ Core/Program.s: Core/Program.cpp.s
 
 # target to generate assembly for a file
 Core/Program.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/Core/Program.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Core/Program.cpp.s
 .PHONY : Core/Program.cpp.s
 
-Core/User.o: Core/User.cpp.o
-.PHONY : Core/User.o
+Graphics/Context.o: Graphics/Context.cpp.o
+.PHONY : Graphics/Context.o
 
 # target to build an object file
-Core/User.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/Core/User.cpp.o
-.PHONY : Core/User.cpp.o
+Graphics/Context.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Context.cpp.o
+.PHONY : Graphics/Context.cpp.o
 
-Core/User.i: Core/User.cpp.i
-.PHONY : Core/User.i
+Graphics/Context.i: Graphics/Context.cpp.i
+.PHONY : Graphics/Context.i
 
 # target to preprocess a source file
-Core/User.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/Core/User.cpp.i
-.PHONY : Core/User.cpp.i
+Graphics/Context.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Context.cpp.i
+.PHONY : Graphics/Context.cpp.i
 
-Core/User.s: Core/User.cpp.s
-.PHONY : Core/User.s
+Graphics/Context.s: Graphics/Context.cpp.s
+.PHONY : Graphics/Context.s
 
 # target to generate assembly for a file
-Core/User.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/Core/User.cpp.s
-.PHONY : Core/User.cpp.s
+Graphics/Context.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Context.cpp.s
+.PHONY : Graphics/Context.cpp.s
+
+Graphics/Vulkan/Buffer.o: Graphics/Vulkan/Buffer.cpp.o
+.PHONY : Graphics/Vulkan/Buffer.o
+
+# target to build an object file
+Graphics/Vulkan/Buffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Buffer.cpp.o
+.PHONY : Graphics/Vulkan/Buffer.cpp.o
+
+Graphics/Vulkan/Buffer.i: Graphics/Vulkan/Buffer.cpp.i
+.PHONY : Graphics/Vulkan/Buffer.i
+
+# target to preprocess a source file
+Graphics/Vulkan/Buffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Buffer.cpp.i
+.PHONY : Graphics/Vulkan/Buffer.cpp.i
+
+Graphics/Vulkan/Buffer.s: Graphics/Vulkan/Buffer.cpp.s
+.PHONY : Graphics/Vulkan/Buffer.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/Buffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Buffer.cpp.s
+.PHONY : Graphics/Vulkan/Buffer.cpp.s
+
+Graphics/Vulkan/CommandBuffer.o: Graphics/Vulkan/CommandBuffer.cpp.o
+.PHONY : Graphics/Vulkan/CommandBuffer.o
+
+# target to build an object file
+Graphics/Vulkan/CommandBuffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/CommandBuffer.cpp.o
+.PHONY : Graphics/Vulkan/CommandBuffer.cpp.o
+
+Graphics/Vulkan/CommandBuffer.i: Graphics/Vulkan/CommandBuffer.cpp.i
+.PHONY : Graphics/Vulkan/CommandBuffer.i
+
+# target to preprocess a source file
+Graphics/Vulkan/CommandBuffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/CommandBuffer.cpp.i
+.PHONY : Graphics/Vulkan/CommandBuffer.cpp.i
+
+Graphics/Vulkan/CommandBuffer.s: Graphics/Vulkan/CommandBuffer.cpp.s
+.PHONY : Graphics/Vulkan/CommandBuffer.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/CommandBuffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/CommandBuffer.cpp.s
+.PHONY : Graphics/Vulkan/CommandBuffer.cpp.s
+
+Graphics/Vulkan/CommandPool.o: Graphics/Vulkan/CommandPool.cpp.o
+.PHONY : Graphics/Vulkan/CommandPool.o
+
+# target to build an object file
+Graphics/Vulkan/CommandPool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/CommandPool.cpp.o
+.PHONY : Graphics/Vulkan/CommandPool.cpp.o
+
+Graphics/Vulkan/CommandPool.i: Graphics/Vulkan/CommandPool.cpp.i
+.PHONY : Graphics/Vulkan/CommandPool.i
+
+# target to preprocess a source file
+Graphics/Vulkan/CommandPool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/CommandPool.cpp.i
+.PHONY : Graphics/Vulkan/CommandPool.cpp.i
+
+Graphics/Vulkan/CommandPool.s: Graphics/Vulkan/CommandPool.cpp.s
+.PHONY : Graphics/Vulkan/CommandPool.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/CommandPool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/CommandPool.cpp.s
+.PHONY : Graphics/Vulkan/CommandPool.cpp.s
+
+Graphics/Vulkan/DepthImage.o: Graphics/Vulkan/DepthImage.cpp.o
+.PHONY : Graphics/Vulkan/DepthImage.o
+
+# target to build an object file
+Graphics/Vulkan/DepthImage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/DepthImage.cpp.o
+.PHONY : Graphics/Vulkan/DepthImage.cpp.o
+
+Graphics/Vulkan/DepthImage.i: Graphics/Vulkan/DepthImage.cpp.i
+.PHONY : Graphics/Vulkan/DepthImage.i
+
+# target to preprocess a source file
+Graphics/Vulkan/DepthImage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/DepthImage.cpp.i
+.PHONY : Graphics/Vulkan/DepthImage.cpp.i
+
+Graphics/Vulkan/DepthImage.s: Graphics/Vulkan/DepthImage.cpp.s
+.PHONY : Graphics/Vulkan/DepthImage.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/DepthImage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/DepthImage.cpp.s
+.PHONY : Graphics/Vulkan/DepthImage.cpp.s
+
+Graphics/Vulkan/DescriptorImage.o: Graphics/Vulkan/DescriptorImage.cpp.o
+.PHONY : Graphics/Vulkan/DescriptorImage.o
+
+# target to build an object file
+Graphics/Vulkan/DescriptorImage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/DescriptorImage.cpp.o
+.PHONY : Graphics/Vulkan/DescriptorImage.cpp.o
+
+Graphics/Vulkan/DescriptorImage.i: Graphics/Vulkan/DescriptorImage.cpp.i
+.PHONY : Graphics/Vulkan/DescriptorImage.i
+
+# target to preprocess a source file
+Graphics/Vulkan/DescriptorImage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/DescriptorImage.cpp.i
+.PHONY : Graphics/Vulkan/DescriptorImage.cpp.i
+
+Graphics/Vulkan/DescriptorImage.s: Graphics/Vulkan/DescriptorImage.cpp.s
+.PHONY : Graphics/Vulkan/DescriptorImage.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/DescriptorImage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/DescriptorImage.cpp.s
+.PHONY : Graphics/Vulkan/DescriptorImage.cpp.s
+
+Graphics/Vulkan/DescriptorPool.o: Graphics/Vulkan/DescriptorPool.cpp.o
+.PHONY : Graphics/Vulkan/DescriptorPool.o
+
+# target to build an object file
+Graphics/Vulkan/DescriptorPool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/DescriptorPool.cpp.o
+.PHONY : Graphics/Vulkan/DescriptorPool.cpp.o
+
+Graphics/Vulkan/DescriptorPool.i: Graphics/Vulkan/DescriptorPool.cpp.i
+.PHONY : Graphics/Vulkan/DescriptorPool.i
+
+# target to preprocess a source file
+Graphics/Vulkan/DescriptorPool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/DescriptorPool.cpp.i
+.PHONY : Graphics/Vulkan/DescriptorPool.cpp.i
+
+Graphics/Vulkan/DescriptorPool.s: Graphics/Vulkan/DescriptorPool.cpp.s
+.PHONY : Graphics/Vulkan/DescriptorPool.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/DescriptorPool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/DescriptorPool.cpp.s
+.PHONY : Graphics/Vulkan/DescriptorPool.cpp.s
+
+Graphics/Vulkan/DescriptorSet.o: Graphics/Vulkan/DescriptorSet.cpp.o
+.PHONY : Graphics/Vulkan/DescriptorSet.o
+
+# target to build an object file
+Graphics/Vulkan/DescriptorSet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/DescriptorSet.cpp.o
+.PHONY : Graphics/Vulkan/DescriptorSet.cpp.o
+
+Graphics/Vulkan/DescriptorSet.i: Graphics/Vulkan/DescriptorSet.cpp.i
+.PHONY : Graphics/Vulkan/DescriptorSet.i
+
+# target to preprocess a source file
+Graphics/Vulkan/DescriptorSet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/DescriptorSet.cpp.i
+.PHONY : Graphics/Vulkan/DescriptorSet.cpp.i
+
+Graphics/Vulkan/DescriptorSet.s: Graphics/Vulkan/DescriptorSet.cpp.s
+.PHONY : Graphics/Vulkan/DescriptorSet.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/DescriptorSet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/DescriptorSet.cpp.s
+.PHONY : Graphics/Vulkan/DescriptorSet.cpp.s
+
+Graphics/Vulkan/DescriptorSetImage.o: Graphics/Vulkan/DescriptorSetImage.cpp.o
+.PHONY : Graphics/Vulkan/DescriptorSetImage.o
+
+# target to build an object file
+Graphics/Vulkan/DescriptorSetImage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/DescriptorSetImage.cpp.o
+.PHONY : Graphics/Vulkan/DescriptorSetImage.cpp.o
+
+Graphics/Vulkan/DescriptorSetImage.i: Graphics/Vulkan/DescriptorSetImage.cpp.i
+.PHONY : Graphics/Vulkan/DescriptorSetImage.i
+
+# target to preprocess a source file
+Graphics/Vulkan/DescriptorSetImage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/DescriptorSetImage.cpp.i
+.PHONY : Graphics/Vulkan/DescriptorSetImage.cpp.i
+
+Graphics/Vulkan/DescriptorSetImage.s: Graphics/Vulkan/DescriptorSetImage.cpp.s
+.PHONY : Graphics/Vulkan/DescriptorSetImage.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/DescriptorSetImage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/DescriptorSetImage.cpp.s
+.PHONY : Graphics/Vulkan/DescriptorSetImage.cpp.s
+
+Graphics/Vulkan/DescriptorSetUniformBuffer.o: Graphics/Vulkan/DescriptorSetUniformBuffer.cpp.o
+.PHONY : Graphics/Vulkan/DescriptorSetUniformBuffer.o
+
+# target to build an object file
+Graphics/Vulkan/DescriptorSetUniformBuffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/DescriptorSetUniformBuffer.cpp.o
+.PHONY : Graphics/Vulkan/DescriptorSetUniformBuffer.cpp.o
+
+Graphics/Vulkan/DescriptorSetUniformBuffer.i: Graphics/Vulkan/DescriptorSetUniformBuffer.cpp.i
+.PHONY : Graphics/Vulkan/DescriptorSetUniformBuffer.i
+
+# target to preprocess a source file
+Graphics/Vulkan/DescriptorSetUniformBuffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/DescriptorSetUniformBuffer.cpp.i
+.PHONY : Graphics/Vulkan/DescriptorSetUniformBuffer.cpp.i
+
+Graphics/Vulkan/DescriptorSetUniformBuffer.s: Graphics/Vulkan/DescriptorSetUniformBuffer.cpp.s
+.PHONY : Graphics/Vulkan/DescriptorSetUniformBuffer.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/DescriptorSetUniformBuffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/DescriptorSetUniformBuffer.cpp.s
+.PHONY : Graphics/Vulkan/DescriptorSetUniformBuffer.cpp.s
+
+Graphics/Vulkan/DescriptorUniformBuffer.o: Graphics/Vulkan/DescriptorUniformBuffer.cpp.o
+.PHONY : Graphics/Vulkan/DescriptorUniformBuffer.o
+
+# target to build an object file
+Graphics/Vulkan/DescriptorUniformBuffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/DescriptorUniformBuffer.cpp.o
+.PHONY : Graphics/Vulkan/DescriptorUniformBuffer.cpp.o
+
+Graphics/Vulkan/DescriptorUniformBuffer.i: Graphics/Vulkan/DescriptorUniformBuffer.cpp.i
+.PHONY : Graphics/Vulkan/DescriptorUniformBuffer.i
+
+# target to preprocess a source file
+Graphics/Vulkan/DescriptorUniformBuffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/DescriptorUniformBuffer.cpp.i
+.PHONY : Graphics/Vulkan/DescriptorUniformBuffer.cpp.i
+
+Graphics/Vulkan/DescriptorUniformBuffer.s: Graphics/Vulkan/DescriptorUniformBuffer.cpp.s
+.PHONY : Graphics/Vulkan/DescriptorUniformBuffer.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/DescriptorUniformBuffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/DescriptorUniformBuffer.cpp.s
+.PHONY : Graphics/Vulkan/DescriptorUniformBuffer.cpp.s
+
+Graphics/Vulkan/FrameBuffer.o: Graphics/Vulkan/FrameBuffer.cpp.o
+.PHONY : Graphics/Vulkan/FrameBuffer.o
+
+# target to build an object file
+Graphics/Vulkan/FrameBuffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/FrameBuffer.cpp.o
+.PHONY : Graphics/Vulkan/FrameBuffer.cpp.o
+
+Graphics/Vulkan/FrameBuffer.i: Graphics/Vulkan/FrameBuffer.cpp.i
+.PHONY : Graphics/Vulkan/FrameBuffer.i
+
+# target to preprocess a source file
+Graphics/Vulkan/FrameBuffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/FrameBuffer.cpp.i
+.PHONY : Graphics/Vulkan/FrameBuffer.cpp.i
+
+Graphics/Vulkan/FrameBuffer.s: Graphics/Vulkan/FrameBuffer.cpp.s
+.PHONY : Graphics/Vulkan/FrameBuffer.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/FrameBuffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/FrameBuffer.cpp.s
+.PHONY : Graphics/Vulkan/FrameBuffer.cpp.s
+
+Graphics/Vulkan/Image.o: Graphics/Vulkan/Image.cpp.o
+.PHONY : Graphics/Vulkan/Image.o
+
+# target to build an object file
+Graphics/Vulkan/Image.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Image.cpp.o
+.PHONY : Graphics/Vulkan/Image.cpp.o
+
+Graphics/Vulkan/Image.i: Graphics/Vulkan/Image.cpp.i
+.PHONY : Graphics/Vulkan/Image.i
+
+# target to preprocess a source file
+Graphics/Vulkan/Image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Image.cpp.i
+.PHONY : Graphics/Vulkan/Image.cpp.i
+
+Graphics/Vulkan/Image.s: Graphics/Vulkan/Image.cpp.s
+.PHONY : Graphics/Vulkan/Image.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/Image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Image.cpp.s
+.PHONY : Graphics/Vulkan/Image.cpp.s
+
+Graphics/Vulkan/Instance.o: Graphics/Vulkan/Instance.cpp.o
+.PHONY : Graphics/Vulkan/Instance.o
+
+# target to build an object file
+Graphics/Vulkan/Instance.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Instance.cpp.o
+.PHONY : Graphics/Vulkan/Instance.cpp.o
+
+Graphics/Vulkan/Instance.i: Graphics/Vulkan/Instance.cpp.i
+.PHONY : Graphics/Vulkan/Instance.i
+
+# target to preprocess a source file
+Graphics/Vulkan/Instance.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Instance.cpp.i
+.PHONY : Graphics/Vulkan/Instance.cpp.i
+
+Graphics/Vulkan/Instance.s: Graphics/Vulkan/Instance.cpp.s
+.PHONY : Graphics/Vulkan/Instance.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/Instance.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Instance.cpp.s
+.PHONY : Graphics/Vulkan/Instance.cpp.s
+
+Graphics/Vulkan/LogicalDevice.o: Graphics/Vulkan/LogicalDevice.cpp.o
+.PHONY : Graphics/Vulkan/LogicalDevice.o
+
+# target to build an object file
+Graphics/Vulkan/LogicalDevice.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/LogicalDevice.cpp.o
+.PHONY : Graphics/Vulkan/LogicalDevice.cpp.o
+
+Graphics/Vulkan/LogicalDevice.i: Graphics/Vulkan/LogicalDevice.cpp.i
+.PHONY : Graphics/Vulkan/LogicalDevice.i
+
+# target to preprocess a source file
+Graphics/Vulkan/LogicalDevice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/LogicalDevice.cpp.i
+.PHONY : Graphics/Vulkan/LogicalDevice.cpp.i
+
+Graphics/Vulkan/LogicalDevice.s: Graphics/Vulkan/LogicalDevice.cpp.s
+.PHONY : Graphics/Vulkan/LogicalDevice.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/LogicalDevice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/LogicalDevice.cpp.s
+.PHONY : Graphics/Vulkan/LogicalDevice.cpp.s
+
+Graphics/Vulkan/MemoryCommandBuffer.o: Graphics/Vulkan/MemoryCommandBuffer.cpp.o
+.PHONY : Graphics/Vulkan/MemoryCommandBuffer.o
+
+# target to build an object file
+Graphics/Vulkan/MemoryCommandBuffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/MemoryCommandBuffer.cpp.o
+.PHONY : Graphics/Vulkan/MemoryCommandBuffer.cpp.o
+
+Graphics/Vulkan/MemoryCommandBuffer.i: Graphics/Vulkan/MemoryCommandBuffer.cpp.i
+.PHONY : Graphics/Vulkan/MemoryCommandBuffer.i
+
+# target to preprocess a source file
+Graphics/Vulkan/MemoryCommandBuffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/MemoryCommandBuffer.cpp.i
+.PHONY : Graphics/Vulkan/MemoryCommandBuffer.cpp.i
+
+Graphics/Vulkan/MemoryCommandBuffer.s: Graphics/Vulkan/MemoryCommandBuffer.cpp.s
+.PHONY : Graphics/Vulkan/MemoryCommandBuffer.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/MemoryCommandBuffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/MemoryCommandBuffer.cpp.s
+.PHONY : Graphics/Vulkan/MemoryCommandBuffer.cpp.s
+
+Graphics/Vulkan/MemoryPool.o: Graphics/Vulkan/MemoryPool.cpp.o
+.PHONY : Graphics/Vulkan/MemoryPool.o
+
+# target to build an object file
+Graphics/Vulkan/MemoryPool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/MemoryPool.cpp.o
+.PHONY : Graphics/Vulkan/MemoryPool.cpp.o
+
+Graphics/Vulkan/MemoryPool.i: Graphics/Vulkan/MemoryPool.cpp.i
+.PHONY : Graphics/Vulkan/MemoryPool.i
+
+# target to preprocess a source file
+Graphics/Vulkan/MemoryPool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/MemoryPool.cpp.i
+.PHONY : Graphics/Vulkan/MemoryPool.cpp.i
+
+Graphics/Vulkan/MemoryPool.s: Graphics/Vulkan/MemoryPool.cpp.s
+.PHONY : Graphics/Vulkan/MemoryPool.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/MemoryPool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/MemoryPool.cpp.s
+.PHONY : Graphics/Vulkan/MemoryPool.cpp.s
+
+Graphics/Vulkan/Mesh.o: Graphics/Vulkan/Mesh.cpp.o
+.PHONY : Graphics/Vulkan/Mesh.o
+
+# target to build an object file
+Graphics/Vulkan/Mesh.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Mesh.cpp.o
+.PHONY : Graphics/Vulkan/Mesh.cpp.o
+
+Graphics/Vulkan/Mesh.i: Graphics/Vulkan/Mesh.cpp.i
+.PHONY : Graphics/Vulkan/Mesh.i
+
+# target to preprocess a source file
+Graphics/Vulkan/Mesh.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Mesh.cpp.i
+.PHONY : Graphics/Vulkan/Mesh.cpp.i
+
+Graphics/Vulkan/Mesh.s: Graphics/Vulkan/Mesh.cpp.s
+.PHONY : Graphics/Vulkan/Mesh.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/Mesh.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Mesh.cpp.s
+.PHONY : Graphics/Vulkan/Mesh.cpp.s
+
+Graphics/Vulkan/PhysicalDevice.o: Graphics/Vulkan/PhysicalDevice.cpp.o
+.PHONY : Graphics/Vulkan/PhysicalDevice.o
+
+# target to build an object file
+Graphics/Vulkan/PhysicalDevice.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/PhysicalDevice.cpp.o
+.PHONY : Graphics/Vulkan/PhysicalDevice.cpp.o
+
+Graphics/Vulkan/PhysicalDevice.i: Graphics/Vulkan/PhysicalDevice.cpp.i
+.PHONY : Graphics/Vulkan/PhysicalDevice.i
+
+# target to preprocess a source file
+Graphics/Vulkan/PhysicalDevice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/PhysicalDevice.cpp.i
+.PHONY : Graphics/Vulkan/PhysicalDevice.cpp.i
+
+Graphics/Vulkan/PhysicalDevice.s: Graphics/Vulkan/PhysicalDevice.cpp.s
+.PHONY : Graphics/Vulkan/PhysicalDevice.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/PhysicalDevice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/PhysicalDevice.cpp.s
+.PHONY : Graphics/Vulkan/PhysicalDevice.cpp.s
+
+Graphics/Vulkan/Pipeline.o: Graphics/Vulkan/Pipeline.cpp.o
+.PHONY : Graphics/Vulkan/Pipeline.o
+
+# target to build an object file
+Graphics/Vulkan/Pipeline.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Pipeline.cpp.o
+.PHONY : Graphics/Vulkan/Pipeline.cpp.o
+
+Graphics/Vulkan/Pipeline.i: Graphics/Vulkan/Pipeline.cpp.i
+.PHONY : Graphics/Vulkan/Pipeline.i
+
+# target to preprocess a source file
+Graphics/Vulkan/Pipeline.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Pipeline.cpp.i
+.PHONY : Graphics/Vulkan/Pipeline.cpp.i
+
+Graphics/Vulkan/Pipeline.s: Graphics/Vulkan/Pipeline.cpp.s
+.PHONY : Graphics/Vulkan/Pipeline.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/Pipeline.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Pipeline.cpp.s
+.PHONY : Graphics/Vulkan/Pipeline.cpp.s
+
+Graphics/Vulkan/Queue.o: Graphics/Vulkan/Queue.cpp.o
+.PHONY : Graphics/Vulkan/Queue.o
+
+# target to build an object file
+Graphics/Vulkan/Queue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Queue.cpp.o
+.PHONY : Graphics/Vulkan/Queue.cpp.o
+
+Graphics/Vulkan/Queue.i: Graphics/Vulkan/Queue.cpp.i
+.PHONY : Graphics/Vulkan/Queue.i
+
+# target to preprocess a source file
+Graphics/Vulkan/Queue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Queue.cpp.i
+.PHONY : Graphics/Vulkan/Queue.cpp.i
+
+Graphics/Vulkan/Queue.s: Graphics/Vulkan/Queue.cpp.s
+.PHONY : Graphics/Vulkan/Queue.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/Queue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Queue.cpp.s
+.PHONY : Graphics/Vulkan/Queue.cpp.s
+
+Graphics/Vulkan/RenderPass.o: Graphics/Vulkan/RenderPass.cpp.o
+.PHONY : Graphics/Vulkan/RenderPass.o
+
+# target to build an object file
+Graphics/Vulkan/RenderPass.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/RenderPass.cpp.o
+.PHONY : Graphics/Vulkan/RenderPass.cpp.o
+
+Graphics/Vulkan/RenderPass.i: Graphics/Vulkan/RenderPass.cpp.i
+.PHONY : Graphics/Vulkan/RenderPass.i
+
+# target to preprocess a source file
+Graphics/Vulkan/RenderPass.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/RenderPass.cpp.i
+.PHONY : Graphics/Vulkan/RenderPass.cpp.i
+
+Graphics/Vulkan/RenderPass.s: Graphics/Vulkan/RenderPass.cpp.s
+.PHONY : Graphics/Vulkan/RenderPass.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/RenderPass.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/RenderPass.cpp.s
+.PHONY : Graphics/Vulkan/RenderPass.cpp.s
+
+Graphics/Vulkan/Renderer.o: Graphics/Vulkan/Renderer.cpp.o
+.PHONY : Graphics/Vulkan/Renderer.o
+
+# target to build an object file
+Graphics/Vulkan/Renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Renderer.cpp.o
+.PHONY : Graphics/Vulkan/Renderer.cpp.o
+
+Graphics/Vulkan/Renderer.i: Graphics/Vulkan/Renderer.cpp.i
+.PHONY : Graphics/Vulkan/Renderer.i
+
+# target to preprocess a source file
+Graphics/Vulkan/Renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Renderer.cpp.i
+.PHONY : Graphics/Vulkan/Renderer.cpp.i
+
+Graphics/Vulkan/Renderer.s: Graphics/Vulkan/Renderer.cpp.s
+.PHONY : Graphics/Vulkan/Renderer.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/Renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Renderer.cpp.s
+.PHONY : Graphics/Vulkan/Renderer.cpp.s
+
+Graphics/Vulkan/ShaderModule.o: Graphics/Vulkan/ShaderModule.cpp.o
+.PHONY : Graphics/Vulkan/ShaderModule.o
+
+# target to build an object file
+Graphics/Vulkan/ShaderModule.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/ShaderModule.cpp.o
+.PHONY : Graphics/Vulkan/ShaderModule.cpp.o
+
+Graphics/Vulkan/ShaderModule.i: Graphics/Vulkan/ShaderModule.cpp.i
+.PHONY : Graphics/Vulkan/ShaderModule.i
+
+# target to preprocess a source file
+Graphics/Vulkan/ShaderModule.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/ShaderModule.cpp.i
+.PHONY : Graphics/Vulkan/ShaderModule.cpp.i
+
+Graphics/Vulkan/ShaderModule.s: Graphics/Vulkan/ShaderModule.cpp.s
+.PHONY : Graphics/Vulkan/ShaderModule.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/ShaderModule.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/ShaderModule.cpp.s
+.PHONY : Graphics/Vulkan/ShaderModule.cpp.s
+
+Graphics/Vulkan/Surface.o: Graphics/Vulkan/Surface.cpp.o
+.PHONY : Graphics/Vulkan/Surface.o
+
+# target to build an object file
+Graphics/Vulkan/Surface.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Surface.cpp.o
+.PHONY : Graphics/Vulkan/Surface.cpp.o
+
+Graphics/Vulkan/Surface.i: Graphics/Vulkan/Surface.cpp.i
+.PHONY : Graphics/Vulkan/Surface.i
+
+# target to preprocess a source file
+Graphics/Vulkan/Surface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Surface.cpp.i
+.PHONY : Graphics/Vulkan/Surface.cpp.i
+
+Graphics/Vulkan/Surface.s: Graphics/Vulkan/Surface.cpp.s
+.PHONY : Graphics/Vulkan/Surface.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/Surface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Surface.cpp.s
+.PHONY : Graphics/Vulkan/Surface.cpp.s
+
+Graphics/Vulkan/Swapchain.o: Graphics/Vulkan/Swapchain.cpp.o
+.PHONY : Graphics/Vulkan/Swapchain.o
+
+# target to build an object file
+Graphics/Vulkan/Swapchain.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Swapchain.cpp.o
+.PHONY : Graphics/Vulkan/Swapchain.cpp.o
+
+Graphics/Vulkan/Swapchain.i: Graphics/Vulkan/Swapchain.cpp.i
+.PHONY : Graphics/Vulkan/Swapchain.i
+
+# target to preprocess a source file
+Graphics/Vulkan/Swapchain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Swapchain.cpp.i
+.PHONY : Graphics/Vulkan/Swapchain.cpp.i
+
+Graphics/Vulkan/Swapchain.s: Graphics/Vulkan/Swapchain.cpp.s
+.PHONY : Graphics/Vulkan/Swapchain.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/Swapchain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Swapchain.cpp.s
+.PHONY : Graphics/Vulkan/Swapchain.cpp.s
+
+Graphics/Vulkan/SwapchainImage.o: Graphics/Vulkan/SwapchainImage.cpp.o
+.PHONY : Graphics/Vulkan/SwapchainImage.o
+
+# target to build an object file
+Graphics/Vulkan/SwapchainImage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/SwapchainImage.cpp.o
+.PHONY : Graphics/Vulkan/SwapchainImage.cpp.o
+
+Graphics/Vulkan/SwapchainImage.i: Graphics/Vulkan/SwapchainImage.cpp.i
+.PHONY : Graphics/Vulkan/SwapchainImage.i
+
+# target to preprocess a source file
+Graphics/Vulkan/SwapchainImage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/SwapchainImage.cpp.i
+.PHONY : Graphics/Vulkan/SwapchainImage.cpp.i
+
+Graphics/Vulkan/SwapchainImage.s: Graphics/Vulkan/SwapchainImage.cpp.s
+.PHONY : Graphics/Vulkan/SwapchainImage.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/SwapchainImage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/SwapchainImage.cpp.s
+.PHONY : Graphics/Vulkan/SwapchainImage.cpp.s
+
+Graphics/Vulkan/Third-Party/stb_image.o: Graphics/Vulkan/Third-Party/stb_image.cpp.o
+.PHONY : Graphics/Vulkan/Third-Party/stb_image.o
+
+# target to build an object file
+Graphics/Vulkan/Third-Party/stb_image.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Third-Party/stb_image.cpp.o
+.PHONY : Graphics/Vulkan/Third-Party/stb_image.cpp.o
+
+Graphics/Vulkan/Third-Party/stb_image.i: Graphics/Vulkan/Third-Party/stb_image.cpp.i
+.PHONY : Graphics/Vulkan/Third-Party/stb_image.i
+
+# target to preprocess a source file
+Graphics/Vulkan/Third-Party/stb_image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Third-Party/stb_image.cpp.i
+.PHONY : Graphics/Vulkan/Third-Party/stb_image.cpp.i
+
+Graphics/Vulkan/Third-Party/stb_image.s: Graphics/Vulkan/Third-Party/stb_image.cpp.s
+.PHONY : Graphics/Vulkan/Third-Party/stb_image.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/Third-Party/stb_image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Third-Party/stb_image.cpp.s
+.PHONY : Graphics/Vulkan/Third-Party/stb_image.cpp.s
+
+Graphics/Vulkan/Third-Party/tiny_obj_loader.o: Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp.o
+.PHONY : Graphics/Vulkan/Third-Party/tiny_obj_loader.o
+
+# target to build an object file
+Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp.o
+.PHONY : Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp.o
+
+Graphics/Vulkan/Third-Party/tiny_obj_loader.i: Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp.i
+.PHONY : Graphics/Vulkan/Third-Party/tiny_obj_loader.i
+
+# target to preprocess a source file
+Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp.i
+.PHONY : Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp.i
+
+Graphics/Vulkan/Third-Party/tiny_obj_loader.s: Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp.s
+.PHONY : Graphics/Vulkan/Third-Party/tiny_obj_loader.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp.s
+.PHONY : Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp.s
+
+Graphics/Vulkan/UICommandBuffer.o: Graphics/Vulkan/UICommandBuffer.cpp.o
+.PHONY : Graphics/Vulkan/UICommandBuffer.o
+
+# target to build an object file
+Graphics/Vulkan/UICommandBuffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/UICommandBuffer.cpp.o
+.PHONY : Graphics/Vulkan/UICommandBuffer.cpp.o
+
+Graphics/Vulkan/UICommandBuffer.i: Graphics/Vulkan/UICommandBuffer.cpp.i
+.PHONY : Graphics/Vulkan/UICommandBuffer.i
+
+# target to preprocess a source file
+Graphics/Vulkan/UICommandBuffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/UICommandBuffer.cpp.i
+.PHONY : Graphics/Vulkan/UICommandBuffer.cpp.i
+
+Graphics/Vulkan/UICommandBuffer.s: Graphics/Vulkan/UICommandBuffer.cpp.s
+.PHONY : Graphics/Vulkan/UICommandBuffer.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/UICommandBuffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/UICommandBuffer.cpp.s
+.PHONY : Graphics/Vulkan/UICommandBuffer.cpp.s
+
+Graphics/Vulkan/UIRenderer.o: Graphics/Vulkan/UIRenderer.cpp.o
+.PHONY : Graphics/Vulkan/UIRenderer.o
+
+# target to build an object file
+Graphics/Vulkan/UIRenderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/UIRenderer.cpp.o
+.PHONY : Graphics/Vulkan/UIRenderer.cpp.o
+
+Graphics/Vulkan/UIRenderer.i: Graphics/Vulkan/UIRenderer.cpp.i
+.PHONY : Graphics/Vulkan/UIRenderer.i
+
+# target to preprocess a source file
+Graphics/Vulkan/UIRenderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/UIRenderer.cpp.i
+.PHONY : Graphics/Vulkan/UIRenderer.cpp.i
+
+Graphics/Vulkan/UIRenderer.s: Graphics/Vulkan/UIRenderer.cpp.s
+.PHONY : Graphics/Vulkan/UIRenderer.s
+
+# target to generate assembly for a file
+Graphics/Vulkan/UIRenderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Vulkan/UIRenderer.cpp.s
+.PHONY : Graphics/Vulkan/UIRenderer.cpp.s
+
+Graphics/VulkanHandle.o: Graphics/VulkanHandle.cpp.o
+.PHONY : Graphics/VulkanHandle.o
+
+# target to build an object file
+Graphics/VulkanHandle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/VulkanHandle.cpp.o
+.PHONY : Graphics/VulkanHandle.cpp.o
+
+Graphics/VulkanHandle.i: Graphics/VulkanHandle.cpp.i
+.PHONY : Graphics/VulkanHandle.i
+
+# target to preprocess a source file
+Graphics/VulkanHandle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/VulkanHandle.cpp.i
+.PHONY : Graphics/VulkanHandle.cpp.i
+
+Graphics/VulkanHandle.s: Graphics/VulkanHandle.cpp.s
+.PHONY : Graphics/VulkanHandle.s
+
+# target to generate assembly for a file
+Graphics/VulkanHandle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/VulkanHandle.cpp.s
+.PHONY : Graphics/VulkanHandle.cpp.s
+
+Graphics/Window.o: Graphics/Window.cpp.o
+.PHONY : Graphics/Window.o
+
+# target to build an object file
+Graphics/Window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Window.cpp.o
+.PHONY : Graphics/Window.cpp.o
+
+Graphics/Window.i: Graphics/Window.cpp.i
+.PHONY : Graphics/Window.i
+
+# target to preprocess a source file
+Graphics/Window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Window.cpp.i
+.PHONY : Graphics/Window.cpp.i
+
+Graphics/Window.s: Graphics/Window.cpp.s
+.PHONY : Graphics/Window.s
+
+# target to generate assembly for a file
+Graphics/Window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/Window.cpp.s
+.PHONY : Graphics/Window.cpp.s
+
+Graphics/WindowHandle.o: Graphics/WindowHandle.cpp.o
+.PHONY : Graphics/WindowHandle.o
+
+# target to build an object file
+Graphics/WindowHandle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/WindowHandle.cpp.o
+.PHONY : Graphics/WindowHandle.cpp.o
+
+Graphics/WindowHandle.i: Graphics/WindowHandle.cpp.i
+.PHONY : Graphics/WindowHandle.i
+
+# target to preprocess a source file
+Graphics/WindowHandle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/WindowHandle.cpp.i
+.PHONY : Graphics/WindowHandle.cpp.i
+
+Graphics/WindowHandle.s: Graphics/WindowHandle.cpp.s
+.PHONY : Graphics/WindowHandle.s
+
+# target to generate assembly for a file
+Graphics/WindowHandle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Graphics/WindowHandle.cpp.s
+.PHONY : Graphics/WindowHandle.cpp.s
 
 Networking/Client.o: Networking/Client.cpp.o
 .PHONY : Networking/Client.o
 
 # target to build an object file
 Networking/Client.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/Networking/Client.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Networking/Client.cpp.o
 .PHONY : Networking/Client.cpp.o
 
 Networking/Client.i: Networking/Client.cpp.i
@@ -285,7 +1053,7 @@ Networking/Client.i: Networking/Client.cpp.i
 
 # target to preprocess a source file
 Networking/Client.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/Networking/Client.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Networking/Client.cpp.i
 .PHONY : Networking/Client.cpp.i
 
 Networking/Client.s: Networking/Client.cpp.s
@@ -293,7 +1061,7 @@ Networking/Client.s: Networking/Client.cpp.s
 
 # target to generate assembly for a file
 Networking/Client.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/Networking/Client.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Networking/Client.cpp.s
 .PHONY : Networking/Client.cpp.s
 
 Networking/IPv4ClientSocket.o: Networking/IPv4ClientSocket.cpp.o
@@ -301,7 +1069,7 @@ Networking/IPv4ClientSocket.o: Networking/IPv4ClientSocket.cpp.o
 
 # target to build an object file
 Networking/IPv4ClientSocket.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/Networking/IPv4ClientSocket.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Networking/IPv4ClientSocket.cpp.o
 .PHONY : Networking/IPv4ClientSocket.cpp.o
 
 Networking/IPv4ClientSocket.i: Networking/IPv4ClientSocket.cpp.i
@@ -309,7 +1077,7 @@ Networking/IPv4ClientSocket.i: Networking/IPv4ClientSocket.cpp.i
 
 # target to preprocess a source file
 Networking/IPv4ClientSocket.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/Networking/IPv4ClientSocket.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Networking/IPv4ClientSocket.cpp.i
 .PHONY : Networking/IPv4ClientSocket.cpp.i
 
 Networking/IPv4ClientSocket.s: Networking/IPv4ClientSocket.cpp.s
@@ -317,7 +1085,7 @@ Networking/IPv4ClientSocket.s: Networking/IPv4ClientSocket.cpp.s
 
 # target to generate assembly for a file
 Networking/IPv4ClientSocket.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/Networking/IPv4ClientSocket.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Networking/IPv4ClientSocket.cpp.s
 .PHONY : Networking/IPv4ClientSocket.cpp.s
 
 Networking/IPv4ServerSocket.o: Networking/IPv4ServerSocket.cpp.o
@@ -325,7 +1093,7 @@ Networking/IPv4ServerSocket.o: Networking/IPv4ServerSocket.cpp.o
 
 # target to build an object file
 Networking/IPv4ServerSocket.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/Networking/IPv4ServerSocket.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Networking/IPv4ServerSocket.cpp.o
 .PHONY : Networking/IPv4ServerSocket.cpp.o
 
 Networking/IPv4ServerSocket.i: Networking/IPv4ServerSocket.cpp.i
@@ -333,7 +1101,7 @@ Networking/IPv4ServerSocket.i: Networking/IPv4ServerSocket.cpp.i
 
 # target to preprocess a source file
 Networking/IPv4ServerSocket.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/Networking/IPv4ServerSocket.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Networking/IPv4ServerSocket.cpp.i
 .PHONY : Networking/IPv4ServerSocket.cpp.i
 
 Networking/IPv4ServerSocket.s: Networking/IPv4ServerSocket.cpp.s
@@ -341,7 +1109,7 @@ Networking/IPv4ServerSocket.s: Networking/IPv4ServerSocket.cpp.s
 
 # target to generate assembly for a file
 Networking/IPv4ServerSocket.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/Networking/IPv4ServerSocket.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Networking/IPv4ServerSocket.cpp.s
 .PHONY : Networking/IPv4ServerSocket.cpp.s
 
 Networking/IPv6ClientSocket.o: Networking/IPv6ClientSocket.cpp.o
@@ -349,7 +1117,7 @@ Networking/IPv6ClientSocket.o: Networking/IPv6ClientSocket.cpp.o
 
 # target to build an object file
 Networking/IPv6ClientSocket.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/Networking/IPv6ClientSocket.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Networking/IPv6ClientSocket.cpp.o
 .PHONY : Networking/IPv6ClientSocket.cpp.o
 
 Networking/IPv6ClientSocket.i: Networking/IPv6ClientSocket.cpp.i
@@ -357,7 +1125,7 @@ Networking/IPv6ClientSocket.i: Networking/IPv6ClientSocket.cpp.i
 
 # target to preprocess a source file
 Networking/IPv6ClientSocket.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/Networking/IPv6ClientSocket.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Networking/IPv6ClientSocket.cpp.i
 .PHONY : Networking/IPv6ClientSocket.cpp.i
 
 Networking/IPv6ClientSocket.s: Networking/IPv6ClientSocket.cpp.s
@@ -365,7 +1133,7 @@ Networking/IPv6ClientSocket.s: Networking/IPv6ClientSocket.cpp.s
 
 # target to generate assembly for a file
 Networking/IPv6ClientSocket.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/Networking/IPv6ClientSocket.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Networking/IPv6ClientSocket.cpp.s
 .PHONY : Networking/IPv6ClientSocket.cpp.s
 
 Networking/IPv6ServerSocket.o: Networking/IPv6ServerSocket.cpp.o
@@ -373,7 +1141,7 @@ Networking/IPv6ServerSocket.o: Networking/IPv6ServerSocket.cpp.o
 
 # target to build an object file
 Networking/IPv6ServerSocket.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/Networking/IPv6ServerSocket.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Networking/IPv6ServerSocket.cpp.o
 .PHONY : Networking/IPv6ServerSocket.cpp.o
 
 Networking/IPv6ServerSocket.i: Networking/IPv6ServerSocket.cpp.i
@@ -381,7 +1149,7 @@ Networking/IPv6ServerSocket.i: Networking/IPv6ServerSocket.cpp.i
 
 # target to preprocess a source file
 Networking/IPv6ServerSocket.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/Networking/IPv6ServerSocket.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Networking/IPv6ServerSocket.cpp.i
 .PHONY : Networking/IPv6ServerSocket.cpp.i
 
 Networking/IPv6ServerSocket.s: Networking/IPv6ServerSocket.cpp.s
@@ -389,7 +1157,7 @@ Networking/IPv6ServerSocket.s: Networking/IPv6ServerSocket.cpp.s
 
 # target to generate assembly for a file
 Networking/IPv6ServerSocket.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/Networking/IPv6ServerSocket.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Networking/IPv6ServerSocket.cpp.s
 .PHONY : Networking/IPv6ServerSocket.cpp.s
 
 Networking/Packet.o: Networking/Packet.cpp.o
@@ -397,7 +1165,7 @@ Networking/Packet.o: Networking/Packet.cpp.o
 
 # target to build an object file
 Networking/Packet.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/Networking/Packet.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Networking/Packet.cpp.o
 .PHONY : Networking/Packet.cpp.o
 
 Networking/Packet.i: Networking/Packet.cpp.i
@@ -405,7 +1173,7 @@ Networking/Packet.i: Networking/Packet.cpp.i
 
 # target to preprocess a source file
 Networking/Packet.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/Networking/Packet.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Networking/Packet.cpp.i
 .PHONY : Networking/Packet.cpp.i
 
 Networking/Packet.s: Networking/Packet.cpp.s
@@ -413,831 +1181,15 @@ Networking/Packet.s: Networking/Packet.cpp.s
 
 # target to generate assembly for a file
 Networking/Packet.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/Networking/Packet.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/Networking/Packet.cpp.s
 .PHONY : Networking/Packet.cpp.s
-
-UI/Context.o: UI/Context.cpp.o
-.PHONY : UI/Context.o
-
-# target to build an object file
-UI/Context.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Context.cpp.o
-.PHONY : UI/Context.cpp.o
-
-UI/Context.i: UI/Context.cpp.i
-.PHONY : UI/Context.i
-
-# target to preprocess a source file
-UI/Context.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Context.cpp.i
-.PHONY : UI/Context.cpp.i
-
-UI/Context.s: UI/Context.cpp.s
-.PHONY : UI/Context.s
-
-# target to generate assembly for a file
-UI/Context.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Context.cpp.s
-.PHONY : UI/Context.cpp.s
-
-UI/Layout.o: UI/Layout.cpp.o
-.PHONY : UI/Layout.o
-
-# target to build an object file
-UI/Layout.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Layout.cpp.o
-.PHONY : UI/Layout.cpp.o
-
-UI/Layout.i: UI/Layout.cpp.i
-.PHONY : UI/Layout.i
-
-# target to preprocess a source file
-UI/Layout.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Layout.cpp.i
-.PHONY : UI/Layout.cpp.i
-
-UI/Layout.s: UI/Layout.cpp.s
-.PHONY : UI/Layout.s
-
-# target to generate assembly for a file
-UI/Layout.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Layout.cpp.s
-.PHONY : UI/Layout.cpp.s
-
-UI/Vulkan/Buffer.o: UI/Vulkan/Buffer.cpp.o
-.PHONY : UI/Vulkan/Buffer.o
-
-# target to build an object file
-UI/Vulkan/Buffer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Buffer.cpp.o
-.PHONY : UI/Vulkan/Buffer.cpp.o
-
-UI/Vulkan/Buffer.i: UI/Vulkan/Buffer.cpp.i
-.PHONY : UI/Vulkan/Buffer.i
-
-# target to preprocess a source file
-UI/Vulkan/Buffer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Buffer.cpp.i
-.PHONY : UI/Vulkan/Buffer.cpp.i
-
-UI/Vulkan/Buffer.s: UI/Vulkan/Buffer.cpp.s
-.PHONY : UI/Vulkan/Buffer.s
-
-# target to generate assembly for a file
-UI/Vulkan/Buffer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Buffer.cpp.s
-.PHONY : UI/Vulkan/Buffer.cpp.s
-
-UI/Vulkan/CommandBuffer.o: UI/Vulkan/CommandBuffer.cpp.o
-.PHONY : UI/Vulkan/CommandBuffer.o
-
-# target to build an object file
-UI/Vulkan/CommandBuffer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/CommandBuffer.cpp.o
-.PHONY : UI/Vulkan/CommandBuffer.cpp.o
-
-UI/Vulkan/CommandBuffer.i: UI/Vulkan/CommandBuffer.cpp.i
-.PHONY : UI/Vulkan/CommandBuffer.i
-
-# target to preprocess a source file
-UI/Vulkan/CommandBuffer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/CommandBuffer.cpp.i
-.PHONY : UI/Vulkan/CommandBuffer.cpp.i
-
-UI/Vulkan/CommandBuffer.s: UI/Vulkan/CommandBuffer.cpp.s
-.PHONY : UI/Vulkan/CommandBuffer.s
-
-# target to generate assembly for a file
-UI/Vulkan/CommandBuffer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/CommandBuffer.cpp.s
-.PHONY : UI/Vulkan/CommandBuffer.cpp.s
-
-UI/Vulkan/CommandPool.o: UI/Vulkan/CommandPool.cpp.o
-.PHONY : UI/Vulkan/CommandPool.o
-
-# target to build an object file
-UI/Vulkan/CommandPool.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/CommandPool.cpp.o
-.PHONY : UI/Vulkan/CommandPool.cpp.o
-
-UI/Vulkan/CommandPool.i: UI/Vulkan/CommandPool.cpp.i
-.PHONY : UI/Vulkan/CommandPool.i
-
-# target to preprocess a source file
-UI/Vulkan/CommandPool.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/CommandPool.cpp.i
-.PHONY : UI/Vulkan/CommandPool.cpp.i
-
-UI/Vulkan/CommandPool.s: UI/Vulkan/CommandPool.cpp.s
-.PHONY : UI/Vulkan/CommandPool.s
-
-# target to generate assembly for a file
-UI/Vulkan/CommandPool.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/CommandPool.cpp.s
-.PHONY : UI/Vulkan/CommandPool.cpp.s
-
-UI/Vulkan/DepthImage.o: UI/Vulkan/DepthImage.cpp.o
-.PHONY : UI/Vulkan/DepthImage.o
-
-# target to build an object file
-UI/Vulkan/DepthImage.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/DepthImage.cpp.o
-.PHONY : UI/Vulkan/DepthImage.cpp.o
-
-UI/Vulkan/DepthImage.i: UI/Vulkan/DepthImage.cpp.i
-.PHONY : UI/Vulkan/DepthImage.i
-
-# target to preprocess a source file
-UI/Vulkan/DepthImage.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/DepthImage.cpp.i
-.PHONY : UI/Vulkan/DepthImage.cpp.i
-
-UI/Vulkan/DepthImage.s: UI/Vulkan/DepthImage.cpp.s
-.PHONY : UI/Vulkan/DepthImage.s
-
-# target to generate assembly for a file
-UI/Vulkan/DepthImage.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/DepthImage.cpp.s
-.PHONY : UI/Vulkan/DepthImage.cpp.s
-
-UI/Vulkan/DescriptorImage.o: UI/Vulkan/DescriptorImage.cpp.o
-.PHONY : UI/Vulkan/DescriptorImage.o
-
-# target to build an object file
-UI/Vulkan/DescriptorImage.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorImage.cpp.o
-.PHONY : UI/Vulkan/DescriptorImage.cpp.o
-
-UI/Vulkan/DescriptorImage.i: UI/Vulkan/DescriptorImage.cpp.i
-.PHONY : UI/Vulkan/DescriptorImage.i
-
-# target to preprocess a source file
-UI/Vulkan/DescriptorImage.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorImage.cpp.i
-.PHONY : UI/Vulkan/DescriptorImage.cpp.i
-
-UI/Vulkan/DescriptorImage.s: UI/Vulkan/DescriptorImage.cpp.s
-.PHONY : UI/Vulkan/DescriptorImage.s
-
-# target to generate assembly for a file
-UI/Vulkan/DescriptorImage.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorImage.cpp.s
-.PHONY : UI/Vulkan/DescriptorImage.cpp.s
-
-UI/Vulkan/DescriptorPool.o: UI/Vulkan/DescriptorPool.cpp.o
-.PHONY : UI/Vulkan/DescriptorPool.o
-
-# target to build an object file
-UI/Vulkan/DescriptorPool.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorPool.cpp.o
-.PHONY : UI/Vulkan/DescriptorPool.cpp.o
-
-UI/Vulkan/DescriptorPool.i: UI/Vulkan/DescriptorPool.cpp.i
-.PHONY : UI/Vulkan/DescriptorPool.i
-
-# target to preprocess a source file
-UI/Vulkan/DescriptorPool.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorPool.cpp.i
-.PHONY : UI/Vulkan/DescriptorPool.cpp.i
-
-UI/Vulkan/DescriptorPool.s: UI/Vulkan/DescriptorPool.cpp.s
-.PHONY : UI/Vulkan/DescriptorPool.s
-
-# target to generate assembly for a file
-UI/Vulkan/DescriptorPool.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorPool.cpp.s
-.PHONY : UI/Vulkan/DescriptorPool.cpp.s
-
-UI/Vulkan/DescriptorSet.o: UI/Vulkan/DescriptorSet.cpp.o
-.PHONY : UI/Vulkan/DescriptorSet.o
-
-# target to build an object file
-UI/Vulkan/DescriptorSet.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSet.cpp.o
-.PHONY : UI/Vulkan/DescriptorSet.cpp.o
-
-UI/Vulkan/DescriptorSet.i: UI/Vulkan/DescriptorSet.cpp.i
-.PHONY : UI/Vulkan/DescriptorSet.i
-
-# target to preprocess a source file
-UI/Vulkan/DescriptorSet.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSet.cpp.i
-.PHONY : UI/Vulkan/DescriptorSet.cpp.i
-
-UI/Vulkan/DescriptorSet.s: UI/Vulkan/DescriptorSet.cpp.s
-.PHONY : UI/Vulkan/DescriptorSet.s
-
-# target to generate assembly for a file
-UI/Vulkan/DescriptorSet.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSet.cpp.s
-.PHONY : UI/Vulkan/DescriptorSet.cpp.s
-
-UI/Vulkan/DescriptorSetImage.o: UI/Vulkan/DescriptorSetImage.cpp.o
-.PHONY : UI/Vulkan/DescriptorSetImage.o
-
-# target to build an object file
-UI/Vulkan/DescriptorSetImage.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetImage.cpp.o
-.PHONY : UI/Vulkan/DescriptorSetImage.cpp.o
-
-UI/Vulkan/DescriptorSetImage.i: UI/Vulkan/DescriptorSetImage.cpp.i
-.PHONY : UI/Vulkan/DescriptorSetImage.i
-
-# target to preprocess a source file
-UI/Vulkan/DescriptorSetImage.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetImage.cpp.i
-.PHONY : UI/Vulkan/DescriptorSetImage.cpp.i
-
-UI/Vulkan/DescriptorSetImage.s: UI/Vulkan/DescriptorSetImage.cpp.s
-.PHONY : UI/Vulkan/DescriptorSetImage.s
-
-# target to generate assembly for a file
-UI/Vulkan/DescriptorSetImage.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetImage.cpp.s
-.PHONY : UI/Vulkan/DescriptorSetImage.cpp.s
-
-UI/Vulkan/DescriptorSetUniformBuffer.o: UI/Vulkan/DescriptorSetUniformBuffer.cpp.o
-.PHONY : UI/Vulkan/DescriptorSetUniformBuffer.o
-
-# target to build an object file
-UI/Vulkan/DescriptorSetUniformBuffer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetUniformBuffer.cpp.o
-.PHONY : UI/Vulkan/DescriptorSetUniformBuffer.cpp.o
-
-UI/Vulkan/DescriptorSetUniformBuffer.i: UI/Vulkan/DescriptorSetUniformBuffer.cpp.i
-.PHONY : UI/Vulkan/DescriptorSetUniformBuffer.i
-
-# target to preprocess a source file
-UI/Vulkan/DescriptorSetUniformBuffer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetUniformBuffer.cpp.i
-.PHONY : UI/Vulkan/DescriptorSetUniformBuffer.cpp.i
-
-UI/Vulkan/DescriptorSetUniformBuffer.s: UI/Vulkan/DescriptorSetUniformBuffer.cpp.s
-.PHONY : UI/Vulkan/DescriptorSetUniformBuffer.s
-
-# target to generate assembly for a file
-UI/Vulkan/DescriptorSetUniformBuffer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorSetUniformBuffer.cpp.s
-.PHONY : UI/Vulkan/DescriptorSetUniformBuffer.cpp.s
-
-UI/Vulkan/DescriptorUniformBuffer.o: UI/Vulkan/DescriptorUniformBuffer.cpp.o
-.PHONY : UI/Vulkan/DescriptorUniformBuffer.o
-
-# target to build an object file
-UI/Vulkan/DescriptorUniformBuffer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorUniformBuffer.cpp.o
-.PHONY : UI/Vulkan/DescriptorUniformBuffer.cpp.o
-
-UI/Vulkan/DescriptorUniformBuffer.i: UI/Vulkan/DescriptorUniformBuffer.cpp.i
-.PHONY : UI/Vulkan/DescriptorUniformBuffer.i
-
-# target to preprocess a source file
-UI/Vulkan/DescriptorUniformBuffer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorUniformBuffer.cpp.i
-.PHONY : UI/Vulkan/DescriptorUniformBuffer.cpp.i
-
-UI/Vulkan/DescriptorUniformBuffer.s: UI/Vulkan/DescriptorUniformBuffer.cpp.s
-.PHONY : UI/Vulkan/DescriptorUniformBuffer.s
-
-# target to generate assembly for a file
-UI/Vulkan/DescriptorUniformBuffer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/DescriptorUniformBuffer.cpp.s
-.PHONY : UI/Vulkan/DescriptorUniformBuffer.cpp.s
-
-UI/Vulkan/FrameBuffer.o: UI/Vulkan/FrameBuffer.cpp.o
-.PHONY : UI/Vulkan/FrameBuffer.o
-
-# target to build an object file
-UI/Vulkan/FrameBuffer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/FrameBuffer.cpp.o
-.PHONY : UI/Vulkan/FrameBuffer.cpp.o
-
-UI/Vulkan/FrameBuffer.i: UI/Vulkan/FrameBuffer.cpp.i
-.PHONY : UI/Vulkan/FrameBuffer.i
-
-# target to preprocess a source file
-UI/Vulkan/FrameBuffer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/FrameBuffer.cpp.i
-.PHONY : UI/Vulkan/FrameBuffer.cpp.i
-
-UI/Vulkan/FrameBuffer.s: UI/Vulkan/FrameBuffer.cpp.s
-.PHONY : UI/Vulkan/FrameBuffer.s
-
-# target to generate assembly for a file
-UI/Vulkan/FrameBuffer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/FrameBuffer.cpp.s
-.PHONY : UI/Vulkan/FrameBuffer.cpp.s
-
-UI/Vulkan/Image.o: UI/Vulkan/Image.cpp.o
-.PHONY : UI/Vulkan/Image.o
-
-# target to build an object file
-UI/Vulkan/Image.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Image.cpp.o
-.PHONY : UI/Vulkan/Image.cpp.o
-
-UI/Vulkan/Image.i: UI/Vulkan/Image.cpp.i
-.PHONY : UI/Vulkan/Image.i
-
-# target to preprocess a source file
-UI/Vulkan/Image.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Image.cpp.i
-.PHONY : UI/Vulkan/Image.cpp.i
-
-UI/Vulkan/Image.s: UI/Vulkan/Image.cpp.s
-.PHONY : UI/Vulkan/Image.s
-
-# target to generate assembly for a file
-UI/Vulkan/Image.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Image.cpp.s
-.PHONY : UI/Vulkan/Image.cpp.s
-
-UI/Vulkan/Instance.o: UI/Vulkan/Instance.cpp.o
-.PHONY : UI/Vulkan/Instance.o
-
-# target to build an object file
-UI/Vulkan/Instance.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Instance.cpp.o
-.PHONY : UI/Vulkan/Instance.cpp.o
-
-UI/Vulkan/Instance.i: UI/Vulkan/Instance.cpp.i
-.PHONY : UI/Vulkan/Instance.i
-
-# target to preprocess a source file
-UI/Vulkan/Instance.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Instance.cpp.i
-.PHONY : UI/Vulkan/Instance.cpp.i
-
-UI/Vulkan/Instance.s: UI/Vulkan/Instance.cpp.s
-.PHONY : UI/Vulkan/Instance.s
-
-# target to generate assembly for a file
-UI/Vulkan/Instance.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Instance.cpp.s
-.PHONY : UI/Vulkan/Instance.cpp.s
-
-UI/Vulkan/LogicalDevice.o: UI/Vulkan/LogicalDevice.cpp.o
-.PHONY : UI/Vulkan/LogicalDevice.o
-
-# target to build an object file
-UI/Vulkan/LogicalDevice.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/LogicalDevice.cpp.o
-.PHONY : UI/Vulkan/LogicalDevice.cpp.o
-
-UI/Vulkan/LogicalDevice.i: UI/Vulkan/LogicalDevice.cpp.i
-.PHONY : UI/Vulkan/LogicalDevice.i
-
-# target to preprocess a source file
-UI/Vulkan/LogicalDevice.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/LogicalDevice.cpp.i
-.PHONY : UI/Vulkan/LogicalDevice.cpp.i
-
-UI/Vulkan/LogicalDevice.s: UI/Vulkan/LogicalDevice.cpp.s
-.PHONY : UI/Vulkan/LogicalDevice.s
-
-# target to generate assembly for a file
-UI/Vulkan/LogicalDevice.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/LogicalDevice.cpp.s
-.PHONY : UI/Vulkan/LogicalDevice.cpp.s
-
-UI/Vulkan/MemoryCommandBuffer.o: UI/Vulkan/MemoryCommandBuffer.cpp.o
-.PHONY : UI/Vulkan/MemoryCommandBuffer.o
-
-# target to build an object file
-UI/Vulkan/MemoryCommandBuffer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/MemoryCommandBuffer.cpp.o
-.PHONY : UI/Vulkan/MemoryCommandBuffer.cpp.o
-
-UI/Vulkan/MemoryCommandBuffer.i: UI/Vulkan/MemoryCommandBuffer.cpp.i
-.PHONY : UI/Vulkan/MemoryCommandBuffer.i
-
-# target to preprocess a source file
-UI/Vulkan/MemoryCommandBuffer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/MemoryCommandBuffer.cpp.i
-.PHONY : UI/Vulkan/MemoryCommandBuffer.cpp.i
-
-UI/Vulkan/MemoryCommandBuffer.s: UI/Vulkan/MemoryCommandBuffer.cpp.s
-.PHONY : UI/Vulkan/MemoryCommandBuffer.s
-
-# target to generate assembly for a file
-UI/Vulkan/MemoryCommandBuffer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/MemoryCommandBuffer.cpp.s
-.PHONY : UI/Vulkan/MemoryCommandBuffer.cpp.s
-
-UI/Vulkan/MemoryPool.o: UI/Vulkan/MemoryPool.cpp.o
-.PHONY : UI/Vulkan/MemoryPool.o
-
-# target to build an object file
-UI/Vulkan/MemoryPool.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/MemoryPool.cpp.o
-.PHONY : UI/Vulkan/MemoryPool.cpp.o
-
-UI/Vulkan/MemoryPool.i: UI/Vulkan/MemoryPool.cpp.i
-.PHONY : UI/Vulkan/MemoryPool.i
-
-# target to preprocess a source file
-UI/Vulkan/MemoryPool.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/MemoryPool.cpp.i
-.PHONY : UI/Vulkan/MemoryPool.cpp.i
-
-UI/Vulkan/MemoryPool.s: UI/Vulkan/MemoryPool.cpp.s
-.PHONY : UI/Vulkan/MemoryPool.s
-
-# target to generate assembly for a file
-UI/Vulkan/MemoryPool.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/MemoryPool.cpp.s
-.PHONY : UI/Vulkan/MemoryPool.cpp.s
-
-UI/Vulkan/PhysicalDevice.o: UI/Vulkan/PhysicalDevice.cpp.o
-.PHONY : UI/Vulkan/PhysicalDevice.o
-
-# target to build an object file
-UI/Vulkan/PhysicalDevice.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/PhysicalDevice.cpp.o
-.PHONY : UI/Vulkan/PhysicalDevice.cpp.o
-
-UI/Vulkan/PhysicalDevice.i: UI/Vulkan/PhysicalDevice.cpp.i
-.PHONY : UI/Vulkan/PhysicalDevice.i
-
-# target to preprocess a source file
-UI/Vulkan/PhysicalDevice.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/PhysicalDevice.cpp.i
-.PHONY : UI/Vulkan/PhysicalDevice.cpp.i
-
-UI/Vulkan/PhysicalDevice.s: UI/Vulkan/PhysicalDevice.cpp.s
-.PHONY : UI/Vulkan/PhysicalDevice.s
-
-# target to generate assembly for a file
-UI/Vulkan/PhysicalDevice.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/PhysicalDevice.cpp.s
-.PHONY : UI/Vulkan/PhysicalDevice.cpp.s
-
-UI/Vulkan/Pipeline.o: UI/Vulkan/Pipeline.cpp.o
-.PHONY : UI/Vulkan/Pipeline.o
-
-# target to build an object file
-UI/Vulkan/Pipeline.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Pipeline.cpp.o
-.PHONY : UI/Vulkan/Pipeline.cpp.o
-
-UI/Vulkan/Pipeline.i: UI/Vulkan/Pipeline.cpp.i
-.PHONY : UI/Vulkan/Pipeline.i
-
-# target to preprocess a source file
-UI/Vulkan/Pipeline.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Pipeline.cpp.i
-.PHONY : UI/Vulkan/Pipeline.cpp.i
-
-UI/Vulkan/Pipeline.s: UI/Vulkan/Pipeline.cpp.s
-.PHONY : UI/Vulkan/Pipeline.s
-
-# target to generate assembly for a file
-UI/Vulkan/Pipeline.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Pipeline.cpp.s
-.PHONY : UI/Vulkan/Pipeline.cpp.s
-
-UI/Vulkan/Queue.o: UI/Vulkan/Queue.cpp.o
-.PHONY : UI/Vulkan/Queue.o
-
-# target to build an object file
-UI/Vulkan/Queue.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Queue.cpp.o
-.PHONY : UI/Vulkan/Queue.cpp.o
-
-UI/Vulkan/Queue.i: UI/Vulkan/Queue.cpp.i
-.PHONY : UI/Vulkan/Queue.i
-
-# target to preprocess a source file
-UI/Vulkan/Queue.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Queue.cpp.i
-.PHONY : UI/Vulkan/Queue.cpp.i
-
-UI/Vulkan/Queue.s: UI/Vulkan/Queue.cpp.s
-.PHONY : UI/Vulkan/Queue.s
-
-# target to generate assembly for a file
-UI/Vulkan/Queue.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Queue.cpp.s
-.PHONY : UI/Vulkan/Queue.cpp.s
-
-UI/Vulkan/RenderPass.o: UI/Vulkan/RenderPass.cpp.o
-.PHONY : UI/Vulkan/RenderPass.o
-
-# target to build an object file
-UI/Vulkan/RenderPass.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.o
-.PHONY : UI/Vulkan/RenderPass.cpp.o
-
-UI/Vulkan/RenderPass.i: UI/Vulkan/RenderPass.cpp.i
-.PHONY : UI/Vulkan/RenderPass.i
-
-# target to preprocess a source file
-UI/Vulkan/RenderPass.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.i
-.PHONY : UI/Vulkan/RenderPass.cpp.i
-
-UI/Vulkan/RenderPass.s: UI/Vulkan/RenderPass.cpp.s
-.PHONY : UI/Vulkan/RenderPass.s
-
-# target to generate assembly for a file
-UI/Vulkan/RenderPass.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/RenderPass.cpp.s
-.PHONY : UI/Vulkan/RenderPass.cpp.s
-
-UI/Vulkan/Renderer.o: UI/Vulkan/Renderer.cpp.o
-.PHONY : UI/Vulkan/Renderer.o
-
-# target to build an object file
-UI/Vulkan/Renderer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Renderer.cpp.o
-.PHONY : UI/Vulkan/Renderer.cpp.o
-
-UI/Vulkan/Renderer.i: UI/Vulkan/Renderer.cpp.i
-.PHONY : UI/Vulkan/Renderer.i
-
-# target to preprocess a source file
-UI/Vulkan/Renderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Renderer.cpp.i
-.PHONY : UI/Vulkan/Renderer.cpp.i
-
-UI/Vulkan/Renderer.s: UI/Vulkan/Renderer.cpp.s
-.PHONY : UI/Vulkan/Renderer.s
-
-# target to generate assembly for a file
-UI/Vulkan/Renderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Renderer.cpp.s
-.PHONY : UI/Vulkan/Renderer.cpp.s
-
-UI/Vulkan/Shape.o: UI/Vulkan/Shape.cpp.o
-.PHONY : UI/Vulkan/Shape.o
-
-# target to build an object file
-UI/Vulkan/Shape.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Shape.cpp.o
-.PHONY : UI/Vulkan/Shape.cpp.o
-
-UI/Vulkan/Shape.i: UI/Vulkan/Shape.cpp.i
-.PHONY : UI/Vulkan/Shape.i
-
-# target to preprocess a source file
-UI/Vulkan/Shape.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Shape.cpp.i
-.PHONY : UI/Vulkan/Shape.cpp.i
-
-UI/Vulkan/Shape.s: UI/Vulkan/Shape.cpp.s
-.PHONY : UI/Vulkan/Shape.s
-
-# target to generate assembly for a file
-UI/Vulkan/Shape.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Shape.cpp.s
-.PHONY : UI/Vulkan/Shape.cpp.s
-
-UI/Vulkan/Surface.o: UI/Vulkan/Surface.cpp.o
-.PHONY : UI/Vulkan/Surface.o
-
-# target to build an object file
-UI/Vulkan/Surface.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Surface.cpp.o
-.PHONY : UI/Vulkan/Surface.cpp.o
-
-UI/Vulkan/Surface.i: UI/Vulkan/Surface.cpp.i
-.PHONY : UI/Vulkan/Surface.i
-
-# target to preprocess a source file
-UI/Vulkan/Surface.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Surface.cpp.i
-.PHONY : UI/Vulkan/Surface.cpp.i
-
-UI/Vulkan/Surface.s: UI/Vulkan/Surface.cpp.s
-.PHONY : UI/Vulkan/Surface.s
-
-# target to generate assembly for a file
-UI/Vulkan/Surface.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Surface.cpp.s
-.PHONY : UI/Vulkan/Surface.cpp.s
-
-UI/Vulkan/Swapchain.o: UI/Vulkan/Swapchain.cpp.o
-.PHONY : UI/Vulkan/Swapchain.o
-
-# target to build an object file
-UI/Vulkan/Swapchain.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Swapchain.cpp.o
-.PHONY : UI/Vulkan/Swapchain.cpp.o
-
-UI/Vulkan/Swapchain.i: UI/Vulkan/Swapchain.cpp.i
-.PHONY : UI/Vulkan/Swapchain.i
-
-# target to preprocess a source file
-UI/Vulkan/Swapchain.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Swapchain.cpp.i
-.PHONY : UI/Vulkan/Swapchain.cpp.i
-
-UI/Vulkan/Swapchain.s: UI/Vulkan/Swapchain.cpp.s
-.PHONY : UI/Vulkan/Swapchain.s
-
-# target to generate assembly for a file
-UI/Vulkan/Swapchain.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Swapchain.cpp.s
-.PHONY : UI/Vulkan/Swapchain.cpp.s
-
-UI/Vulkan/SwapchainImage.o: UI/Vulkan/SwapchainImage.cpp.o
-.PHONY : UI/Vulkan/SwapchainImage.o
-
-# target to build an object file
-UI/Vulkan/SwapchainImage.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/SwapchainImage.cpp.o
-.PHONY : UI/Vulkan/SwapchainImage.cpp.o
-
-UI/Vulkan/SwapchainImage.i: UI/Vulkan/SwapchainImage.cpp.i
-.PHONY : UI/Vulkan/SwapchainImage.i
-
-# target to preprocess a source file
-UI/Vulkan/SwapchainImage.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/SwapchainImage.cpp.i
-.PHONY : UI/Vulkan/SwapchainImage.cpp.i
-
-UI/Vulkan/SwapchainImage.s: UI/Vulkan/SwapchainImage.cpp.s
-.PHONY : UI/Vulkan/SwapchainImage.s
-
-# target to generate assembly for a file
-UI/Vulkan/SwapchainImage.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/SwapchainImage.cpp.s
-.PHONY : UI/Vulkan/SwapchainImage.cpp.s
-
-UI/Vulkan/Third-Party/stb_image.o: UI/Vulkan/Third-Party/stb_image.cpp.o
-.PHONY : UI/Vulkan/Third-Party/stb_image.o
-
-# target to build an object file
-UI/Vulkan/Third-Party/stb_image.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/stb_image.cpp.o
-.PHONY : UI/Vulkan/Third-Party/stb_image.cpp.o
-
-UI/Vulkan/Third-Party/stb_image.i: UI/Vulkan/Third-Party/stb_image.cpp.i
-.PHONY : UI/Vulkan/Third-Party/stb_image.i
-
-# target to preprocess a source file
-UI/Vulkan/Third-Party/stb_image.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/stb_image.cpp.i
-.PHONY : UI/Vulkan/Third-Party/stb_image.cpp.i
-
-UI/Vulkan/Third-Party/stb_image.s: UI/Vulkan/Third-Party/stb_image.cpp.s
-.PHONY : UI/Vulkan/Third-Party/stb_image.s
-
-# target to generate assembly for a file
-UI/Vulkan/Third-Party/stb_image.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/stb_image.cpp.s
-.PHONY : UI/Vulkan/Third-Party/stb_image.cpp.s
-
-UI/Vulkan/Third-Party/tiny_obj_loader.o: UI/Vulkan/Third-Party/tiny_obj_loader.cpp.o
-.PHONY : UI/Vulkan/Third-Party/tiny_obj_loader.o
-
-# target to build an object file
-UI/Vulkan/Third-Party/tiny_obj_loader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/tiny_obj_loader.cpp.o
-.PHONY : UI/Vulkan/Third-Party/tiny_obj_loader.cpp.o
-
-UI/Vulkan/Third-Party/tiny_obj_loader.i: UI/Vulkan/Third-Party/tiny_obj_loader.cpp.i
-.PHONY : UI/Vulkan/Third-Party/tiny_obj_loader.i
-
-# target to preprocess a source file
-UI/Vulkan/Third-Party/tiny_obj_loader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/tiny_obj_loader.cpp.i
-.PHONY : UI/Vulkan/Third-Party/tiny_obj_loader.cpp.i
-
-UI/Vulkan/Third-Party/tiny_obj_loader.s: UI/Vulkan/Third-Party/tiny_obj_loader.cpp.s
-.PHONY : UI/Vulkan/Third-Party/tiny_obj_loader.s
-
-# target to generate assembly for a file
-UI/Vulkan/Third-Party/tiny_obj_loader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/Third-Party/tiny_obj_loader.cpp.s
-.PHONY : UI/Vulkan/Third-Party/tiny_obj_loader.cpp.s
-
-UI/Vulkan/UICommandBuffer.o: UI/Vulkan/UICommandBuffer.cpp.o
-.PHONY : UI/Vulkan/UICommandBuffer.o
-
-# target to build an object file
-UI/Vulkan/UICommandBuffer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/UICommandBuffer.cpp.o
-.PHONY : UI/Vulkan/UICommandBuffer.cpp.o
-
-UI/Vulkan/UICommandBuffer.i: UI/Vulkan/UICommandBuffer.cpp.i
-.PHONY : UI/Vulkan/UICommandBuffer.i
-
-# target to preprocess a source file
-UI/Vulkan/UICommandBuffer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/UICommandBuffer.cpp.i
-.PHONY : UI/Vulkan/UICommandBuffer.cpp.i
-
-UI/Vulkan/UICommandBuffer.s: UI/Vulkan/UICommandBuffer.cpp.s
-.PHONY : UI/Vulkan/UICommandBuffer.s
-
-# target to generate assembly for a file
-UI/Vulkan/UICommandBuffer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/UICommandBuffer.cpp.s
-.PHONY : UI/Vulkan/UICommandBuffer.cpp.s
-
-UI/Vulkan/UIRenderer.o: UI/Vulkan/UIRenderer.cpp.o
-.PHONY : UI/Vulkan/UIRenderer.o
-
-# target to build an object file
-UI/Vulkan/UIRenderer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/UIRenderer.cpp.o
-.PHONY : UI/Vulkan/UIRenderer.cpp.o
-
-UI/Vulkan/UIRenderer.i: UI/Vulkan/UIRenderer.cpp.i
-.PHONY : UI/Vulkan/UIRenderer.i
-
-# target to preprocess a source file
-UI/Vulkan/UIRenderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/UIRenderer.cpp.i
-.PHONY : UI/Vulkan/UIRenderer.cpp.i
-
-UI/Vulkan/UIRenderer.s: UI/Vulkan/UIRenderer.cpp.s
-.PHONY : UI/Vulkan/UIRenderer.s
-
-# target to generate assembly for a file
-UI/Vulkan/UIRenderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Vulkan/UIRenderer.cpp.s
-.PHONY : UI/Vulkan/UIRenderer.cpp.s
-
-UI/VulkanHandle.o: UI/VulkanHandle.cpp.o
-.PHONY : UI/VulkanHandle.o
-
-# target to build an object file
-UI/VulkanHandle.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/VulkanHandle.cpp.o
-.PHONY : UI/VulkanHandle.cpp.o
-
-UI/VulkanHandle.i: UI/VulkanHandle.cpp.i
-.PHONY : UI/VulkanHandle.i
-
-# target to preprocess a source file
-UI/VulkanHandle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/VulkanHandle.cpp.i
-.PHONY : UI/VulkanHandle.cpp.i
-
-UI/VulkanHandle.s: UI/VulkanHandle.cpp.s
-.PHONY : UI/VulkanHandle.s
-
-# target to generate assembly for a file
-UI/VulkanHandle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/VulkanHandle.cpp.s
-.PHONY : UI/VulkanHandle.cpp.s
-
-UI/Window.o: UI/Window.cpp.o
-.PHONY : UI/Window.o
-
-# target to build an object file
-UI/Window.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Window.cpp.o
-.PHONY : UI/Window.cpp.o
-
-UI/Window.i: UI/Window.cpp.i
-.PHONY : UI/Window.i
-
-# target to preprocess a source file
-UI/Window.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Window.cpp.i
-.PHONY : UI/Window.cpp.i
-
-UI/Window.s: UI/Window.cpp.s
-.PHONY : UI/Window.s
-
-# target to generate assembly for a file
-UI/Window.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/Window.cpp.s
-.PHONY : UI/Window.cpp.s
-
-UI/WindowHandle.o: UI/WindowHandle.cpp.o
-.PHONY : UI/WindowHandle.o
-
-# target to build an object file
-UI/WindowHandle.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/WindowHandle.cpp.o
-.PHONY : UI/WindowHandle.cpp.o
-
-UI/WindowHandle.i: UI/WindowHandle.cpp.i
-.PHONY : UI/WindowHandle.i
-
-# target to preprocess a source file
-UI/WindowHandle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/WindowHandle.cpp.i
-.PHONY : UI/WindowHandle.cpp.i
-
-UI/WindowHandle.s: UI/WindowHandle.cpp.s
-.PHONY : UI/WindowHandle.s
-
-# target to generate assembly for a file
-UI/WindowHandle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/UI/WindowHandle.cpp.s
-.PHONY : UI/WindowHandle.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -1245,7 +1197,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -1253,7 +1205,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Wuu.dir/build.make CMakeFiles/Wuu.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vulkan-Abstraction.dir/build.make CMakeFiles/Vulkan-Abstraction.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -1269,17 +1221,113 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... uninstall"
-	@echo "... Wuu"
+	@echo "... Vulkan-Abstraction"
 	@echo "... glfw"
-	@echo "... Core/Data.o"
-	@echo "... Core/Data.i"
-	@echo "... Core/Data.s"
 	@echo "... Core/Program.o"
 	@echo "... Core/Program.i"
 	@echo "... Core/Program.s"
-	@echo "... Core/User.o"
-	@echo "... Core/User.i"
-	@echo "... Core/User.s"
+	@echo "... Graphics/Context.o"
+	@echo "... Graphics/Context.i"
+	@echo "... Graphics/Context.s"
+	@echo "... Graphics/Vulkan/Buffer.o"
+	@echo "... Graphics/Vulkan/Buffer.i"
+	@echo "... Graphics/Vulkan/Buffer.s"
+	@echo "... Graphics/Vulkan/CommandBuffer.o"
+	@echo "... Graphics/Vulkan/CommandBuffer.i"
+	@echo "... Graphics/Vulkan/CommandBuffer.s"
+	@echo "... Graphics/Vulkan/CommandPool.o"
+	@echo "... Graphics/Vulkan/CommandPool.i"
+	@echo "... Graphics/Vulkan/CommandPool.s"
+	@echo "... Graphics/Vulkan/DepthImage.o"
+	@echo "... Graphics/Vulkan/DepthImage.i"
+	@echo "... Graphics/Vulkan/DepthImage.s"
+	@echo "... Graphics/Vulkan/DescriptorImage.o"
+	@echo "... Graphics/Vulkan/DescriptorImage.i"
+	@echo "... Graphics/Vulkan/DescriptorImage.s"
+	@echo "... Graphics/Vulkan/DescriptorPool.o"
+	@echo "... Graphics/Vulkan/DescriptorPool.i"
+	@echo "... Graphics/Vulkan/DescriptorPool.s"
+	@echo "... Graphics/Vulkan/DescriptorSet.o"
+	@echo "... Graphics/Vulkan/DescriptorSet.i"
+	@echo "... Graphics/Vulkan/DescriptorSet.s"
+	@echo "... Graphics/Vulkan/DescriptorSetImage.o"
+	@echo "... Graphics/Vulkan/DescriptorSetImage.i"
+	@echo "... Graphics/Vulkan/DescriptorSetImage.s"
+	@echo "... Graphics/Vulkan/DescriptorSetUniformBuffer.o"
+	@echo "... Graphics/Vulkan/DescriptorSetUniformBuffer.i"
+	@echo "... Graphics/Vulkan/DescriptorSetUniformBuffer.s"
+	@echo "... Graphics/Vulkan/DescriptorUniformBuffer.o"
+	@echo "... Graphics/Vulkan/DescriptorUniformBuffer.i"
+	@echo "... Graphics/Vulkan/DescriptorUniformBuffer.s"
+	@echo "... Graphics/Vulkan/FrameBuffer.o"
+	@echo "... Graphics/Vulkan/FrameBuffer.i"
+	@echo "... Graphics/Vulkan/FrameBuffer.s"
+	@echo "... Graphics/Vulkan/Image.o"
+	@echo "... Graphics/Vulkan/Image.i"
+	@echo "... Graphics/Vulkan/Image.s"
+	@echo "... Graphics/Vulkan/Instance.o"
+	@echo "... Graphics/Vulkan/Instance.i"
+	@echo "... Graphics/Vulkan/Instance.s"
+	@echo "... Graphics/Vulkan/LogicalDevice.o"
+	@echo "... Graphics/Vulkan/LogicalDevice.i"
+	@echo "... Graphics/Vulkan/LogicalDevice.s"
+	@echo "... Graphics/Vulkan/MemoryCommandBuffer.o"
+	@echo "... Graphics/Vulkan/MemoryCommandBuffer.i"
+	@echo "... Graphics/Vulkan/MemoryCommandBuffer.s"
+	@echo "... Graphics/Vulkan/MemoryPool.o"
+	@echo "... Graphics/Vulkan/MemoryPool.i"
+	@echo "... Graphics/Vulkan/MemoryPool.s"
+	@echo "... Graphics/Vulkan/Mesh.o"
+	@echo "... Graphics/Vulkan/Mesh.i"
+	@echo "... Graphics/Vulkan/Mesh.s"
+	@echo "... Graphics/Vulkan/PhysicalDevice.o"
+	@echo "... Graphics/Vulkan/PhysicalDevice.i"
+	@echo "... Graphics/Vulkan/PhysicalDevice.s"
+	@echo "... Graphics/Vulkan/Pipeline.o"
+	@echo "... Graphics/Vulkan/Pipeline.i"
+	@echo "... Graphics/Vulkan/Pipeline.s"
+	@echo "... Graphics/Vulkan/Queue.o"
+	@echo "... Graphics/Vulkan/Queue.i"
+	@echo "... Graphics/Vulkan/Queue.s"
+	@echo "... Graphics/Vulkan/RenderPass.o"
+	@echo "... Graphics/Vulkan/RenderPass.i"
+	@echo "... Graphics/Vulkan/RenderPass.s"
+	@echo "... Graphics/Vulkan/Renderer.o"
+	@echo "... Graphics/Vulkan/Renderer.i"
+	@echo "... Graphics/Vulkan/Renderer.s"
+	@echo "... Graphics/Vulkan/ShaderModule.o"
+	@echo "... Graphics/Vulkan/ShaderModule.i"
+	@echo "... Graphics/Vulkan/ShaderModule.s"
+	@echo "... Graphics/Vulkan/Surface.o"
+	@echo "... Graphics/Vulkan/Surface.i"
+	@echo "... Graphics/Vulkan/Surface.s"
+	@echo "... Graphics/Vulkan/Swapchain.o"
+	@echo "... Graphics/Vulkan/Swapchain.i"
+	@echo "... Graphics/Vulkan/Swapchain.s"
+	@echo "... Graphics/Vulkan/SwapchainImage.o"
+	@echo "... Graphics/Vulkan/SwapchainImage.i"
+	@echo "... Graphics/Vulkan/SwapchainImage.s"
+	@echo "... Graphics/Vulkan/Third-Party/stb_image.o"
+	@echo "... Graphics/Vulkan/Third-Party/stb_image.i"
+	@echo "... Graphics/Vulkan/Third-Party/stb_image.s"
+	@echo "... Graphics/Vulkan/Third-Party/tiny_obj_loader.o"
+	@echo "... Graphics/Vulkan/Third-Party/tiny_obj_loader.i"
+	@echo "... Graphics/Vulkan/Third-Party/tiny_obj_loader.s"
+	@echo "... Graphics/Vulkan/UICommandBuffer.o"
+	@echo "... Graphics/Vulkan/UICommandBuffer.i"
+	@echo "... Graphics/Vulkan/UICommandBuffer.s"
+	@echo "... Graphics/Vulkan/UIRenderer.o"
+	@echo "... Graphics/Vulkan/UIRenderer.i"
+	@echo "... Graphics/Vulkan/UIRenderer.s"
+	@echo "... Graphics/VulkanHandle.o"
+	@echo "... Graphics/VulkanHandle.i"
+	@echo "... Graphics/VulkanHandle.s"
+	@echo "... Graphics/Window.o"
+	@echo "... Graphics/Window.i"
+	@echo "... Graphics/Window.s"
+	@echo "... Graphics/WindowHandle.o"
+	@echo "... Graphics/WindowHandle.i"
+	@echo "... Graphics/WindowHandle.s"
 	@echo "... Networking/Client.o"
 	@echo "... Networking/Client.i"
 	@echo "... Networking/Client.s"
@@ -1298,108 +1346,6 @@ help:
 	@echo "... Networking/Packet.o"
 	@echo "... Networking/Packet.i"
 	@echo "... Networking/Packet.s"
-	@echo "... UI/Context.o"
-	@echo "... UI/Context.i"
-	@echo "... UI/Context.s"
-	@echo "... UI/Layout.o"
-	@echo "... UI/Layout.i"
-	@echo "... UI/Layout.s"
-	@echo "... UI/Vulkan/Buffer.o"
-	@echo "... UI/Vulkan/Buffer.i"
-	@echo "... UI/Vulkan/Buffer.s"
-	@echo "... UI/Vulkan/CommandBuffer.o"
-	@echo "... UI/Vulkan/CommandBuffer.i"
-	@echo "... UI/Vulkan/CommandBuffer.s"
-	@echo "... UI/Vulkan/CommandPool.o"
-	@echo "... UI/Vulkan/CommandPool.i"
-	@echo "... UI/Vulkan/CommandPool.s"
-	@echo "... UI/Vulkan/DepthImage.o"
-	@echo "... UI/Vulkan/DepthImage.i"
-	@echo "... UI/Vulkan/DepthImage.s"
-	@echo "... UI/Vulkan/DescriptorImage.o"
-	@echo "... UI/Vulkan/DescriptorImage.i"
-	@echo "... UI/Vulkan/DescriptorImage.s"
-	@echo "... UI/Vulkan/DescriptorPool.o"
-	@echo "... UI/Vulkan/DescriptorPool.i"
-	@echo "... UI/Vulkan/DescriptorPool.s"
-	@echo "... UI/Vulkan/DescriptorSet.o"
-	@echo "... UI/Vulkan/DescriptorSet.i"
-	@echo "... UI/Vulkan/DescriptorSet.s"
-	@echo "... UI/Vulkan/DescriptorSetImage.o"
-	@echo "... UI/Vulkan/DescriptorSetImage.i"
-	@echo "... UI/Vulkan/DescriptorSetImage.s"
-	@echo "... UI/Vulkan/DescriptorSetUniformBuffer.o"
-	@echo "... UI/Vulkan/DescriptorSetUniformBuffer.i"
-	@echo "... UI/Vulkan/DescriptorSetUniformBuffer.s"
-	@echo "... UI/Vulkan/DescriptorUniformBuffer.o"
-	@echo "... UI/Vulkan/DescriptorUniformBuffer.i"
-	@echo "... UI/Vulkan/DescriptorUniformBuffer.s"
-	@echo "... UI/Vulkan/FrameBuffer.o"
-	@echo "... UI/Vulkan/FrameBuffer.i"
-	@echo "... UI/Vulkan/FrameBuffer.s"
-	@echo "... UI/Vulkan/Image.o"
-	@echo "... UI/Vulkan/Image.i"
-	@echo "... UI/Vulkan/Image.s"
-	@echo "... UI/Vulkan/Instance.o"
-	@echo "... UI/Vulkan/Instance.i"
-	@echo "... UI/Vulkan/Instance.s"
-	@echo "... UI/Vulkan/LogicalDevice.o"
-	@echo "... UI/Vulkan/LogicalDevice.i"
-	@echo "... UI/Vulkan/LogicalDevice.s"
-	@echo "... UI/Vulkan/MemoryCommandBuffer.o"
-	@echo "... UI/Vulkan/MemoryCommandBuffer.i"
-	@echo "... UI/Vulkan/MemoryCommandBuffer.s"
-	@echo "... UI/Vulkan/MemoryPool.o"
-	@echo "... UI/Vulkan/MemoryPool.i"
-	@echo "... UI/Vulkan/MemoryPool.s"
-	@echo "... UI/Vulkan/PhysicalDevice.o"
-	@echo "... UI/Vulkan/PhysicalDevice.i"
-	@echo "... UI/Vulkan/PhysicalDevice.s"
-	@echo "... UI/Vulkan/Pipeline.o"
-	@echo "... UI/Vulkan/Pipeline.i"
-	@echo "... UI/Vulkan/Pipeline.s"
-	@echo "... UI/Vulkan/Queue.o"
-	@echo "... UI/Vulkan/Queue.i"
-	@echo "... UI/Vulkan/Queue.s"
-	@echo "... UI/Vulkan/RenderPass.o"
-	@echo "... UI/Vulkan/RenderPass.i"
-	@echo "... UI/Vulkan/RenderPass.s"
-	@echo "... UI/Vulkan/Renderer.o"
-	@echo "... UI/Vulkan/Renderer.i"
-	@echo "... UI/Vulkan/Renderer.s"
-	@echo "... UI/Vulkan/Shape.o"
-	@echo "... UI/Vulkan/Shape.i"
-	@echo "... UI/Vulkan/Shape.s"
-	@echo "... UI/Vulkan/Surface.o"
-	@echo "... UI/Vulkan/Surface.i"
-	@echo "... UI/Vulkan/Surface.s"
-	@echo "... UI/Vulkan/Swapchain.o"
-	@echo "... UI/Vulkan/Swapchain.i"
-	@echo "... UI/Vulkan/Swapchain.s"
-	@echo "... UI/Vulkan/SwapchainImage.o"
-	@echo "... UI/Vulkan/SwapchainImage.i"
-	@echo "... UI/Vulkan/SwapchainImage.s"
-	@echo "... UI/Vulkan/Third-Party/stb_image.o"
-	@echo "... UI/Vulkan/Third-Party/stb_image.i"
-	@echo "... UI/Vulkan/Third-Party/stb_image.s"
-	@echo "... UI/Vulkan/Third-Party/tiny_obj_loader.o"
-	@echo "... UI/Vulkan/Third-Party/tiny_obj_loader.i"
-	@echo "... UI/Vulkan/Third-Party/tiny_obj_loader.s"
-	@echo "... UI/Vulkan/UICommandBuffer.o"
-	@echo "... UI/Vulkan/UICommandBuffer.i"
-	@echo "... UI/Vulkan/UICommandBuffer.s"
-	@echo "... UI/Vulkan/UIRenderer.o"
-	@echo "... UI/Vulkan/UIRenderer.i"
-	@echo "... UI/Vulkan/UIRenderer.s"
-	@echo "... UI/VulkanHandle.o"
-	@echo "... UI/VulkanHandle.i"
-	@echo "... UI/VulkanHandle.s"
-	@echo "... UI/Window.o"
-	@echo "... UI/Window.i"
-	@echo "... UI/Window.s"
-	@echo "... UI/WindowHandle.o"
-	@echo "... UI/WindowHandle.i"
-	@echo "... UI/WindowHandle.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

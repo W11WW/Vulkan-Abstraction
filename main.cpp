@@ -3,7 +3,7 @@
 int main()
 {
 
-    Wuu::Program program {};
+    Program program {};
 
     program.run();
     program.destroy();

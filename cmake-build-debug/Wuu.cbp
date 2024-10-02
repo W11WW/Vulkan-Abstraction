@@ -5,602 +5,589 @@
 		<Option title="Wuu"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\glfw-3\;CMake Files\glfw-3\src\;CMake Files\glm\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Third-Party\;CMake Files\Third-Party\glfw-3\;CMake Files\Third-Party\glfw-3\src\;CMake Files\Third-Party\glm\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug"/>
+				<Option working_dir="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Wuu">
-				<Option output="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Wuu" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug"/>
+				<Option output="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Wuu" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include"/>
-					<Add directory="/Users/michaelferents/CLionProjects/Wuu/glfw-3/include"/>
-					<Add directory="/Users/michaelferents/CLionProjects/Wuu/glm/.."/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/include"/>
+					<Add directory="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glm/../.."/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 Wuu"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 Wuu"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Wuu/fast">
-				<Option output="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Wuu" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug"/>
+				<Option output="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Wuu" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include"/>
-					<Add directory="/Users/michaelferents/CLionProjects/Wuu/glfw-3/include"/>
-					<Add directory="/Users/michaelferents/CLionProjects/Wuu/glm/.."/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/include"/>
+					<Add directory="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glm/../.."/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 Wuu/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 Wuu/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug"/>
+				<Option working_dir="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug"/>
+				<Option working_dir="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="list_install_components">
-				<Option working_dir="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug"/>
+				<Option working_dir="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install">
-				<Option working_dir="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug"/>
+				<Option working_dir="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/local">
-				<Option working_dir="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug"/>
+				<Option working_dir="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/strip">
-				<Option working_dir="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug"/>
+				<Option working_dir="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="uninstall">
-				<Option working_dir="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3"/>
+				<Option working_dir="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Third-Party/glfw-3"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/Makefile&quot;  VERBOSE=1 uninstall"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Third-Party/glfw-3/Makefile&quot;  VERBOSE=1 uninstall"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Third-Party/glfw-3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Third-Party/glfw-3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Third-Party/glfw-3/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="glfw">
-				<Option output="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src"/>
+				<Option output="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Third-Party/glfw-3/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Third-Party/glfw-3/src"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-D_GLFW_USE_CONFIG_H"/>
 					<Add directory="/Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include"/>
-					<Add directory="/Users/michaelferents/CLionProjects/Wuu/glfw-3/include"/>
-					<Add directory="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src"/>
-					<Add directory="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/include"/>
+					<Add directory="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src"/>
+					<Add directory="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Third-Party/glfw-3/src"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/Makefile&quot;  VERBOSE=1 glfw"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Third-Party/glfw-3/src/Makefile&quot;  VERBOSE=1 glfw"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Third-Party/glfw-3/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Third-Party/glfw-3/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Third-Party/glfw-3/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="glfw/fast">
-				<Option output="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src"/>
+				<Option output="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Third-Party/glfw-3/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Third-Party/glfw-3/src"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-D_GLFW_USE_CONFIG_H"/>
 					<Add directory="/Users/michaelferents/Desktop/Vulkan/vulkansdk-macos-1.2.170.0/macOS/include"/>
-					<Add directory="/Users/michaelferents/CLionProjects/Wuu/glfw-3/include"/>
-					<Add directory="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src"/>
-					<Add directory="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/include"/>
+					<Add directory="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src"/>
+					<Add directory="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Third-Party/glfw-3/src"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/Makefile&quot;  VERBOSE=1 glfw/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Third-Party/glfw-3/src/Makefile&quot;  VERBOSE=1 glfw/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Third-Party/glfw-3/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Third-Party/glfw-3/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Third-Party/glfw-3/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/Core/Data.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Core/Program.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/Core/Data.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Core/Program.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/Core/DataGuard.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Core/TestFile.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/Core/Program.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Context.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/Core/Program.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Context.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/Core/User.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Buffer.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/Core/User.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Buffer.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/Core/Util.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/CommandBuffer.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/Networking/Client.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/CommandBuffer.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/Networking/Client.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/CommandPool.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/Networking/IPv4ClientSocket.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/CommandPool.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/Networking/IPv4ClientSocket.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DepthImage.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/Networking/IPv4ServerSocket.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DepthImage.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/Networking/IPv4ServerSocket.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorFunctions.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/Networking/IPv4SocketInfo.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorImage.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/Networking/IPv6ClientSocket.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorImage.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/Networking/IPv6ClientSocket.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorPool.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/Networking/IPv6ServerSocket.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorPool.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/Networking/IPv6ServerSocket.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorSet.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/Networking/IPv6SocketInfo.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorSet.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/Networking/Packet.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorSetImage.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/Networking/Packet.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorSetImage.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/Networking/Socket.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorSetUniformBuffer.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/Networking/SocketErrors.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorSetUniformBuffer.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Context.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorType.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Context.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorUniformBuffer.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Layout.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/DescriptorUniformBuffer.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Layout.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/FrameBuffer.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Buffer.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/FrameBuffer.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Buffer.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Image.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/CommandBuffer.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Image.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/CommandBuffer.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/IndexBuffer.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/CommandPool.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Instance.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/CommandPool.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Instance.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DepthImage.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Logger.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DepthImage.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/LogicalDevice.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorFunctions.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/LogicalDevice.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorImage.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/MAllocator.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorImage.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/MemoryCommandBuffer.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorPool.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/MemoryCommandBuffer.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorPool.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/MemoryFunctions.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorSet.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/MemoryPool.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorSet.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/MemoryPool.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorSetImage.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Mesh.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorSetImage.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Mesh.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorSetUniformBuffer.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/PhysicalDevice.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorSetUniformBuffer.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/PhysicalDevice.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorType.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Pipeline.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorUniformBuffer.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Pipeline.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/DescriptorUniformBuffer.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/PushConstantFunctions.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/FrameBuffer.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/PushConstantType.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/FrameBuffer.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Queue.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Image.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Queue.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Image.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/RenderPass.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/IndexBuffer.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/RenderPass.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Instance.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Renderer.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Instance.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Renderer.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/LogicalDevice.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/ShaderModule.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/LogicalDevice.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/ShaderModule.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryCommandBuffer.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Surface.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryCommandBuffer.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Surface.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryFunctions.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Swapchain.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryPool.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Swapchain.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/MemoryPool.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/SwapchainImage.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PhysicalDevice.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/SwapchainImage.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PhysicalDevice.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Third-Party/stb_image.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Pipeline.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Third-Party/stb_image.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Pipeline.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Third-Party/tiny_obj_loader.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PushConstantFunctions.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Third-Party/tiny_obj_loader.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/PushConstantType.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/UICommandBuffer.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Queue.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/UICommandBuffer.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Queue.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/UIRenderer.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/RenderPass.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/UIRenderer.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/RenderPass.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/UniformBufferType.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Renderer.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/Utils.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Renderer.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/VertexBuffer.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Shape.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Vulkan/VertexTypes.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Shape.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/VulkanHandle.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Surface.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/VulkanHandle.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Surface.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Window.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Swapchain.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/Window.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Swapchain.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/WindowHandle.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/SwapchainImage.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/WindowHandle.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/SwapchainImage.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Graphics/WindowUtils.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Third-Party/stb_image.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/Client.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Third-Party/stb_image.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/Client.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Third-Party/tiny_obj_loader.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/IPv4ClientSocket.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Third-Party/tiny_obj_loader.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/IPv4ClientSocket.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/UICommandBuffer.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/IPv4ServerSocket.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/UICommandBuffer.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/IPv4ServerSocket.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/UIRenderer.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/IPv4SocketInfo.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/UIRenderer.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/IPv6ClientSocket.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/UniformBufferType.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/IPv6ClientSocket.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/Utils.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/IPv6ServerSocket.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/VertexBuffer.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/IPv6ServerSocket.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Vulkan/VertexTypes.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/IPv6SocketInfo.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/VulkanHandle.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/Packet.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/VulkanHandle.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/Packet.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Window.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/Socket.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/Window.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Networking/SocketErrors.h">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/WindowHandle.cpp">
-			<Option target="Wuu"/>
-		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/WindowHandle.h">
-			<Option target="Wuu"/>
-		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/UI/WindowUtils.h">
-			<Option target="Wuu"/>
-		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/src/glfw_config.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/include/GLFW/glfw3.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/include/GLFW/glfw3.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/include/GLFW/glfw3native.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/include/GLFW/glfw3native.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src/cocoa_init.m">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/cocoa_init.m">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src/cocoa_joystick.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/cocoa_joystick.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src/cocoa_joystick.m">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/cocoa_joystick.m">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src/cocoa_monitor.m">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/cocoa_monitor.m">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src/cocoa_platform.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/cocoa_platform.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src/cocoa_time.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/cocoa_time.c">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src/cocoa_window.m">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/cocoa_window.m">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src/context.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/context.c">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src/egl_context.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/egl_context.c">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src/egl_context.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/egl_context.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src/init.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/init.c">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src/input.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/input.c">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src/internal.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/internal.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src/mappings.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/mappings.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src/monitor.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/monitor.c">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src/nsgl_context.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/nsgl_context.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src/nsgl_context.m">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/nsgl_context.m">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src/osmesa_context.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/osmesa_context.c">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src/osmesa_context.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/osmesa_context.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src/posix_thread.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/posix_thread.c">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src/posix_thread.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/posix_thread.h">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src/vulkan.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/vulkan.c">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src/window.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/window.c">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Third-Party/glfw-3/src/glfw_config.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/main.cpp">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/main.cpp">
 			<Option target="Wuu"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/CMakeLists.txt">
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\glfw-3\"/>
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Third-Party\glfw-3\"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/cmake_uninstall.cmake.in">
-			<Option virtualFolder="CMake Files\glfw-3\"/>
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/cmake_uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\Third-Party\glfw-3\"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\glfw-3\src\"/>
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Third-Party\glfw-3\src\"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/glfw3.pc.in">
-			<Option virtualFolder="CMake Files\glfw-3\src\"/>
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\Third-Party\glfw-3\src\"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/glfw3Config.cmake.in">
-			<Option virtualFolder="CMake Files\glfw-3\src\"/>
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\Third-Party\glfw-3\src\"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glfw-3/src/glfw_config.h.in">
-			<Option virtualFolder="CMake Files\glfw-3\src\"/>
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glfw-3/src/glfw_config.h.in">
+			<Option virtualFolder="CMake Files\Third-Party\glfw-3\src\"/>
 		</Unit>
-		<Unit filename="/Users/michaelferents/CLionProjects/Wuu/glm/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\glm\"/>
+		<Unit filename="/Users/michaelferents/CLionProjects/Vulkan-Abstraction/Third-Party/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Third-Party\glm\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

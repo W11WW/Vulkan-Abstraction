@@ -1,4 +1,4 @@
-# Install script for directory: /Users/michaelferents/CLionProjects/Wuu
+# Install script for directory: /Users/michaelferents/CLionProjects/Vulkan-Abstraction
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,12 +39,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glfw-3/cmake_install.cmake")
+  include("/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Third-Party/glfw-3/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/glm/cmake_install.cmake")
+  include("/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/Third-Party/glm/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -55,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/michaelferents/CLionProjects/Wuu/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/michaelferents/CLionProjects/Vulkan-Abstraction/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
