@@ -2,9 +2,9 @@
 // Created by Michael Ferents on 23/03/2022.
 //
 
-#include "UIRenderer.h"
+#include "BasicRenderer.h"
 
-void UIRenderer::initialize(GLFWwindow* window)
+void BasicRenderer::initialize(GLFWwindow* window)
 {
     initializeRenderer(window);
 
@@ -16,7 +16,7 @@ void UIRenderer::initialize(GLFWwindow* window)
     m_commandPool.setPool(m_logicalDevice, static_cast<const uint32_t&&>(m_logicalDevice.getGraphicsQueueIndex()));
 }
 
-UIRenderer::~UIRenderer()
+BasicRenderer::~BasicRenderer()
 {
     m_logicalDevice.getLogicalDevice().waitIdle();
 
@@ -31,7 +31,7 @@ UIRenderer::~UIRenderer()
     m_instance.destroy();
 }
 
-bool UIRenderer::render(GLFWwindow *window)
+bool BasicRenderer::render(GLFWwindow *window)
 {
     // get image index and when we get the image make m_imageAvailableSemaphore true
     uint32_t imageIndex = 0;
@@ -78,7 +78,7 @@ bool UIRenderer::render(GLFWwindow *window)
     return true;
 }
 
-void UIRenderer::recreateSwapchain(GLFWwindow *window)
+void BasicRenderer::recreateSwapchain(GLFWwindow *window)
 {
     m_logicalDevice.getLogicalDevice().waitIdle();
 

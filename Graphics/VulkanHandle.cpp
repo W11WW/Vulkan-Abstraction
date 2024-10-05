@@ -61,7 +61,7 @@ void VulkanHandle::initialize(GLFWwindow* window)
     m_square.setShape(m_renderer.getLogicalDevice(), m_renderer.getPhysicalDevice(), m_memoryPool, "al");
 }
 
-// what im doing here rn is retarded but im testing stuff which also doesnt seem to work great : )
+// what im doing here rn is idiotic but im testing stuff which also doesn't seem to work great :/
 
 void VulkanHandle::updateCommandBuffers()
 {

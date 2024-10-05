@@ -9,20 +9,6 @@
 #include <vector>
 #include <fstream>
 
-typedef struct InstanceCreateInfo {
-
-    bool m_enableValidationLayers = true;
-
-    std::string m_applicationName = "Vulkan-Abstraction";
-    uint16_t m_applicationVersion = 1;
-
-    std::string m_engineName = "WuranEngine";
-    uint16_t m_engineVersion = 1;
-
-} InstanceCreateInfo;
-
-
-
 static std::vector<char> readFile(const std::string& filename)
 {
     std::ifstream file(filename, std::ios::ate | std::ios::binary);

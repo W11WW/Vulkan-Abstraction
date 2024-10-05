@@ -7,7 +7,7 @@
 #include <iostream>
 #include <GLFW/glfw3.h>
 
-#include "Vulkan/UIRenderer.h"
+#include "Vulkan/BasicRenderer.h"
 #include "Vulkan/MemoryPool.h"
 #include "Vulkan/DepthImage.h"
 #include "Vulkan/DescriptorUniformBuffer.h"
@@ -19,6 +19,7 @@
 #include "Vulkan/DescriptorImage.h"
 #include "Vulkan/DescriptorSetImage.h"
 #include "Vulkan/MemoryFunctions.h"
+#include "Vulkan/MAllocator.h"
 
 class VulkanHandle {
 public:
@@ -35,7 +36,7 @@ public:
 
 private:
 
-    UIRenderer m_renderer;
+    BasicRenderer m_renderer;
     MemoryPool m_memoryPool;
     DepthImage m_depthImage;
     DescriptorUniformBuffer<UniformBufferObject> m_uniformBuffer;
@@ -43,6 +44,7 @@ private:
     DescriptorSetUniformBuffer m_descriptorSetUniformBuffer;
     RenderPass m_renderPass;
     Pipeline m_pipeline;
+    MAllocator m_allocator;
 
     Mesh m_square {};
     std::vector<DescriptorImage> m_images {};

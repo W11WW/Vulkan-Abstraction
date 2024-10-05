@@ -11,10 +11,10 @@
 #include "Pipeline.h"
 #include "Mesh.h"
 
-class UICommandBuffer : public CommandBuffer {
+class BasicCommandBuffer : public CommandBuffer {
 public:
 
-    UICommandBuffer() = default;
+    BasicCommandBuffer() = default;
 
     void beginCommandBufferRecord() final;
     void endCommandBufferRecord() final;

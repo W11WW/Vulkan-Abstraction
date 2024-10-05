@@ -7,8 +7,19 @@
 #include <utility>
 #include <vulkan/vulkan.hpp>
 #include <GLFW/glfw3.h>
-#include "Utils.h"
 #include <iostream>
+
+typedef struct InstanceCreateInfo {
+
+    bool m_enableValidationLayers = true;
+
+    std::string m_applicationName = "Vulkan-Abstraction";
+    uint16_t m_applicationVersion = 1;
+
+    std::string m_engineName = "Engine";
+    uint16_t m_engineVersion = 1;
+
+} InstanceCreateInfo;
 
 class Instance {
 public:

@@ -5,16 +5,16 @@
 #ifndef WUU_UIRENDERER_H
 #define WUU_UIRENDERER_H
 #include "Renderer.h"
-#include "UICommandBuffer.h"
+#include "BasicCommandBuffer.h"
 
 #include <array>
 
-class UIRenderer : public Renderer{
+class BasicRenderer : public Renderer{
 public:
 
-    UIRenderer() = default;
+    BasicRenderer() = default;
 
-    ~UIRenderer();
+    ~BasicRenderer();
 
     void initialize(GLFWwindow* window);
 
@@ -27,7 +27,7 @@ private:
 
     CommandPool m_commandPool;
 
-    std::vector<std::array<UICommandBuffer, 2>> m_commandBuffers;
+    std::vector<std::array<BasicCommandBuffer, 2>> m_commandBuffers;
 
     vk::Semaphore m_imageAvailableSemaphore;
     vk::Semaphore m_renderFinishedSemaphore;

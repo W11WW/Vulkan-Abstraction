@@ -8,7 +8,8 @@
 #include <ranges>
 #include <coroutine>
 #include <numbers>
-#include <__numeric/midpoint.h>
+#include <span>
+//#include <__numeric/midpoint.h>
 #include "Graphics/Vulkan/Logger.h"
 
 // coroutines are stackless - their state is allocated on the heap
@@ -128,6 +129,7 @@ void g(T a)
 }
 */
 // Compund requirements
+/*
 template <typename T>
 concept C = requires(T x)
 {
@@ -136,6 +138,7 @@ concept C = requires(T x)
     {x + 1} -> std::same_as<int>; // the expression 'x + 1' satisfies 'std::same_as<decltype((x+1))>'
     {x * 1} -> std::convertible_to<T>; // the type of the expression 'x * 1' is convertible to 'T'
 };
+ */
 /*
 // Nested requirements
 template <typename T>
@@ -227,6 +230,7 @@ consteval int sqr(int n) {
  */
 
 // "using enum" - eg
+/*
 enum class rgba_color_channel { red, green, blue, alpha };
 
 static std::string_view to_string(rgba_color_channel my_channel)
@@ -300,6 +304,7 @@ bool logicalAnd(Args... args)
     // Binary folding.
     return (true && ... && args);
 }
+ */
 /*
  *
  * bool b = true;
@@ -307,13 +312,14 @@ bool logicalAnd(Args... args)
  * logicalAnd(b,b2,true); // == true
  *
  */
+/*
 template <typename... Args>
 auto sum(Args... args)
 {
     // Unary folding.
     return (... + args);
 }
-
+*/
 // sum(1.0, 2.0f, 3); // == 6.0
 
 // New rules for auto deduction from braced-init-list
@@ -323,6 +329,7 @@ auto sum(Args... args)
 //auto x4 {3.0}; // x4 is double
 
 // Compile-time lambdas using constexpr
+/*
 auto identity = [](int n) constexpr { return n; };
 static_assert(identity(123) == 123);
 
@@ -335,6 +342,7 @@ struct MyObj {
         return [this] { return value; };
     }
 };
+ */
 /*
 MyObj mo;
 auto valueCopy = mo.getValueCopy();
@@ -345,6 +353,7 @@ valueRef(); // 321
 */
 
 // constexpr if
+/*
 template <typename T>
 constexpr bool isIntegral() {
     if constexpr (std::is_integral<T>::value)
@@ -354,6 +363,7 @@ constexpr bool isIntegral() {
         return false;
     }
 }
+ */
 
 // std::variant - holds a value of one of its alternative types
 // std::optional - a value that may or may not be present
@@ -384,10 +394,11 @@ public:
  */
 
 // std::apply
+/*
 auto add = [](int x, int y) {
     return x + y;
 };
-
+*/
 //std::apply(add, std::make_tuple(1, 2)); // == 3
 
 // Generic lambda expressions
@@ -452,7 +463,7 @@ N n;
 //if(n); // OK calls N::operator bool()
 // bool bb = n; error copy-initialization does not consider N::operator bool()
 */
-
+/*
 struct Event {
 
     explicit Event(std::string_view message) : event(message) {}
@@ -464,7 +475,7 @@ struct Event {
         return event;
     }
 };
-
+*/
 static void testmain()
 {
     //g(baz{});
@@ -483,8 +494,8 @@ static void testmain()
     str.ends_with("baz"); // false
 
     // std::midpoint
-    std::midpoint(1, 3); // == 2
-
+    //std::midpoint(1, 3); // ==
+    /*
     Logger<Event> eventLogger {};
 
     eventLogger.log(Event("First LOG"));
@@ -492,6 +503,7 @@ static void testmain()
     eventLogger.log(Event("Third LOG"));
 
     eventLogger.print();
+    */
 }
 
 

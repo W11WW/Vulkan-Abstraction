@@ -2,15 +2,15 @@
 // Created by Michael Ferents on 24/03/2022.
 //
 
-#include "UICommandBuffer.h"
+#include "BasicCommandBuffer.h"
 
-void UICommandBuffer::beginCommandBufferRecord()
+void BasicCommandBuffer::beginCommandBufferRecord()
 {
     auto beginInfo = vk::CommandBufferBeginInfo {};
     m_commandBuffer.begin(beginInfo);
 }
 
-void UICommandBuffer::bindRenderPass(RenderPass &renderPass, Swapchain &swapchain, int index)
+void BasicCommandBuffer::bindRenderPass(RenderPass &renderPass, Swapchain &swapchain, int index)
 {
     std::array<vk::ClearValue, 2> clearValues {};
     std::array<float, 4> color = { 0.0f, 0.0f, 0.0f, 0.0f };
@@ -23,12 +23,12 @@ void UICommandBuffer::bindRenderPass(RenderPass &renderPass, Swapchain &swapchai
     m_commandBuffer.beginRenderPass(renderPassBeginInfo, vk::SubpassContents::eInline);
 }
 
-void UICommandBuffer::bindPipeline(Pipeline &pipeline)
+void BasicCommandBuffer::bindPipeline(Pipeline &pipeline)
 {
     m_commandBuffer.bindPipeline(vk::PipelineBindPoint::eGraphics, pipeline.getPipeline());
 }
 
-void UICommandBuffer::bindShape(Mesh &shape)
+void BasicCommandBuffer::bindShape(Mesh &shape)
 {
     vk::Buffer vertexBuffers[] = { shape.getVertexBuffer().getBuffer() };
     vk::DeviceSize offsets[] = {0};
@@ -37,13 +37,13 @@ void UICommandBuffer::bindShape(Mesh &shape)
     m_commandBuffer.bindIndexBuffer(shape.getIndexBuffer().getBuffer(), 0, vk::IndexType::eUint32);
 }
 
-void UICommandBuffer::bindDescriptorSets(Pipeline &pipeline, std::vector<DescriptorSet> &sets)
+void BasicCommandBuffer::bindDescriptorSets(Pipeline &pipeline, std::vector<DescriptorSet> &sets)
 {
     m_commandBuffer.bindDescriptorSets(vk::PipelineBindPoint::eGraphics, pipeline.getPipelineLayout(), 0, 1, &sets[0].getDescriptorSet(), 0, nullptr);
     m_commandBuffer.bindDescriptorSets(vk::PipelineBindPoint::eGraphics, pipeline.getPipelineLayout(), 1, 1, &sets[1].getDescriptorSet(), 0, nullptr);
 }
 
-void UICommandBuffer::drawIndexed(Pipeline &pipeline, Mesh &shape, glm::vec3 &position)
+void BasicCommandBuffer::drawIndexed(Pipeline &pipeline, Mesh &shape, glm::vec3 &position)
 {
     PushConstantData data {};
     createPushConstantObject(data, position);
@@ -52,12 +52,12 @@ void UICommandBuffer::drawIndexed(Pipeline &pipeline, Mesh &shape, glm::vec3 &po
     m_commandBuffer.drawIndexed(shape.getIndexBuffer().getIndicesSize(), 1, 0, 0, 0);
 }
 
-void UICommandBuffer::unbindRenderPass()
+void BasicCommandBuffer::unbindRenderPass()
 {
     m_commandBuffer.endRenderPass();
 }
 
-void UICommandBuffer::endCommandBufferRecord()
+void BasicCommandBuffer::endCommandBufferRecord()
 {
     m_commandBuffer.end();
 }
